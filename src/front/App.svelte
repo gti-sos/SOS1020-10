@@ -9,6 +9,8 @@
 	import SuicidesTable from './global-suicides_GUI/App.svelte';
 	import editSuicide from './global-suicides_GUI/editSuicide.svelte';
 	import EmptyTable from './global-suicides_GUI/EmptyTable.svelte';
+	import suicidesGraph from './global-suicides_GUI/global-suicides_Graph.svelte';
+	import suicidesGraph2 from './global-suicides_GUI/global-suicides_Graph2.svelte';
 	
 	import globalDivorces from './DivorcesGUI/App.svelte';  
 	import EditDivorce from './DivorcesGUI/EditDivorce.svelte';
@@ -23,7 +25,9 @@
 		"/empty": EmptyTable,
 
 		"/globalDivorcesAPI/:country/:year": EditDivorce,
-		"/globalDivorcesAPI":globalDivorces, 
+		"/globalDivorcesAPI":globalDivorces,
+		"/suicidesGraph": suicidesGraph, 
+		"/suicidesGraph2": suicidesGraph2, 
 		
 		"*": NotFound
 	};
