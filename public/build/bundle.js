@@ -10885,7 +10885,7 @@ var app = (function () {
     	return block;
     }
 
-    // (302:1) {:then suicides}
+    // (306:1) {:then suicides}
     function create_then_block$2(ctx) {
     	let p0;
     	let t0;
@@ -10895,22 +10895,23 @@ var app = (function () {
     	let t4;
     	let t5;
     	let t6;
-    	let p1;
     	let t7;
+    	let p1;
     	let t8;
     	let t9;
-    	let p2;
     	let t10;
-    	let h61;
+    	let p2;
     	let t11;
+    	let h61;
     	let t12;
     	let t13;
+    	let t14;
     	let current;
 
     	const button0 = new Button({
     			props: {
     				color: "success",
-    				$$slots: { default: [create_default_slot_12$1] },
+    				$$slots: { default: [create_default_slot_13$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -10921,7 +10922,7 @@ var app = (function () {
     	const button1 = new Button({
     			props: {
     				color: "danger",
-    				$$slots: { default: [create_default_slot_11$1] },
+    				$$slots: { default: [create_default_slot_12$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -10932,7 +10933,7 @@ var app = (function () {
     	const button2 = new Button({
     			props: {
     				color: "primary",
-    				$$slots: { default: [create_default_slot_10$1] },
+    				$$slots: { default: [create_default_slot_11$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -10943,13 +10944,24 @@ var app = (function () {
     	const button3 = new Button({
     			props: {
     				color: "primary",
-    				$$slots: { default: [create_default_slot_9$1] },
+    				$$slots: { default: [create_default_slot_10$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
     		});
 
     	button3.$on("click", toGraph2);
+
+    	const button4 = new Button({
+    			props: {
+    				color: "success",
+    				$$slots: { default: [create_default_slot_9$1] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button4.$on("click", toHome);
 
     	const formgroup = new FormGroup({
     			props: {
@@ -10959,7 +10971,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	const button4 = new Button({
+    	const button5 = new Button({
     			props: {
     				color: "success",
     				$$slots: { default: [create_default_slot_6$1] },
@@ -10968,7 +10980,7 @@ var app = (function () {
     			$$inline: true
     		});
 
-    	button4.$on("click", function () {
+    	button5.$on("click", function () {
     		if (is_function(/*searchSuicides*/ ctx[12](/*searchCountry*/ ctx[5]))) /*searchSuicides*/ ctx[12](/*searchCountry*/ ctx[5]).apply(this, arguments);
     	});
 
@@ -10996,24 +11008,26 @@ var app = (function () {
     			t5 = space();
     			create_component(button3.$$.fragment);
     			t6 = space();
-    			p1 = element("p");
-    			t7 = space();
-    			create_component(formgroup.$$.fragment);
-    			t8 = space();
     			create_component(button4.$$.fragment);
+    			t7 = space();
+    			p1 = element("p");
+    			t8 = space();
+    			create_component(formgroup.$$.fragment);
     			t9 = space();
-    			p2 = element("p");
+    			create_component(button5.$$.fragment);
     			t10 = space();
+    			p2 = element("p");
+    			t11 = space();
     			h61 = element("h6");
-    			t11 = text("Total de recursos: ");
-    			t12 = text(/*totalElements*/ ctx[0]);
-    			t13 = space();
+    			t12 = text("Total de recursos: ");
+    			t13 = text(/*totalElements*/ ctx[0]);
+    			t14 = space();
     			create_component(table.$$.fragment);
-    			add_location(p0, file$d, 302, 1, 7304);
-    			add_location(h60, file$d, 303, 1, 7314);
-    			add_location(p1, file$d, 308, 1, 7628);
-    			add_location(p2, file$d, 315, 1, 7894);
-    			add_location(h61, file$d, 316, 1, 7904);
+    			add_location(p0, file$d, 306, 1, 7360);
+    			add_location(h60, file$d, 307, 1, 7370);
+    			add_location(p1, file$d, 313, 1, 7746);
+    			add_location(p2, file$d, 320, 1, 8012);
+    			add_location(h61, file$d, 321, 1, 8022);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p0, anchor);
@@ -11028,18 +11042,20 @@ var app = (function () {
     			insert_dev(target, t5, anchor);
     			mount_component(button3, target, anchor);
     			insert_dev(target, t6, anchor);
-    			insert_dev(target, p1, anchor);
-    			insert_dev(target, t7, anchor);
-    			mount_component(formgroup, target, anchor);
-    			insert_dev(target, t8, anchor);
     			mount_component(button4, target, anchor);
+    			insert_dev(target, t7, anchor);
+    			insert_dev(target, p1, anchor);
+    			insert_dev(target, t8, anchor);
+    			mount_component(formgroup, target, anchor);
     			insert_dev(target, t9, anchor);
-    			insert_dev(target, p2, anchor);
+    			mount_component(button5, target, anchor);
     			insert_dev(target, t10, anchor);
+    			insert_dev(target, p2, anchor);
+    			insert_dev(target, t11, anchor);
     			insert_dev(target, h61, anchor);
-    			append_dev(h61, t11);
     			append_dev(h61, t12);
-    			insert_dev(target, t13, anchor);
+    			append_dev(h61, t13);
+    			insert_dev(target, t14, anchor);
     			mount_component(table, target, anchor);
     			current = true;
     		},
@@ -11073,13 +11089,6 @@ var app = (function () {
     			}
 
     			button3.$set(button3_changes);
-    			const formgroup_changes = {};
-
-    			if (dirty[0] & /*searchCountry*/ 32 | dirty[1] & /*$$scope*/ 4) {
-    				formgroup_changes.$$scope = { dirty, ctx };
-    			}
-
-    			formgroup.$set(formgroup_changes);
     			const button4_changes = {};
 
     			if (dirty[1] & /*$$scope*/ 4) {
@@ -11087,7 +11096,21 @@ var app = (function () {
     			}
 
     			button4.$set(button4_changes);
-    			if (!current || dirty[0] & /*totalElements*/ 1) set_data_dev(t12, /*totalElements*/ ctx[0]);
+    			const formgroup_changes = {};
+
+    			if (dirty[0] & /*searchCountry*/ 32 | dirty[1] & /*$$scope*/ 4) {
+    				formgroup_changes.$$scope = { dirty, ctx };
+    			}
+
+    			formgroup.$set(formgroup_changes);
+    			const button5_changes = {};
+
+    			if (dirty[1] & /*$$scope*/ 4) {
+    				button5_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button5.$set(button5_changes);
+    			if (!current || dirty[0] & /*totalElements*/ 1) set_data_dev(t13, /*totalElements*/ ctx[0]);
     			const table_changes = {};
 
     			if (dirty[0] & /*suicides, newSuicide*/ 80 | dirty[1] & /*$$scope*/ 4) {
@@ -11102,8 +11125,9 @@ var app = (function () {
     			transition_in(button1.$$.fragment, local);
     			transition_in(button2.$$.fragment, local);
     			transition_in(button3.$$.fragment, local);
-    			transition_in(formgroup.$$.fragment, local);
     			transition_in(button4.$$.fragment, local);
+    			transition_in(formgroup.$$.fragment, local);
+    			transition_in(button5.$$.fragment, local);
     			transition_in(table.$$.fragment, local);
     			current = true;
     		},
@@ -11112,8 +11136,9 @@ var app = (function () {
     			transition_out(button1.$$.fragment, local);
     			transition_out(button2.$$.fragment, local);
     			transition_out(button3.$$.fragment, local);
-    			transition_out(formgroup.$$.fragment, local);
     			transition_out(button4.$$.fragment, local);
+    			transition_out(formgroup.$$.fragment, local);
+    			transition_out(button5.$$.fragment, local);
     			transition_out(table.$$.fragment, local);
     			current = false;
     		},
@@ -11130,16 +11155,18 @@ var app = (function () {
     			if (detaching) detach_dev(t5);
     			destroy_component(button3, detaching);
     			if (detaching) detach_dev(t6);
-    			if (detaching) detach_dev(p1);
-    			if (detaching) detach_dev(t7);
-    			destroy_component(formgroup, detaching);
-    			if (detaching) detach_dev(t8);
     			destroy_component(button4, detaching);
+    			if (detaching) detach_dev(t7);
+    			if (detaching) detach_dev(p1);
+    			if (detaching) detach_dev(t8);
+    			destroy_component(formgroup, detaching);
     			if (detaching) detach_dev(t9);
-    			if (detaching) detach_dev(p2);
+    			destroy_component(button5, detaching);
     			if (detaching) detach_dev(t10);
+    			if (detaching) detach_dev(p2);
+    			if (detaching) detach_dev(t11);
     			if (detaching) detach_dev(h61);
-    			if (detaching) detach_dev(t13);
+    			if (detaching) detach_dev(t14);
     			destroy_component(table, detaching);
     		}
     	};
@@ -11148,15 +11175,15 @@ var app = (function () {
     		block,
     		id: create_then_block$2.name,
     		type: "then",
-    		source: "(302:1) {:then suicides}",
+    		source: "(306:1) {:then suicides}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (305:1) <Button color="success" on:click="{reloadSuicides}">
-    function create_default_slot_12$1(ctx) {
+    // (309:1) <Button color="success" on:click="{reloadSuicides}">
+    function create_default_slot_13$1(ctx) {
     	let t;
 
     	const block = {
@@ -11173,17 +11200,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_12$1.name,
+    		id: create_default_slot_13$1.name,
     		type: "slot",
-    		source: "(305:1) <Button color=\\\"success\\\" on:click=\\\"{reloadSuicides}\\\">",
+    		source: "(309:1) <Button color=\\\"success\\\" on:click=\\\"{reloadSuicides}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (306:1) <Button color="danger" on:click="{deleteSuicides}">
-    function create_default_slot_11$1(ctx) {
+    // (310:1) <Button color="danger" on:click="{deleteSuicides}">
+    function create_default_slot_12$1(ctx) {
     	let t;
 
     	const block = {
@@ -11200,17 +11227,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_11$1.name,
+    		id: create_default_slot_12$1.name,
     		type: "slot",
-    		source: "(306:1) <Button color=\\\"danger\\\" on:click=\\\"{deleteSuicides}\\\">",
+    		source: "(310:1) <Button color=\\\"danger\\\" on:click=\\\"{deleteSuicides}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (307:1) <Button color="primary" on:click="{toGraph1}">
-    function create_default_slot_10$1(ctx) {
+    // (311:1) <Button color="primary" on:click="{toGraph1}">
+    function create_default_slot_11$1(ctx) {
     	let t;
 
     	const block = {
@@ -11227,17 +11254,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_10$1.name,
+    		id: create_default_slot_11$1.name,
     		type: "slot",
-    		source: "(307:1) <Button color=\\\"primary\\\" on:click=\\\"{toGraph1}\\\">",
+    		source: "(311:1) <Button color=\\\"primary\\\" on:click=\\\"{toGraph1}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (308:1) <Button color="primary" on:click="{toGraph2}">
-    function create_default_slot_9$1(ctx) {
+    // (312:1) <Button color="primary" on:click="{toGraph2}">
+    function create_default_slot_10$1(ctx) {
     	let t;
 
     	const block = {
@@ -11254,16 +11281,43 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_9$1.name,
+    		id: create_default_slot_10$1.name,
     		type: "slot",
-    		source: "(308:1) <Button color=\\\"primary\\\" on:click=\\\"{toGraph2}\\\">",
+    		source: "(312:1) <Button color=\\\"primary\\\" on:click=\\\"{toGraph2}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (311:3) <Label for="exampleEmail">
+    // (313:1) <Button color="success" on:click="{toHome}">
+    function create_default_slot_9$1(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Inicio");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_9$1.name,
+    		type: "slot",
+    		source: "(313:1) <Button color=\\\"success\\\" on:click=\\\"{toHome}\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (316:3) <Label for="exampleEmail">
     function create_default_slot_8$1(ctx) {
     	let t;
 
@@ -11283,14 +11337,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_8$1.name,
     		type: "slot",
-    		source: "(311:3) <Label for=\\\"exampleEmail\\\">",
+    		source: "(316:3) <Label for=\\\"exampleEmail\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (310:1) <FormGroup>
+    // (315:1) <FormGroup>
     function create_default_slot_7$1(ctx) {
     	let t;
     	let updating_value;
@@ -11373,14 +11427,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_7$1.name,
     		type: "slot",
-    		source: "(310:1) <FormGroup>",
+    		source: "(315:1) <FormGroup>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (315:1) <Button color="success" on:click="{searchSuicides(searchCountry)}">
+    // (320:1) <Button color="success" on:click="{searchSuicides(searchCountry)}">
     function create_default_slot_6$1(ctx) {
     	let t;
 
@@ -11400,14 +11454,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_6$1.name,
     		type: "slot",
-    		source: "(315:1) <Button color=\\\"success\\\" on:click=\\\"{searchSuicides(searchCountry)}\\\">",
+    		source: "(320:1) <Button color=\\\"success\\\" on:click=\\\"{searchSuicides(searchCountry)}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (333:8) <Button color="primary" on:click="{insertSuicide}">
+    // (338:8) <Button color="primary" on:click="{insertSuicide}">
     function create_default_slot_5$1(ctx) {
     	let t;
 
@@ -11427,14 +11481,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5$1.name,
     		type: "slot",
-    		source: "(333:8) <Button color=\\\"primary\\\" on:click=\\\"{insertSuicide}\\\">",
+    		source: "(338:8) <Button color=\\\"primary\\\" on:click=\\\"{insertSuicide}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (344:10) <Button outline color="danger" on:click="{deleteSuicide(suicide.country)}">
+    // (349:10) <Button outline color="danger" on:click="{deleteSuicide(suicide.country)}">
     function create_default_slot_4$1(ctx) {
     	let t;
 
@@ -11454,14 +11508,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$1.name,
     		type: "slot",
-    		source: "(344:10) <Button outline color=\\\"danger\\\" on:click=\\\"{deleteSuicide(suicide.country)}\\\">",
+    		source: "(349:10) <Button outline color=\\\"danger\\\" on:click=\\\"{deleteSuicide(suicide.country)}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (342:4) {#each suicides as suicide}
+    // (347:4) {#each suicides as suicide}
     function create_each_block$1(ctx) {
     	let tr;
     	let td0;
@@ -11540,17 +11594,17 @@ var app = (function () {
     			td7 = element("td");
     			t13 = text(t13_value);
     			t14 = space();
-    			add_location(td0, file$d, 343, 6, 8780);
+    			add_location(td0, file$d, 348, 6, 8898);
     			attr_dev(a, "href", a_href_value = "#/suicide/" + /*suicide*/ ctx[30].country);
-    			add_location(a, file$d, 344, 10, 8894);
-    			add_location(td1, file$d, 344, 6, 8890);
-    			add_location(td2, file$d, 345, 6, 8966);
-    			add_location(td3, file$d, 346, 6, 9004);
-    			add_location(td4, file$d, 347, 6, 9044);
-    			add_location(td5, file$d, 348, 6, 9075);
-    			add_location(td6, file$d, 349, 6, 9105);
-    			add_location(td7, file$d, 350, 6, 9137);
-    			add_location(tr, file$d, 342, 5, 8768);
+    			add_location(a, file$d, 349, 10, 9012);
+    			add_location(td1, file$d, 349, 6, 9008);
+    			add_location(td2, file$d, 350, 6, 9084);
+    			add_location(td3, file$d, 351, 6, 9122);
+    			add_location(td4, file$d, 352, 6, 9162);
+    			add_location(td5, file$d, 353, 6, 9193);
+    			add_location(td6, file$d, 354, 6, 9223);
+    			add_location(td7, file$d, 355, 6, 9255);
+    			add_location(tr, file$d, 347, 5, 8886);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -11622,14 +11676,14 @@ var app = (function () {
     		block,
     		id: create_each_block$1.name,
     		type: "each",
-    		source: "(342:4) {#each suicides as suicide}",
+    		source: "(347:4) {#each suicides as suicide}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (318:1) <Table bordered>
+    // (323:1) <Table bordered>
     function create_default_slot_3$1(ctx) {
     	let thead;
     	let tr0;
@@ -11758,33 +11812,33 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(th0, file$d, 320, 5, 7996);
-    			add_location(th1, file$d, 321, 5, 8018);
-    			add_location(th2, file$d, 322, 5, 8038);
-    			add_location(th3, file$d, 323, 5, 8069);
-    			add_location(th4, file$d, 324, 5, 8099);
-    			add_location(th5, file$d, 325, 5, 8118);
-    			add_location(th6, file$d, 326, 5, 8140);
-    			add_location(th7, file$d, 327, 5, 8161);
-    			add_location(tr0, file$d, 319, 4, 7985);
-    			add_location(thead, file$d, 318, 3, 7972);
-    			add_location(td0, file$d, 332, 4, 8227);
-    			add_location(input0, file$d, 333, 10, 8315);
-    			add_location(td1, file$d, 333, 6, 8311);
-    			add_location(input1, file$d, 334, 10, 8374);
-    			add_location(td2, file$d, 334, 6, 8370);
-    			add_location(input2, file$d, 335, 10, 8437);
-    			add_location(td3, file$d, 335, 6, 8433);
-    			add_location(input3, file$d, 336, 10, 8502);
-    			add_location(td4, file$d, 336, 6, 8498);
-    			add_location(input4, file$d, 337, 10, 8558);
-    			add_location(td5, file$d, 337, 6, 8554);
-    			add_location(input5, file$d, 338, 10, 8613);
-    			add_location(td6, file$d, 338, 6, 8609);
-    			add_location(input6, file$d, 339, 10, 8670);
-    			add_location(td7, file$d, 339, 6, 8666);
-    			add_location(tr1, file$d, 331, 4, 8217);
-    			add_location(tbody, file$d, 330, 3, 8204);
+    			add_location(th0, file$d, 325, 5, 8114);
+    			add_location(th1, file$d, 326, 5, 8136);
+    			add_location(th2, file$d, 327, 5, 8156);
+    			add_location(th3, file$d, 328, 5, 8187);
+    			add_location(th4, file$d, 329, 5, 8217);
+    			add_location(th5, file$d, 330, 5, 8236);
+    			add_location(th6, file$d, 331, 5, 8258);
+    			add_location(th7, file$d, 332, 5, 8279);
+    			add_location(tr0, file$d, 324, 4, 8103);
+    			add_location(thead, file$d, 323, 3, 8090);
+    			add_location(td0, file$d, 337, 4, 8345);
+    			add_location(input0, file$d, 338, 10, 8433);
+    			add_location(td1, file$d, 338, 6, 8429);
+    			add_location(input1, file$d, 339, 10, 8492);
+    			add_location(td2, file$d, 339, 6, 8488);
+    			add_location(input2, file$d, 340, 10, 8555);
+    			add_location(td3, file$d, 340, 6, 8551);
+    			add_location(input3, file$d, 341, 10, 8620);
+    			add_location(td4, file$d, 341, 6, 8616);
+    			add_location(input4, file$d, 342, 10, 8676);
+    			add_location(td5, file$d, 342, 6, 8672);
+    			add_location(input5, file$d, 343, 10, 8731);
+    			add_location(td6, file$d, 343, 6, 8727);
+    			add_location(input6, file$d, 344, 10, 8788);
+    			add_location(td7, file$d, 344, 6, 8784);
+    			add_location(tr1, file$d, 336, 4, 8335);
+    			add_location(tbody, file$d, 335, 3, 8322);
     		},
     		m: function mount(target, anchor, remount) {
     			insert_dev(target, thead, anchor);
@@ -11955,14 +12009,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3$1.name,
     		type: "slot",
-    		source: "(318:1) <Table bordered>",
+    		source: "(323:1) <Table bordered>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (298:18)       Loading suicides...     {:then suicides}
+    // (302:18)       Loading suicides...     {:then suicides}
     function create_pending_block$2(ctx) {
     	let t;
 
@@ -11985,14 +12039,14 @@ var app = (function () {
     		block,
     		id: create_pending_block$2.name,
     		type: "pending",
-    		source: "(298:18)       Loading suicides...     {:then suicides}",
+    		source: "(302:18)       Loading suicides...     {:then suicides}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (357:1) {#if backButton}
+    // (362:1) {#if backButton}
     function create_if_block_2$3(ctx) {
     	let current;
 
@@ -12043,14 +12097,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$3.name,
     		type: "if",
-    		source: "(357:1) {#if backButton}",
+    		source: "(362:1) {#if backButton}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (358:1) <Button outline color="primary" on:click="{backPage}">
+    // (363:1) <Button outline color="primary" on:click="{backPage}">
     function create_default_slot_2$2(ctx) {
     	let t;
 
@@ -12070,14 +12124,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$2.name,
     		type: "slot",
-    		source: "(358:1) <Button outline color=\\\"primary\\\" on:click=\\\"{backPage}\\\">",
+    		source: "(363:1) <Button outline color=\\\"primary\\\" on:click=\\\"{backPage}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (360:1) {#if nextButton}
+    // (365:1) {#if nextButton}
     function create_if_block_1$3(ctx) {
     	let current;
 
@@ -12127,14 +12181,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$3.name,
     		type: "if",
-    		source: "(360:1) {#if nextButton}",
+    		source: "(365:1) {#if nextButton}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (361:1) <Button color="primary" on:click="{nextPage}">
+    // (366:1) <Button color="primary" on:click="{nextPage}">
     function create_default_slot_1$2(ctx) {
     	let t;
 
@@ -12154,14 +12208,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$2.name,
     		type: "slot",
-    		source: "(361:1) <Button color=\\\"primary\\\" on:click=\\\"{nextPage}\\\">",
+    		source: "(366:1) <Button color=\\\"primary\\\" on:click=\\\"{nextPage}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (363:1) {#if popSearch}
+    // (368:1) {#if popSearch}
     function create_if_block$8(ctx) {
     	let current;
 
@@ -12212,14 +12266,14 @@ var app = (function () {
     		block,
     		id: create_if_block$8.name,
     		type: "if",
-    		source: "(363:1) {#if popSearch}",
+    		source: "(368:1) {#if popSearch}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (364:1) <Button color="primary" on:click="{getSuicides}" on:click="{resetPopSearch}">
+    // (369:1) <Button color="primary" on:click="{getSuicides}" on:click="{resetPopSearch}">
     function create_default_slot$2(ctx) {
     	let t;
 
@@ -12239,7 +12293,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$2.name,
     		type: "slot",
-    		source: "(364:1) <Button color=\\\"primary\\\" on:click=\\\"{getSuicides}\\\" on:click=\\\"{resetPopSearch}\\\">",
+    		source: "(369:1) <Button color=\\\"primary\\\" on:click=\\\"{getSuicides}\\\" on:click=\\\"{resetPopSearch}\\\">",
     		ctx
     	});
 
@@ -12288,12 +12342,12 @@ var app = (function () {
     			if (if_block1) if_block1.c();
     			t4 = space();
     			if (if_block2) if_block2.c();
-    			add_location(p, file$d, 291, 1, 7152);
+    			add_location(p, file$d, 295, 1, 7208);
     			attr_dev(div, "role", "alert");
     			attr_dev(div, "id", "div_alert");
     			set_style(div, "display", "none");
-    			add_location(div, file$d, 292, 1, 7162);
-    			add_location(main, file$d, 290, 0, 7143);
+    			add_location(div, file$d, 296, 1, 7218);
+    			add_location(main, file$d, 294, 0, 7199);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -12490,6 +12544,10 @@ var app = (function () {
 
     function toGraph2() {
     	window.location.href = "/#/suicidesGraph2";
+    }
+
+    function toHome() {
+    	window.location.href = "/#/";
     }
 
     function instance$e($$self, $$props, $$invalidate) {
@@ -12789,7 +12847,8 @@ var app = (function () {
     		clearAlert: clearAlert$2,
     		resetPopSearch,
     		toGraph1,
-    		toGraph2
+    		toGraph2,
+    		toHome
     	});
 
     	$$self.$inject_state = $$props => {
@@ -50178,7 +50237,7 @@ var app = (function () {
     			props: {
     				bordered: true,
     				style: "text-align: center;",
-    				$$slots: { default: [create_default_slot_13$1] },
+    				$$slots: { default: [create_default_slot_13$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -50613,7 +50672,7 @@ var app = (function () {
     }
 
     // (271:2) <Table bordered style="text-align: center;">
-    function create_default_slot_13$1(ctx) {
+    function create_default_slot_13$2(ctx) {
     	let thead;
     	let tr0;
     	let th0;
@@ -50894,7 +50953,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_13$1.name,
+    		id: create_default_slot_13$2.name,
     		type: "slot",
     		source: "(271:2) <Table bordered style=\\\"text-align: center;\\\">",
     		ctx
