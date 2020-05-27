@@ -1,0 +1,797 @@
+{
+	"info": {
+		"_postman_id": "d8030fed-d759-4970-918d-aa0d73ce5b3e",
+		"name": "sos1920-10-global-divorces",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get Divorces",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9af6f857-b0ce-4eea-bd88-8bd10db2d2e9",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Verify not empty\", function () {",
+							"   pm.response.to.not.be.empty;",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-divorces/Switzerland/2017",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-divorces",
+						"Switzerland",
+						"2017"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Divorces pagina 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9af6f857-b0ce-4eea-bd88-8bd10db2d2e9",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"var respuesta = pm.response.json();",
+							"pm.test(\"Verify number of elements\", function () {",
+							"   pm.expect(respuesta).to.have.lengthOf(2);",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-divorces/?offset=0&limit=2",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-divorces",
+						""
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Divorces pagina 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9af6f857-b0ce-4eea-bd88-8bd10db2d2e9",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"var respuesta = pm.response.json();",
+							"pm.test(\"Verify number of elements\", function () {",
+							"   pm.expect(respuesta).to.have.lengthOf(2);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-divorces/?offset=2&limit=2",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-divorces",
+						""
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "2"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post Divorce",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "329b4f21-2b32-473c-b030-29162864fbf1",
+						"exec": [
+							"pm.test(\"Successful POST request\", function () {",
+							"    pm.expect(pm.response.code).to.be.oneOf([201,202]);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\t\t\"country\": \"France\",\r\n\t\t\"year\": 2016,\r\n\t\t\"divorce\": 128043,\r\n\t\t\"crude_rate\": 1.9,\r\n\t\t\"variation\": 0\r\n\t\t\r\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-divorces",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-divorces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Divorces France",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ea651992-bbcc-4b92-8b61-67e8d98e25da",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Verify not empty\", function () {",
+							"   pm.response.to.not.be.empty;",
+							"});",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-divorces/France/2016",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-divorces",
+						"France",
+						"2016"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Divorces by divorce",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "06b025b0-9cb7-40e1-bfac-bf36f256e59d",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"var element = pm.response.json();",
+							"var france = element[0];",
+							"pm.test(\"Verify Country name\", function () {",
+							"    pm.expect(france.country).is.to.eql(\"France\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-divorces?divorce=128043",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-divorces"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "France",
+							"disabled": true
+						},
+						{
+							"key": "year",
+							"value": "2016",
+							"disabled": true
+						},
+						{
+							"key": "divorce",
+							"value": "128043"
+						},
+						{
+							"key": "crude_rate",
+							"value": "1.9",
+							"disabled": true
+						},
+						{
+							"key": "variation",
+							"value": "0",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del Divorce by country",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5099a11f-8ec6-444f-b44e-f7fec1bb7f42",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"country\": \"France\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-divorces/France/2016",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-divorces",
+						"France",
+						"2016"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del Divorce by country NOT FOUND",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5099a11f-8ec6-444f-b44e-f7fec1bb7f42",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"country\": \"France\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-divorces/France/2017",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-divorces",
+						"France",
+						"2017"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Divorces by country NOT FOUND",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "06b025b0-9cb7-40e1-bfac-bf36f256e59d",
+						"exec": [
+							"pm.test(\"Status code is 404\", function () {",
+							"    pm.response.to.have.status(404);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-divorces?country=France",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-divorces"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "France"
+						},
+						{
+							"key": "year",
+							"value": "2016",
+							"disabled": true
+						},
+						{
+							"key": "divorce",
+							"value": "128043",
+							"disabled": true
+						},
+						{
+							"key": "crude_rate",
+							"value": "1.9",
+							"disabled": true
+						},
+						{
+							"key": "variation",
+							"value": "-0.1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Divorces Country",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e2882b0b-a96c-4123-bdcf-65acb6b4449c",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"country\": \"Spain\",\n\t\"year\": 2017,\n\t\"divorce\": 11111,\n\t\"crude_rate\": 2.1,\n\t\"variation\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-divorces/Spain/2017",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-divorces",
+						"Spain",
+						"2017"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Divorces Spain mod",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "06b025b0-9cb7-40e1-bfac-bf36f256e59d",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"var element = pm.response.json();",
+							"pm.test(\"Verify divorce number\", function () {",
+							"    pm.expect(element.divorce).is.to.eql(11111);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-divorces/Spain/2017",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-divorces",
+						"Spain",
+						"2017"
+					],
+					"query": [
+						{
+							"key": "country",
+							"value": "Spain",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post Divorce ERROR",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1e674aac-4fdc-4744-97be-e33ce64ecf58",
+						"exec": [
+							"pm.test(\"Status code is 405\", function () {",
+							"    pm.response.to.have.status(405);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\t\t\"country\": \"France\",\r\n\t\t\"year\": 2016,\r\n\t\t\"divorce\": 128043,\r\n\t\t\"crude_rate\": 1.9,\r\n\t\t\"var\": 0\r\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-divorces/Spain",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-divorces",
+						"Spain"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put Divorces ERROR",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "bb5eeb77-9d4d-40c7-8ced-65cf0d4fa1fa",
+						"exec": [
+							"pm.test(\"Status code is 405\", function () {",
+							"    pm.response.to.have.status(405);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n\t\t\"country\": \"Spain\",\r\n\t\t\"year\": 2017,\r\n\t\t\"divorce\": 128048,\r\n\t\t\"crude_rate\": 1.9,\r\n\t\t\"var\": 0\r\n\t\t\r\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-divorces",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-divorces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "del Divorce",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "46f1c211-ffe1-424b-b643-291843bd8fab",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-divorces",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-divorces"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Divorces loadInitialData",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9064db28-b089-4be9-897e-e5c077f30b27",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Verify not empty\", function () {",
+							"   pm.response.to.not.be.empty;",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-divorces/loadInitialData",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-divorces",
+						"loadInitialData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get Divorces",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b7e157db-3635-448f-b02a-41a8d303addb",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Verify not empty\", function () {",
+							"   pm.response.to.not.be.empty;",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-divorces",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-divorces"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

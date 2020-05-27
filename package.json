@@ -1,11 +1,12 @@
 {
-  "name": "sos1920-l09",
+  "name": "sos1920-d03",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
+    "test": "npx newman run tests/global-suicides_TEST.json && tests/global-marriages_TEST.json && tests/global-divorces_TEST.json",
     "start": "node index"
   },
   "devDependencies": {
@@ -25,7 +26,6 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "nedb": "^1.8.0",
-    "node-modules": "^1.0.1",
     "svelte-spa-router": "^2.1.0",
     "sveltestrap": "^3.3.3"
   }

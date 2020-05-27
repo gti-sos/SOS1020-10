@@ -1,0 +1,615 @@
+{
+	"info": {
+		"_postman_id": "3f625b32-ea67-4a41-817e-5cfe717e37f2",
+		"name": "sos1920-10-global-marriages",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET GLOBAL-MARRIAGES",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9b229658-496c-41f2-a061-ae0c4f80aedf",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"There are more than 1 country\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.lengthOf.above(1);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-marriages",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-marriages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET GLOBAL-MARRIAGES/ XXXX",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "49402347-1115-4e55-b52c-3f85165ce1a3",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Element has country property\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.property('country');\r",
+							"});\r",
+							"\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-marriages/Italy/2018",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-marriages",
+						"Italy",
+						"2018"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE GLOBAL-MARRIAGES/ XXXX",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d4409675-19ae-4e3b-a37e-2afdad05aa84",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-marriages/Mexico/2011",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-marriages",
+						"Mexico",
+						"2011"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST GLOBAL-MARRIAGES",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4701d2e2-e0cb-4839-8121-76f9695ea194",
+						"exec": [
+							"pm.test(\"Status code is 201\", function () {\r",
+							"    pm.response.to.have.status(201);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"country\": \"Spain\",\r\n\"year\": 2020,\r\n\"marriages\": 2778,\r\n\"avg_wm\": 29.2,\r\n\"avg_m\": 35.2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-marriages",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-marriages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST GLOBAL-MARRIAGES INVALID FORMAT (NOT JSON)",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "4701d2e2-e0cb-4839-8121-76f9695ea194",
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"country\": \"Spain\",\r\n\"year\": 2020,\r\n\"marriages\": 2778,\r\n\"avg_wm\": 29.2,\r\n\"avg_m\": 23.3\r\n}",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-marriages",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-marriages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST NOT ALLOWED",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f1495a43-1a7b-4b56-a3b4-7a740362cd69",
+						"exec": [
+							"pm.test(\"Status code is 405\", function () {\r",
+							"    pm.response.to.have.status(405);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"country\": \"Italy\",\r\n\"year\": 2018,\r\n\"marriages\": 2778,\r\n\"avg_wm\": 29.2,\r\n\"avg_m\": 35.2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-marriages/Italy/2018",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-marriages",
+						"Italy",
+						"2018"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT GLOBAL-MARRIAGES/ XXXX",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "8ff62290-2fed-4c7f-a1e7-6da2cbed1e62",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"country\": \"Belgium\",\r\n\"year\": 2017,\r\n\"marriages\": \"44\",\r\n\"avg_wm\": 31.2,\r\n\"avg_m\": 33.5\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-marriages/Belgium/2017",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-marriages",
+						"Belgium",
+						"2017"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT NOT ALLOWED",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7ad4545d-4624-4c78-8cf1-a5d818519a57",
+						"exec": [
+							"pm.test(\"Status code is 405\", function () {\r",
+							"    pm.response.to.have.status(405);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"country\": \"Spain\",\r\n\"year\": 2010,\r\n\"marriages\": 2778,\r\n\"avg_wm\": 29.2,\r\n\"avg_m\": 35.2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-marriages",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-marriages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BUSQUEDA 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "0ceb4c27-a078-4e36-a51d-bc25aae175e8",
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"\r",
+							"var theElement = jsonData[0];\r",
+							"pm.test(\"Verify year\", function() {\r",
+							"    pm.expect(theElement.year).is.to.equal(2018);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Verify marriages number\", function() {\r",
+							"    pm.expect(theElement.marriages).is.to.equal(40716);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"There is 1 country\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.lengthOf(1);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-marriages?marriages=40716&year=2018",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-marriages"
+					],
+					"query": [
+						{
+							"key": "marriages",
+							"value": "40716"
+						},
+						{
+							"key": "year",
+							"value": "2018"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET BUSQUEDA 2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ae4a8ff7-c2d2-4578-8e24-4ae9f3a07da2",
+						"exec": [
+							"var jsonData = pm.response.json();\r",
+							"\r",
+							"var theElement = jsonData[0];\r",
+							"pm.test(\"Verify year\", function() {\r",
+							"    pm.expect(theElement.year).is.to.equal(2018);\r",
+							"});\r",
+							"\r",
+							"\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-marriages?year=2018",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-marriages"
+					],
+					"query": [
+						{
+							"key": "year",
+							"value": "2018"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET PAGINACION 1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5d50d8a8-df92-4ba9-a6c5-fc9a8b2eef16",
+						"exec": [
+							"pm.test(\"There is 2 country\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.lengthOf(10);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-marriages?offset=0&limit=10",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-marriages"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "0"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET PAGINACION 3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f87e968f-ce4c-456d-b70e-20e1c17ae227",
+						"exec": [
+							"pm.test(\"There is 1 country\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.lengthOf(1);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-marriages?offset=4&limit=2",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-marriages"
+					],
+					"query": [
+						{
+							"key": "offset",
+							"value": "4"
+						},
+						{
+							"key": "limit",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE GLOBAL-MARRIAGES",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "1bea7216-9f7e-479a-b802-d32aac3151d0",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Body matches string\", function () {\r",
+							"    pm.expect(pm.response.text()).to.include(\"OK\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-marriages",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-marriages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET LOADINITIALDATA",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "33496a02-add0-48d4-84a4-5f0f5a661387",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"There are more than 3 countries\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData).to.have.lengthOf.above(2);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"user-agent": true,
+					"accept": true,
+					"accept-encoding": true,
+					"connection": true
+				}
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:9999/api/v2/global-marriages/loadInitialData",
+					"host": [
+						"http://localhost:9999/api"
+					],
+					"path": [
+						"v2",
+						"global-marriages",
+						"loadInitialData"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
