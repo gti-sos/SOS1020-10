@@ -102,7 +102,7 @@
     </svelte:head>
     
     <main>
-        <h2>Integraciones con SOS1920-G26</h2>
+        <h2>Integración con SOS1920-26</h2>
         <Button color="info" on:click="{pop}">Atrás</Button>
         <figure class="highcharts-figure">
             <div id="container"></div>

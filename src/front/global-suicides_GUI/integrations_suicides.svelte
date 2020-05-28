@@ -95,7 +95,7 @@ async function loadGraph(){
 </svelte:head>
 
 <main>
-    <h2>ntegraciones con SOS1920-G02</h2>
+    <h2>Integración con SOS1920-02</h2>
     <Button color="info" on:click="{pop}">Atrás</Button>
     <figure class="highcharts-figure">
         <div id="container"></div>
