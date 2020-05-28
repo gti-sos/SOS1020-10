@@ -127,7 +127,7 @@
     </svelte:head>
     
     <main>
-        <h2>Integraciones con SOS1920</h2>
+        <h2>Integraciones con SOS1920 TEST DE LA MIERDA DE GOOGLE</h2>
         <Button color="info" on:click="{pop}">Atrás</Button>
         <figure class="highcharts-figure">
             <div id="container"></div>
