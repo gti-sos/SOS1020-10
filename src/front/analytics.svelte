@@ -17,6 +17,7 @@ async function loadGraph(){
 				value: d.average
 			};
 			return res;
+            location.reload();
         });
         console.log("Suicidios:");
         console.log(suicides_set);
@@ -96,7 +97,6 @@ async function loadGraph(){
         data: marriages_set
     }]
     });
-
 }
 
 loadGraph();
@@ -104,9 +104,9 @@ loadGraph();
    </script>
 
 <svelte:head>
-    <script src="https://code.highcharts.com/highcharts.js" on:load="{loadGraph}" defer></script>
-    <script src="https://code.highcharts.com/highcharts-more.js" on:load="{loadGraph}" defer></script>
-    <script src="https://code.highcharts.com/modules/exporting.js" on:load="{loadGraph}" defer></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
     <script src="https://code.highcharts.com/modules/accessibility.js" on:load="{loadGraph}" defer></script>
 </svelte:head>
    

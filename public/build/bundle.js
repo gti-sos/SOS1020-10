@@ -52426,25 +52426,22 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "Esta gráfica muestra datos de todos los recursos de las 3 apis del grupo.\r\n            El dato de los matrimonios ha sido tratado para unificar una media común: (avg_wm+avg_m)/2.";
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			script0.defer = true;
-    			add_location(script0, file$q, 106, 4, 2553);
+    			add_location(script0, file$q, 106, 4, 2583);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/highcharts-more.js")) attr_dev(script1, "src", script1_src_value);
-    			script1.defer = true;
-    			add_location(script1, file$q, 107, 4, 2652);
+    			add_location(script1, file$q, 107, 4, 2654);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			script2.defer = true;
-    			add_location(script2, file$q, 108, 4, 2756);
+    			add_location(script2, file$q, 108, 4, 2730);
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script3, "src", script3_src_value);
     			script3.defer = true;
-    			add_location(script3, file$q, 109, 4, 2862);
-    			add_location(h2, file$q, 114, 7, 3016);
+    			add_location(script3, file$q, 109, 4, 2808);
+    			add_location(h2, file$q, 114, 7, 2962);
     			attr_dev(div, "id", "container");
-    			add_location(div, file$q, 117, 8, 3177);
+    			add_location(div, file$q, 117, 8, 3123);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$q, 118, 8, 3213);
+    			add_location(p, file$q, 118, 8, 3159);
     			attr_dev(figure, "class", "highcharts-figure svelte-5ufr06");
-    			add_location(figure, file$q, 116, 7, 3133);
-    			add_location(main, file$q, 112, 3, 2992);
+    			add_location(figure, file$q, 116, 7, 3079);
+    			add_location(main, file$q, 112, 3, 2938);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -52465,14 +52462,8 @@ var app = (function () {
     			append_dev(figure, t4);
     			append_dev(figure, p);
     			current = true;
-    			if (remount) run_all(dispose);
-
-    			dispose = [
-    				listen_dev(script0, "load", loadGraph$5, false, false, false),
-    				listen_dev(script1, "load", loadGraph$5, false, false, false),
-    				listen_dev(script2, "load", loadGraph$5, false, false, false),
-    				listen_dev(script3, "load", loadGraph$5, false, false, false)
-    			];
+    			if (remount) dispose();
+    			dispose = listen_dev(script3, "load", loadGraph$5, false, false, false);
     		},
     		p: function update(ctx, [dirty]) {
     			const button_changes = {};
@@ -52500,7 +52491,7 @@ var app = (function () {
     			if (detaching) detach_dev(t0);
     			if (detaching) detach_dev(main);
     			destroy_component(button);
-    			run_all(dispose);
+    			dispose();
     		}
     	};
 
