@@ -6,35 +6,40 @@
     import ListGroupItem  from "sveltestrap/src/ListGroupItem.svelte";
     
     const URL_BASE = "api/v2/global-suicides";
-    
-    
+           
     async function loadGraph(){
     
-        const resData = await fetch(URL_BASE);
+    const resData = await fetch(URL_BASE);
     let MyData = await resData.json();
     
-    let countries = Array.from(MyData.map((d) => {return d.country+d.year;}));
+    let countries = Array.from(MyData.map((d) => {return d.country;}));
     let years = Array.from(MyData.map((d) => {return d.year;}));
-    console.log("Datos nono");
-    console.log(years);
-
-
-    const URL_BASE_grupo_01 = "/api/v2/poverty-stats";
-    console.log("fetch a " + URL_BASE_grupo_01);
-    const resData_2 = await fetch(URL_BASE_grupo_01);
-    let MyData_2 = await resData_2.json();
-    let avg_2 = Array.from(MyData_2.map((d) => {return d.poverty_prp;}));
-    console.log("Datos Ángela:");
-    console.log(avg_2);
+  
+    const URL_BASE_EXT = "https://www.etnassoft.com/api/v1/get/?category=libros_programacion&criteria=most_viewed";
+    console.log("fetch a " + URL_BASE_EXT);
     
-    console.log("Graph_NONO y Angela");
+    const resData_Ext = await fetch(URL_BASE_EXT);
+    let MyData_Ext = await resData_Ext.json();
+    console.log("Mydata ext:");
+    console.log(MyData_Ext);
+
+    let data_ext = [];
+    MyData_Ext.forEach(aux => data_ext.push(parseInt(aux.publisher_date)));
+    console.log("Datos externos:");
+    console.log(data_ext);
+
+    let years_public = Array.from(new Set(MyData_Ext.map((d) => {return d.publisher_date;})));
+    console.log("Datos externos2 no muestra repetidos:");
+    console.log(years_public);
+    
+    console.log("Graph_Ext1");
 
     Highcharts.chart('container', {
         chart: {
             type: 'bar'
         },
         title: {
-            text: 'Integración con SOS1920-01.'
+            text: 'Integración con Api Externa 1.'
         },
         subtitle: {
             text: 'La relacion entre los datos no tiene lógica.'
@@ -48,7 +53,7 @@
         yAxis: {
             min: 0,
             title: {
-                text: 'Media de Suicidios por cada 100.000 personas y media de pobreza',
+                text: 'Años de media de suicidios frente a años de publicaciones de libros de programación',
                 align: 'high'
             },
             labels: {
@@ -56,7 +61,7 @@
             }
         },
         tooltip: {
-            valueSuffix: 'Personas'
+            valueSuffix: 'Años'
         },
         plotOptions: {
             bar: {
@@ -70,7 +75,7 @@
             align: 'right',
             verticalAlign: 'top',
             x: -40,
-            y: 350,
+            y: 0,
             floating: true,
             borderWidth: 1,
             backgroundColor:
@@ -81,35 +86,33 @@
             enabled: false
         },
         series: [{
-            name: 'Pobreza',
-            data: avg_2
+            name: 'Años Suicidios',
+            data: years
         },
          {
-            name: 'Años',
-            data: years
+            name: 'Años publiaciones',
+            data: data_ext
         }]
     });
-    
     }
-    
-    
+
     </script>
     
     <svelte:head>
-        <script src="https://code.highcharts.com/highcharts.js" defer></script>
-        <script src="https://code.highcharts.com/modules/series-label.js"  defer></script>
-        <script src="https://code.highcharts.com/modules/exporting.js"  defer></script>
-        <script src="https://code.highcharts.com/modules/export-data.js"  defer></script>
-        <script src="https://code.highcharts.com/modules/accessibility.js" on:load="{loadGraph}" defer></script>
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="https://code.highcharts.com/modules/series-label.js"></script>
+        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+        <script src="https://code.highcharts.com/modules/export-data.js"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js" on:load="{loadGraph}"></script>
     </svelte:head>
     
     <main>
-        <h2>Integración con SOS1920-01</h2>
+        <h2>Integración con SOS1920-22</h2>
         <Button color="info" on:click="{pop}">Atrás</Button>
         <figure class="highcharts-figure">
             <div id="container"></div>
             <p class="highcharts-description">
-                El gráfico muestra valores de la api de grupo 10 y grupo 01. No tienen relación.
+                El gráfico muestra valores de la api de grupo 10 y grupo 22. No tienen relación.
             </p>
         </figure>
     </main>
