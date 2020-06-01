@@ -308,6 +308,9 @@ function toExternal(){
 function toExternal2(){
 	window.location.href= "/#/integrations_suicides_external2";
 }
+function toVideo(){
+	window.location.href= "/#/about";
+}
 </script>
 
 <main>
@@ -335,6 +338,7 @@ function toExternal2(){
 	<Button color="dark" on:click="{toIntG22}">Int. G22</Button>
 	<Button color="secondary" on:click="{toExternal}">Int. Ext_1</Button>
 	<Button color="secondary" on:click="{toExternal2}">Int. Ext_2</Button>
+	<Button color="danger"  on:click="{toVideo}">Vídeo</Button>
 	<p></p>
 	<FormGroup>
 			<Label for="exampleEmail">Buscar País:</Label>
