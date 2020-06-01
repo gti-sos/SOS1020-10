@@ -1532,7 +1532,7 @@ var app = (function () {
     			attr_dev(button4, "onclick", "window.location.href='#/analytics'");
     			add_location(button4, file, 13, 2, 696);
     			attr_dev(button5, "type", "button");
-    			attr_dev(button5, "class", "btn btn-dark");
+    			attr_dev(button5, "class", "btn btn-danger");
     			attr_dev(button5, "onclick", "window.location.href='#/about'");
     			add_location(button5, file, 14, 2, 818);
     			attr_dev(div, "class", "div-home");
