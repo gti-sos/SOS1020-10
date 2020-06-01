@@ -305,6 +305,9 @@ function toIntG22(){
 function toExternal(){
 	window.location.href= "/#/integrations_suicides_external";
 }
+function toExternal2(){
+	window.location.href= "/#/integrations_suicides_external2";
+}
 </script>
 
 <main>
@@ -331,6 +334,7 @@ function toExternal(){
 	<Button color="dark" on:click="{toIntG26}">Int. G26</Button>
 	<Button color="dark" on:click="{toIntG22}">Int. G22</Button>
 	<Button color="secondary" on:click="{toExternal}">Int. Ext_1</Button>
+	<Button color="secondary" on:click="{toExternal2}">Int. Ext_2</Button>
 	<p></p>
 	<FormGroup>
 			<Label for="exampleEmail">Buscar País:</Label>

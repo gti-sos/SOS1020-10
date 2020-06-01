@@ -21,6 +21,7 @@
         <button type="button"   class="btn btn-primary"  onclick="window.location.href='#/integrations_suicides3'">Int. G26</button>
         <button type="button"   class="btn btn-primary"  onclick="window.location.href='#/integrations_suicides4'">Int. G22</button>
         <button type="button"   class="btn btn-primary"  onclick="window.location.href='#/integrations_suicides_external'">Int. Ext_1</button>
+        <button type="button"   class="btn btn-primary"  onclick="window.location.href='#/integrations_suicides_external2'">Int. Ext_2</button>
 	</div>
 
 </body>

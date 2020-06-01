@@ -19,6 +19,7 @@
 	import integrations from './integrations.svelte';
 	import analytics from './analytics.svelte';
 	import integrations_suicides_external from './global-suicides_GUI/integrations_suicides_external.svelte';
+	import integrations_suicides_external2 from './global-suicides_GUI/integrations_suicides_external2.svelte';
 	
 	import globalDivorces from './DivorcesGUI/App.svelte';  
 	import EditDivorce from './DivorcesGUI/EditDivorce.svelte';
@@ -43,6 +44,7 @@
 		"/integrations": integrations,
 		"/analytics": analytics,
 		"/integrations_suicides_external": integrations_suicides_external,
+		"/integrations_suicides_external2": integrations_suicides_external2,
 		"/about": about,
 		
 		"*": NotFound
