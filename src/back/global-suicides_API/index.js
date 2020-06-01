@@ -159,6 +159,15 @@ const express = require("express");
 //======================ZONA INTEGRACIONES=====================
 //=============================================================
 
+const URL_EXT = "https://jsonplaceholder.typicode.com";
+app.use("/users", function(req, res) {
+	console.log("GET API EXT2");
+	var url = URL_EXT + req.baseUrl + req.url;
+	console.log("URL_EXT2: "+url);
+	console.log('piped: ' + req.baseUrl + req.url);
+	req.pipe(request(url)).pipe(res);
+});
+app.use(express.static('.'));
 
 const URL_02 = "https://sos1920-02.herokuapp.com";
 app.use("/api/v2/rural-tourism-stats", function(req, res) {

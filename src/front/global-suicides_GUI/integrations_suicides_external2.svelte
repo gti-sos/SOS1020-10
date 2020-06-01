@@ -13,33 +13,34 @@
     let MyData = await resData.json();
     
     let countries = Array.from(MyData.map((d) => {return d.country;}));
-    let years = Array.from(MyData.map((d) => {return d.year;}));
+    console.log("countries:");
+    console.log(countries);
+
+    let length_coords = Array.from(MyData.map((d) => {return d.lengthCoord;}));
+    console.log("length coords:");
+    console.log(length_coords);
   
-    const URL_BASE_EXT = "https://jsonplaceholder.typicode.com/users";
+    const URL_BASE_EXT = "/users";
     console.log("fetch a " + URL_BASE_EXT);
     
     const resData_Ext = await fetch(URL_BASE_EXT);
+    console.log("resData_Ext:");
+    console.log(resData_Ext);
     let MyData_Ext = await resData_Ext.json();
-    console.log("Mydata ext:");
+    console.log("Mydata ext.json():");
     console.log(MyData_Ext);
 
-    let data_ext = [];
-    MyData_Ext.forEach(aux => data_ext.push(parseInt(aux.publisher_date)));
-    console.log("Datos externos:");
-    console.log(data_ext);
-
-    let years_public = Array.from(new Set(MyData_Ext.map((d) => {return d.publisher_date;})));
-    console.log("Datos externos2 no muestra repetidos:");
-    console.log(years_public);
-    
-    console.log("Graph_Ext1");
+    let lng_coord = [];
+    MyData_Ext.forEach(aux => lng_coord.push(parseFloat(aux.address.geo.lng)));
+    console.log("Datos estraidos:");
+    console.log(lng_coord);
 
     Highcharts.chart('container', {
         chart: {
             type: 'bar'
         },
         title: {
-            text: 'Integración con Api Externa 1.'
+            text: 'Integración con Api Externa 2. (vía proxy)'
         },
         subtitle: {
             text: 'La relacion entre los datos no tiene lógica.'
@@ -51,9 +52,9 @@
             }
         },
         yAxis: {
-            min: 0,
+            min: -180,
             title: {
-                text: 'Años de media de suicidios frente a años de publicaciones de libros de programación',
+                text: 'Datos de coordenadas longitud de distintas APIs',
                 align: 'high'
             },
             labels: {
@@ -61,7 +62,7 @@
             }
         },
         tooltip: {
-            valueSuffix: 'Años'
+            valueSuffix: 'Coordenada Longitud'
         },
         plotOptions: {
             bar: {
@@ -74,8 +75,8 @@
             layout: 'vertical',
             align: 'right',
             verticalAlign: 'top',
-            x: -40,
-            y: 0,
+            x: -250,
+            y: 650,
             floating: true,
             borderWidth: 1,
             backgroundColor:
@@ -86,12 +87,12 @@
             enabled: false
         },
         series: [{
-            name: 'Años Suicidios',
-            data: years
+            name: 'Coord.Longitud API_Int',
+            data: length_coords
         },
          {
-            name: 'Años publiaciones',
-            data: data_ext
+            name: 'Coord.Longitud API_Ext',
+            data: lng_coord
         }]
     });
     }
@@ -107,12 +108,12 @@
     </svelte:head>
     
     <main>
-        <h2>Integración con SOS1920-22</h2>
+        <h2>Integración con Api Externa 2</h2>
         <Button color="info" on:click="{pop}">Atrás</Button>
         <figure class="highcharts-figure">
             <div id="container"></div>
             <p class="highcharts-description">
-                El gráfico muestra valores de la api de grupo 10 y grupo 22. No tienen relación.
+                El gráfico muestra valores de la api interna y de una externa. No tienen relación.
             </p>
         </figure>
     </main>

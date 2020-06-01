@@ -39,7 +39,7 @@
             type: 'bar'
         },
         title: {
-            text: 'Integración con Api Externa 1.'
+            text: 'Integración con Api Externa 1. (Usando Cors)'
         },
         subtitle: {
             text: 'La relacion entre los datos no tiene lógica.'
@@ -107,12 +107,12 @@
     </svelte:head>
     
     <main>
-        <h2>Integración con SOS1920-22</h2>
+        <h2>Integración con Api Externa 1</h2>
         <Button color="info" on:click="{pop}">Atrás</Button>
         <figure class="highcharts-figure">
             <div id="container"></div>
             <p class="highcharts-description">
-                El gráfico muestra valores de la api de grupo 10 y grupo 22. No tienen relación.
+                El gráfico muestra valores de la api interna y de una externa. No tienen relación.
             </p>
         </figure>
     </main>
