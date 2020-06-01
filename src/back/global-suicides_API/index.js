@@ -190,7 +190,7 @@ app.use("/api/v2/poverty-stats", function(req, res) {
 app.use(express.static('.'));
 
 const URL_26 = "http://sos1920-26.herokuapp.com";
-app.use("/api/v2/goalscorers", function(req, res) {
+app.use("/api/v3/goalscorers", function(req, res) {
 	console.log("GET API GOLEADORES");
 	var url = URL_26 + req.baseUrl + req.url;
 	console.log("URL_GOLEADORES: "+url);

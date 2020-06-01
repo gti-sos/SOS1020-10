@@ -52107,7 +52107,7 @@ var app = (function () {
     		return d.average;
     	}));
 
-    	const URL_BASE_grupo_26 = "/api/v2/goalscorers";
+    	const URL_BASE_grupo_26 = "/api/v3/goalscorers";
     	console.log("fetch a " + URL_BASE_grupo_26);
     	const resData_3 = await fetch(URL_BASE_grupo_26);
     	let MyData_3 = await resData_3.json();
