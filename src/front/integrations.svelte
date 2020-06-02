@@ -22,7 +22,22 @@
         <button type="button"   class="btn btn-primary"  onclick="window.location.href='#/integrations_suicides4'">Int. G22</button>
         <button type="button"   class="btn btn-primary"  onclick="window.location.href='#/integrations_suicides_external'">Int. Ext_1</button>
         <button type="button"   class="btn btn-primary"  onclick="window.location.href='#/integrations_suicides_external2'">Int. Ext_2</button>
+    </div>
+    
+
+
+    <p></p>
+    <p></p>
+    <h4>Integraciones de Matrimonios Globales</h4>
+	<div class="div-home">
+		<button type="button"   class="btn btn-danger"  onclick="window.location.href='#/Marriages/Integration-01'">Int. G01</button>
+		<button type="button"   class="btn btn-danger"  onclick="window.location.href='#/Marriages/Integration-05'">Int. G05</button>
+        <button type="button"   class="btn btn-danger"  onclick="window.location.href='#/Marriages/Integration-21'">Int. G21</button>
+        <button type="button"   class="btn btn-danger"  onclick="window.location.href='#/Marriages/Integration-26'">Int. G26</button>
+        <button type="button"   class="btn btn-danger"  onclick="window.location.href='#/Marriages/Integration-Ext-1'">Int. Ext_1</button>
+        <button type="button"   class="btn btn-danger"  onclick="window.location.href='#/Marriages/Integration-Ext-2'">Int. Ext_2</button>
 	</div>
+
 
 </body>
 </main>

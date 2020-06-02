@@ -2,11 +2,22 @@
 	import Router from 'svelte-spa-router';
 
 	import Home from './Home.svelte';   // Sera donde se pueda seleccionar a que API acceder 
-	import globalMarriages from './MarriagesGUI/App.svelte'; // Sera donde se carga la tabla de datos 
-	import EditMarriage from './MarriagesGUI/EditMarriage.svelte';
 	import NotFound from './NotFound.svelte';
 	import about from './about.svelte';
 
+	//Rutas de Marriages
+	import globalMarriages from './MarriagesGUI/App.svelte'; // Sera donde se carga la tabla de datos 
+	import EditMarriage from './MarriagesGUI/EditMarriage.svelte';
+	import MarriagesChart from './MarriagesGUI/MarriagesChart.svelte';
+	import MarriagesPieChart from './MarriagesGUI/MarriagesPieChart.svelte';
+	import MarriagesIntegration26 from  './MarriagesGUI/Integration-26.svelte';
+	import MarriagesIntegration21 from  './MarriagesGUI/Integration-21.svelte';
+	import MarriagesIntegration05 from  './MarriagesGUI/Integration-05.svelte';
+	import MarriagesIntegration01 from  './MarriagesGUI/Integration-01.svelte';
+	import MarriagesIntegrationExt1 from  './MarriagesGUI/Integration-Ext-1.svelte';
+	import MarriagesIntegrationExt2 from  './MarriagesGUI/Integration-Ext-2.svelte';
+
+	//Rutas de Suicides
 	import SuicidesTable from './global-suicides_GUI/App.svelte';
 	import editSuicide from './global-suicides_GUI/editSuicide.svelte';
 	import EmptyTable from './global-suicides_GUI/EmptyTable.svelte';
@@ -21,6 +32,8 @@
 	import integrations_suicides_external from './global-suicides_GUI/integrations_suicides_external.svelte';
 	import integrations_suicides_external2 from './global-suicides_GUI/integrations_suicides_external2.svelte';
 	
+
+		//Rutas de Divorces
 	import globalDivorces from './DivorcesGUI/App.svelte';  
 	import EditDivorce from './DivorcesGUI/EditDivorce.svelte';
 
@@ -28,6 +41,15 @@
 		"/": Home,
 		"/global-marriages/:country/:year": EditMarriage,
 		"/globalMarriagesAPI":globalMarriages,
+		"/MarriagesChart":MarriagesChart,
+		"/MarriagesPieChart":MarriagesPieChart,
+		"/Marriages/Integration-26":MarriagesIntegration26,
+		"/Marriages/Integration-21":MarriagesIntegration21,
+		"/Marriages/Integration-01":MarriagesIntegration01,
+		"/Marriages/Integration-05":MarriagesIntegration05,
+		"/Marriages/Integration-Ext-1":MarriagesIntegrationExt1,
+		"/Marriages/Integration-Ext-2":MarriagesIntegrationExt2,
+
 
 		"/global-suicides_API" : SuicidesTable,
 		"/suicide/:countryName": editSuicide,

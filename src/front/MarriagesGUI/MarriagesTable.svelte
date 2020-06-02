@@ -45,7 +45,7 @@
 
 
 	async function ReloadTable() {
-		const res = await fetch("/api/v2/global-marriages/loadInitialData")
+		const res = await fetch("/api/v3/global-marriages/loadInitialData")
 
 		if (res.ok) {
 			const initialMarriages = await res.json();
@@ -62,7 +62,7 @@
 
 //Funcion que devuelve array con los años y los paises existentes para poder hacer un select y usarlo para buscar
 	async function getCountriesYears() {
-		const res = await fetch("/api/v2/global-marriages"); //Recogemos los datos de /api/v2/global-marriages
+		const res = await fetch("/api/v3/global-marriages"); //Recogemos los datos de /api/v3/global-marriages
 
 		if (res.ok) {
 			const json = await res.json();
@@ -92,7 +92,7 @@
 	async function getMarriages() {
 
 		console.log("Fetching marriages...");
-		const res = await fetch("/api/v2/global-marriages?offset=" + numberElementsPages * offset + "&limit=" + numberElementsPages); 
+		const res = await fetch("/api/v3/global-marriages?offset=" + numberElementsPages * offset + "&limit=" + numberElementsPages); 
 
 		if (res.ok) {
 			console.log("Ok:");
@@ -105,7 +105,7 @@
 				moreData=false
 			} else{
 
-						const next = await fetch("/api/v2/global-marriages?offset=" + numberElementsPages * (offset+1) + "&limit=" + numberElementsPages); 
+						const next = await fetch("/api/v3/global-marriages?offset=" + numberElementsPages * (offset+1) + "&limit=" + numberElementsPages); 
 						console.log("La variable NEXT tiene el estado: " + next.status)
 						const jsonNext = await next.json();
 						
@@ -140,7 +140,7 @@
 			alert("Se debe incluir el nombre del país y el año obligatoriamente");
 
 		} else {
-				const res = await fetch("/api/v2/global-marriages", {
+				const res = await fetch("/api/v3/global-marriages", {
 					method: "POST",
 					body: JSON.stringify(newMarriage),
 					headers: {
@@ -163,7 +163,7 @@
 	async function deleteMarriage(country,year) {
 		console.log("Deleting marrriage..." + JSON.stringify(country)+ + JSON.stringify(year) );
 
-		const res = await fetch("/api/v2/global-marriages/" + country+"/"+year, {
+		const res = await fetch("/api/v3/global-marriages/" + country+"/"+year, {
 			method: "DELETE"
 		}).then(function (res) {
 			if (res.ok){
@@ -180,7 +180,7 @@
 	//Borramos todos los paises
 	async function deleteGlobalMarriages() {
 		console.log("Deleting all marriages data...");
-		const res = await fetch("/api/v2/global-marriages/", {
+		const res = await fetch("/api/v3/global-marriages/", {
 			method: "DELETE"
 		}).then(function (res) {
 			if (res.ok){
@@ -203,7 +203,7 @@
 		console.log("Searching data: " + country + " and " + year);
 
 		/* Checking if the fields are empty */
-		var url = "/api/v2/global-marriages";
+		var url = "/api/v3/global-marriages";
 	
 		if (country != "-" && year != "-") {
 			url = url + "?country=" + country + "&year=" + year; 
@@ -299,6 +299,36 @@ function errorResponse(res, recurso1,recurso2) {
 	}
 }
 
+function toGraph1(){
+	window.location.href= "/#/MarriagesChart";
+}
+function toGraph2(){
+	window.location.href= "/#/MarriagesPieChart";
+}
+function toHome(){
+	window.location.href= "/#/";
+}
+function toIntG01(){
+	window.location.href= "/#/Marriages/Integration-01";
+}
+function toIntG05(){
+	window.location.href= "/#/Marriages/Integration-05";
+}
+function toIntG26(){
+	window.location.href= "/#/Marriages/Integration-26";
+}
+function toIntG21(){
+	window.location.href= "/#/Marriages/Integration-21";
+}
+function toExternal(){
+	window.location.href= "/#/Marriages/Integration-Ext-1";
+}
+function toExternal2(){
+	window.location.href= "/#/Marriages/Integration-Ext-2";
+}
+function toVideo(){
+	window.location.href= "/#/about";
+}
 
 </script>
 
@@ -308,6 +338,8 @@ function errorResponse(res, recurso1,recurso2) {
 	{#await marriages}
 		Loading marriages...
 	{:then marriages}
+
+
 
 		<FormGroup> 
 			<Label for="selectCountry"> Búsqueda por país </Label>
@@ -414,5 +446,18 @@ function errorResponse(res, recurso1,recurso2) {
 	<Button outline  on:click={deleteGlobalMarriages}   color="danger"> <i class="fa fa-trash" aria-hidden="true"></i> Borrar todo </Button>
 	<Button outline  color="primary" on:click="{ReloadTable}"> <i class="fas fa-search"></i> Recargar API </Button>
 
+	<p></p>
+	<h6>Acciones Especiales:</h6>
+	<Button color="success" on:click="{toHome}">Inicio</Button>
+	<Button color="primary" on:click="{toGraph1}">Grafico1</Button>
+	<Button color="primary" on:click="{toGraph2}">Grafico2</Button>
+	<Button color="dark" on:click="{toIntG01}">Int. G01</Button>
+	<Button color="dark" on:click="{toIntG05}">Int. G05</Button>
+	<Button color="dark" on:click="{toIntG21}">Int. G21</Button>
+	<Button color="dark" on:click="{toIntG26}">Int. G26</Button>
+	<Button color="secondary" on:click="{toExternal}">Int. Ext_1</Button>
+	<Button color="secondary" on:click="{toExternal2}">Int. Ext_2</Button>
+	<Button color="danger"  on:click="{toVideo}">Vídeo</Button>
+	<p></p>
 
 </main>

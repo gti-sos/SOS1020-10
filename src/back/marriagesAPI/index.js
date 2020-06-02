@@ -4,12 +4,15 @@ module.exports = function (app) {
     const path = require ("path"); //para que podamos trabajar de manera standar con las direcciones (No haya problema entre Unix y Windows )
 
     const dbFileName =path.join(__dirname,"./globalMarriages.db");   //archivo donde almacenamos los datos que vamos a persistir
-    const BASE_API_URL="/api/v2";   // ESta es la URL base
+    const BASE_API_URL="/api/v3";   // ESta es la URL base
     
     const db = new dataStore({
         filename: dbFileName,
         autoload:true
     });
+
+    const request = require('request');
+	const express = require("express");
 
     var initial_marriages =  [
         {"country": "Italy","year": 2018,"marriages": 195778,"avg_wm": 32.4,"avg_m": 35.2},
@@ -32,16 +35,72 @@ module.exports = function (app) {
 
     ];
 
+                            //=============================================================
+                            //======================ZONA INTEGRACIONES=====================
+                            //=============================================================
+
+    //*********************************PROXY***********************************************/
+
+//Configuracion para el PROXY con el grupo 26 
+var paths='/api/v3/global-coef';          //Aqui seria donde esta ubicada nuestra API
+var apiServerHost = 'http://sos1920-26.herokuapp.com';     //Aqui es a donde redirigimos 
+
+    //Para que el PROXY redireccione
+app.use(paths, function(req, res) {
+    var url = apiServerHost + req.baseUrl + req.url;
+    console.log('piped: '+req.baseUrl + req.url);
+    req.pipe(request(url)).pipe(res);
+  });
+ 
+    const URL_05 = "https://sos1920-05.herokuapp.com";
+    app.use("/api/v1/books-exports", function(req, res) {
+        console.log("GET API DIEGO");
+        var url = URL_05 + req.baseUrl + req.url;
+        console.log("URL_DIEGO: "+url);
+        console.log('piped: ' + req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+    app.use(express.static('.'));
+
+
+
+
+    const URL_21 = "https://sos1920-21.herokuapp.com";
+    app.use("/api/v2/traffic-injuries", function(req, res) {
+        console.log("GET API JUAN");
+        var url = URL_21 + req.baseUrl + req.url;
+        console.log("URL_JUAN: "+url);
+        console.log('piped: ' + req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+    app.use(express.static('.'));
+
+
+
+
+    const URL_01 = "https://sos1920-01.herokuapp.com";
+    app.use("/api/v2/emigrants-stats", function(req, res) {
+        console.log("GET API ANTONIO");
+        var url = URL_01 + req.baseUrl + req.url;
+        console.log("URL_ANTONIO: "+url);
+        console.log('piped: ' + req.baseUrl + req.url);
+        req.pipe(request(url)).pipe(res);
+    });
+    app.use(express.static('.'));
+
+
+  // *****************************************************************************************
+
+
+                    //=============================================================
+                    //======================FUNCIONES DE LA API====================
+                    //=============================================================
+
     function deleteIDs (marriages){
         marriages.forEach( (m) => {
             delete m._id;
         });
-    }
-
-
-
-
-    
+    }    
     //*****************************METODOS DEL GET***************************************/
     // LOAD INITIAL DATA     
     app.get(BASE_API_URL+"/global-marriages/loadInitialData",(req,res) =>{
@@ -115,52 +174,6 @@ module.exports = function (app) {
 
 
 
-
-
-
-
-// GET GLOBAL-MARRIAGES/XXX
-/*
-app.get(BASE_API_URL+"/global-marriages/:param", (req, res) => {
-    var param = req.params.param;
-    var query = {};
-    // Checking if we can parse the param, if so, it's a country
-    // And the query is just to specify the country
-    if (isNaN(parseInt(param))) {
-        query = {country: param};
-    } else {
-        query = {year: parseInt(param)};
-        
-    }
-    
-    db.find(query).exec((error, marriages) => {
-
-        if (marriages.length > 1) {
-            deleteIDs(marriages);
-            res.send(JSON.stringify(marriages, null, 2)); 
-            console.log("Data sent: " + JSON.stringify(marriages, null, 2));
-            
-        }
-        // We consider the posibility of returning just 1 element and return a JSON and not an array
-        
-        else if (marriages.length == 1) {
-            delete marriages[0]._id;
-            res.send(JSON.stringify(marriages[0], null, 2)); 
-            console.log("Data sent: " + JSON.stringify(marriages[0], null, 2));
-            
-        } 
-        
-        else {
-            res.sendStatus(404, "NOT FOUND");
-        }
-    });
-
-    console.log("OK.");
-
-});
-*/
-
-
       //*****************************METODOS DEL POST***************************************/
 
     // POST GLOBAL-MARRIAGES
@@ -168,12 +181,13 @@ app.get(BASE_API_URL+"/global-marriages/:param", (req, res) => {
 	app.post(BASE_API_URL+"/global-marriages", (req, res) => {
         var marriage = req.body;
 
+
 		if((marriage == {}) 
-			 || (marriage.country == null) 
-             || (marriage.year == null) 
-			 || (marriage.marriages == null) 
-			 || (marriage.avg_m == null) 
-             || (marriage.avg_wm == null)){	
+			 || (marriage.country == null || !isNaN(marriage.country) )
+             || (marriage.year == null  || isNaN(marriage.year) || marriage.year <= 0) 
+			 || (marriage.marriages == null || isNaN(marriage.marriages) || marriage.marriages <= 0) 
+			 || (marriage.avg_m == null|| isNaN(marriage.avg_m) || marriage.avg_m <= 0 ) 
+             || (marriage.avg_wm == null || isNaN(marriage.avg_wm) || marriage.avg_wm <= 0 )){	
 			res.sendStatus(400,"BAD REQUEST");
 		} else {
 			db.insert(marriage);
@@ -255,44 +269,6 @@ app.post(BASE_API_URL + "/global-marriages/:country/:year", (req, res) => {
 			}
 		}); 
 	});
-
-/*
-    app.delete(BASE_API_URL+"/global-marriages/:param",(req,res) =>{
-
-		var param = req.params.param;
-		
-		var query = {};
-		
-		// Checking if we can parse the param, if so, it's a country
-		// And the query is just to specify the country
-		if (isNaN(parseInt(param))) {
-			query = { country: param };
-			
-		} else {
-			query = { year: parseInt(param) };
-			
-		}
-		
-		db.remove(query, { multi: true }, (error, numRemoved) => {
-			if (numRemoved == 0) {
-				res.sendStatus(404, "NOT FOUND");
-			} else {
-				res.sendStatus(200, "OK");
-			}
-		}); 
-		
-	});
-*/
-
-
-
-
-
-
-
-
-
-
 
 
     console.log("... OK")
