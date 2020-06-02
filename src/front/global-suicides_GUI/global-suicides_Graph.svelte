@@ -11,9 +11,15 @@ const resData = await fetch(URL_BASE);
 let MyData = await resData.json();
 
 let countries = Array.from(MyData.map((d) => {return d.country+" "+d.year;}));
-let mens = Array.from(MyData.map((d) => {return d.men;}));
-let womens = Array.from(MyData.map((d) => {return d.women;}));
-let averages = Array.from(MyData.map((d) => {return d.average;}));
+let mens = Array.from(MyData.map((d) => {return parseFloat(d.men);}));
+let womens = Array.from(MyData.map((d) => {return parseFloat(d.women);}));
+let averages = Array.from(MyData.map((d) => {return parseFloat(d.average);}));
+console.log("mens:");
+console.log(mens);
+console.log("womens:");
+console.log(womens);
+console.log("averages");
+console.log(averages);
 
 console.log("Graph_NONO");
 

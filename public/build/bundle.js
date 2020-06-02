@@ -18555,7 +18555,7 @@ var app = (function () {
     const { console: console_1$f } = globals;
     const file$s = "src\\front\\global-suicides_GUI\\global-suicides_Graph.svelte";
 
-    // (96:4) <Button color="info" on:click="{pop}">
+    // (102:4) <Button color="info" on:click="{pop}">
     function create_default_slot$e(ctx) {
     	let t;
 
@@ -18575,7 +18575,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$e.name,
     		type: "slot",
-    		source: "(96:4) <Button color=\\\"info\\\" on:click=\\\"{pop}\\\">",
+    		source: "(102:4) <Button color=\\\"info\\\" on:click=\\\"{pop}\\\">",
     		ctx
     	});
 
@@ -18636,25 +18636,25 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "El gráfico de barras muestra un estudio de personas que se han suicidado por cada 100.000 habitantes\r\n            en distintos países.";
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$s, 86, 4, 1960);
+    			add_location(script0, file$s, 92, 4, 2136);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$s, 87, 4, 2031);
+    			add_location(script1, file$s, 93, 4, 2207);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$s, 88, 4, 2112);
+    			add_location(script2, file$s, 94, 4, 2288);
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$s, 89, 4, 2190);
+    			add_location(script3, file$s, 95, 4, 2366);
     			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
     			script4.defer = true;
-    			add_location(script4, file$s, 90, 4, 2270);
-    			add_location(h2, file$s, 94, 4, 2406);
+    			add_location(script4, file$s, 96, 4, 2446);
+    			add_location(h2, file$s, 100, 4, 2582);
     			attr_dev(div, "id", "container");
     			attr_dev(div, "class", "svelte-pgwtr9");
-    			add_location(div, file$s, 97, 8, 2540);
+    			add_location(div, file$s, 103, 8, 2716);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$s, 98, 8, 2576);
+    			add_location(p, file$s, 104, 8, 2752);
     			attr_dev(figure, "class", "highcharts-figure svelte-pgwtr9");
-    			add_location(figure, file$s, 96, 4, 2496);
-    			add_location(main, file$s, 93, 0, 2394);
+    			add_location(figure, file$s, 102, 4, 2672);
+    			add_location(main, file$s, 99, 0, 2570);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -18732,17 +18732,23 @@ var app = (function () {
     	}));
 
     	let mens = Array.from(MyData.map(d => {
-    		return d.men;
+    		return parseFloat(d.men);
     	}));
 
     	let womens = Array.from(MyData.map(d => {
-    		return d.women;
+    		return parseFloat(d.women);
     	}));
 
     	let averages = Array.from(MyData.map(d => {
-    		return d.average;
+    		return parseFloat(d.average);
     	}));
 
+    	console.log("mens:");
+    	console.log(mens);
+    	console.log("womens:");
+    	console.log(womens);
+    	console.log("averages");
+    	console.log(averages);
     	console.log("Graph_NONO");
 
     	Highcharts.chart("container", {
