@@ -96,7 +96,7 @@
         }]
     });
     }
-    
+
 loadGraph();
 
     </script>
@@ -106,7 +106,7 @@ loadGraph();
         <script src="https://code.highcharts.com/modules/series-label.js"></script>
         <script src="https://code.highcharts.com/modules/exporting.js"></script>
         <script src="https://code.highcharts.com/modules/export-data.js"></script>
-        <script src="https://code.highcharts.com/modules/accessibility.js" on:load="{loadGraph}"></script>
+        <script src="https://code.highcharts.com/modules/accessibility.js" on:load="{loadGraph}" defer></script>
     </svelte:head>
     
     <main>
