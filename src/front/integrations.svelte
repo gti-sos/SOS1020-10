@@ -37,7 +37,20 @@
         <button type="button"   class="btn btn-danger"  onclick="window.location.href='#/Marriages/Integration-Ext-1'">Int. Ext_1</button>
         <button type="button"   class="btn btn-danger"  onclick="window.location.href='#/Marriages/Integration-Ext-2'">Int. Ext_2</button>
 	</div>
+    <p></p>
+    <p></p>
+    <h4>Integraciones de Divorcios Globales</h4>
+    <div class="div-home">
+		<button type="button"   class="btn btn-success"  onclick="window.location.href='#/globalDivorcesAPI/IntegrationsTransfers'">Int. G26</button>
+        <button type="button"   class="btn btn-success"  onclick="window.location.href='#/globalDivorcesAPI/IntegrationsUnivregs'">Int. G24</button>
+		<button type="button"   class="btn btn-success"  onclick="window.location.href='#/globalDivorcesAPI/IntegrationsSugarConsume'"> Int. G30</button>
+		<button type="button"   class="btn btn-success"  onclick="window.location.href='#/globalDivorcesAPI/IntegrationsEnergy'">Int. G09</button>
+		<button type="button"   class="btn btn-success"  onclick="window.location.href='#/globalDivorcesAPI/IntegrationsCompetitivity'"> Int. G25</button>
+		<button type="button"   class="btn btn-success"  onclick="window.location.href='#/globalDivorcesAPI/IntegrationsNBA'"> Int. Ext. NBA </button>
+		<button type="button"   class="btn btn-success"  onclick="window.location.href='#/globalDivorcesAPI/IntegrationsINE'"> Int. Ext. INE </button>
 
+
+	</div>
 
 </body>
 </main>

@@ -36,6 +36,19 @@
 		//Rutas de Divorces
 	import globalDivorces from './DivorcesGUI/App.svelte';  
 	import EditDivorce from './DivorcesGUI/EditDivorce.svelte';
+	import DivorcesGraph from './DivorcesGUI/DivorcesGraph.svelte';
+	import DivorcesGraph2 from './DivorcesGUI/DivorcesGraph2.svelte';
+	
+	import IntegrationsDivorce from './DivorcesGUI/Integrations/Integrations.svelte';
+
+	import IntegrationsTransfers from './DivorcesGUI/Integrations/IntegrationsTransfers.svelte';
+	import IntegrationsUnivregs from './DivorcesGUI/Integrations/IntegrationsUnivregs.svelte';
+	import IntegrationsSugarConsume from './DivorcesGUI/Integrations/IntegrationsSugarConsume.svelte';
+	import IntegrationsEnergy from './DivorcesGUI/Integrations/IntegrationsEnergy.svelte';
+	import IntegrationsCompetitivity from './DivorcesGUI/Integrations/IntegrationsCompetivity.svelte';
+	import IntegrationsNBA from './DivorcesGUI/Integrations/IntegrationsNBA.svelte';
+	import IntegrationsINE from './DivorcesGUI/Integrations/IntegrationsINE.svelte';
+
 
 	const routes = {
 		"/": Home,
@@ -57,6 +70,19 @@
 
 		"/globalDivorcesAPI/:country/:year": EditDivorce,
 		"/globalDivorcesAPI":globalDivorces,
+		"/globalDivorcesAPI/DivorcesGraph": DivorcesGraph,
+		"/globalDivorcesAPI/DivorcesGraph2": DivorcesGraph2,
+		"/globalDivorcesAPI/Integrations": IntegrationsDivorce,
+
+		"/globalDivorcesAPI/IntegrationsTransfers": IntegrationsTransfers,
+		"/globalDivorcesAPI/IntegrationsUnivregs": IntegrationsUnivregs,
+		"/globalDivorcesAPI/IntegrationsSugarConsume": IntegrationsSugarConsume,
+		"/globalDivorcesAPI/IntegrationsEnergy": IntegrationsEnergy,
+		"/globalDivorcesAPI/IntegrationsCompetitivity": IntegrationsCompetitivity,
+		"/globalDivorcesAPI/IntegrationsNBA": IntegrationsNBA,
+		"/globalDivorcesAPI/IntegrationsINE": IntegrationsINE,
+
+
 		"/suicidesGraph": suicidesGraph, 
 		"/suicidesGraph2": suicidesGraph2,
 		"/integrations_suicides": integrations_suicides,

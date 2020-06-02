@@ -55288,6 +55288,27 @@ var app = (function () {
     	let button11;
     	let t33;
     	let button12;
+    	let t35;
+    	let p5;
+    	let t36;
+    	let p6;
+    	let t37;
+    	let h42;
+    	let t39;
+    	let div2;
+    	let button13;
+    	let t41;
+    	let button14;
+    	let t43;
+    	let button15;
+    	let t45;
+    	let button16;
+    	let t47;
+    	let button17;
+    	let t49;
+    	let button18;
+    	let t51;
+    	let button19;
     	let current;
 
     	const button0 = new Button({
@@ -55363,6 +55384,35 @@ var app = (function () {
     			t33 = space();
     			button12 = element("button");
     			button12.textContent = "Int. Ext_2";
+    			t35 = space();
+    			p5 = element("p");
+    			t36 = space();
+    			p6 = element("p");
+    			t37 = space();
+    			h42 = element("h4");
+    			h42.textContent = "Integraciones de Divorcios Globales";
+    			t39 = space();
+    			div2 = element("div");
+    			button13 = element("button");
+    			button13.textContent = "Int. G26";
+    			t41 = space();
+    			button14 = element("button");
+    			button14.textContent = "Int. G24";
+    			t43 = space();
+    			button15 = element("button");
+    			button15.textContent = "Int. G30";
+    			t45 = space();
+    			button16 = element("button");
+    			button16.textContent = "Int. G09";
+    			t47 = space();
+    			button17 = element("button");
+    			button17.textContent = "Int. G25";
+    			t49 = space();
+    			button18 = element("button");
+    			button18.textContent = "Int. Ext. NBA";
+    			t51 = space();
+    			button19 = element("button");
+    			button19.textContent = "Int. Ext. INE";
     			add_location(h2, file$y, 9, 4, 138);
     			add_location(p0, file$y, 13, 1, 253);
     			add_location(p1, file$y, 14, 4, 266);
@@ -55423,6 +55473,39 @@ var app = (function () {
     			add_location(button12, file$y, 37, 8, 1976);
     			attr_dev(div1, "class", "div-home");
     			add_location(div1, file$y, 31, 1, 1276);
+    			add_location(p5, file$y, 39, 4, 2121);
+    			add_location(p6, file$y, 40, 4, 2134);
+    			add_location(h42, file$y, 41, 4, 2147);
+    			attr_dev(button13, "type", "button");
+    			attr_dev(button13, "class", "btn btn-success");
+    			attr_dev(button13, "onclick", "window.location.href='#/globalDivorcesAPI/IntegrationsTransfers'");
+    			add_location(button13, file$y, 43, 2, 2223);
+    			attr_dev(button14, "type", "button");
+    			attr_dev(button14, "class", "btn btn-success");
+    			attr_dev(button14, "onclick", "window.location.href='#/globalDivorcesAPI/IntegrationsUnivregs'");
+    			add_location(button14, file$y, 44, 8, 2374);
+    			attr_dev(button15, "type", "button");
+    			attr_dev(button15, "class", "btn btn-success");
+    			attr_dev(button15, "onclick", "window.location.href='#/globalDivorcesAPI/IntegrationsSugarConsume'");
+    			add_location(button15, file$y, 45, 2, 2518);
+    			attr_dev(button16, "type", "button");
+    			attr_dev(button16, "class", "btn btn-success");
+    			attr_dev(button16, "onclick", "window.location.href='#/globalDivorcesAPI/IntegrationsEnergy'");
+    			add_location(button16, file$y, 46, 2, 2667);
+    			attr_dev(button17, "type", "button");
+    			attr_dev(button17, "class", "btn btn-success");
+    			attr_dev(button17, "onclick", "window.location.href='#/globalDivorcesAPI/IntegrationsCompetitivity'");
+    			add_location(button17, file$y, 47, 2, 2809);
+    			attr_dev(button18, "type", "button");
+    			attr_dev(button18, "class", "btn btn-success");
+    			attr_dev(button18, "onclick", "window.location.href='#/globalDivorcesAPI/IntegrationsNBA'");
+    			add_location(button18, file$y, 48, 2, 2959);
+    			attr_dev(button19, "type", "button");
+    			attr_dev(button19, "class", "btn btn-success");
+    			attr_dev(button19, "onclick", "window.location.href='#/globalDivorcesAPI/IntegrationsINE'");
+    			add_location(button19, file$y, 49, 2, 3105);
+    			attr_dev(div2, "class", "div-home");
+    			add_location(div2, file$y, 42, 4, 2197);
     			add_location(body, file$y, 11, 1, 242);
     			add_location(main, file$y, 7, 0, 123);
     		},
@@ -55475,6 +55558,27 @@ var app = (function () {
     			append_dev(div1, button11);
     			append_dev(div1, t33);
     			append_dev(div1, button12);
+    			append_dev(body, t35);
+    			append_dev(body, p5);
+    			append_dev(body, t36);
+    			append_dev(body, p6);
+    			append_dev(body, t37);
+    			append_dev(body, h42);
+    			append_dev(body, t39);
+    			append_dev(body, div2);
+    			append_dev(div2, button13);
+    			append_dev(div2, t41);
+    			append_dev(div2, button14);
+    			append_dev(div2, t43);
+    			append_dev(div2, button15);
+    			append_dev(div2, t45);
+    			append_dev(div2, button16);
+    			append_dev(div2, t47);
+    			append_dev(div2, button17);
+    			append_dev(div2, t49);
+    			append_dev(div2, button18);
+    			append_dev(div2, t51);
+    			append_dev(div2, button19);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -56388,7 +56492,7 @@ var app = (function () {
     	return block;
     }
 
-    // (258:1) {:then divorces}
+    // (265:1) {:then divorces}
     function create_then_block$4(ctx) {
     	let t0;
     	let t1;
@@ -56396,7 +56500,8 @@ var app = (function () {
 
     	const formgroup = new FormGroup({
     			props: {
-    				$$slots: { default: [create_default_slot_17$2] },
+    				style: "margin-top:60px",
+    				$$slots: { default: [create_default_slot_20$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -56408,7 +56513,7 @@ var app = (function () {
     				outline: true,
     				color: "primary",
     				class: "button-search",
-    				$$slots: { default: [create_default_slot_16$2] },
+    				$$slots: { default: [create_default_slot_19$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -56422,7 +56527,7 @@ var app = (function () {
     			props: {
     				bordered: true,
     				style: "text-align: center;",
-    				$$slots: { default: [create_default_slot_13$2] },
+    				$$slots: { default: [create_default_slot_16$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -56494,15 +56599,15 @@ var app = (function () {
     		block,
     		id: create_then_block$4.name,
     		type: "then",
-    		source: "(258:1) {:then divorces}",
+    		source: "(265:1) {:then divorces}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (261:3) <Label for="selectCountry">
-    function create_default_slot_19$2(ctx) {
+    // (268:3) <Label for="selectCountry">
+    function create_default_slot_22$1(ctx) {
     	let t;
 
     	const block = {
@@ -56519,17 +56624,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_19$2.name,
+    		id: create_default_slot_22$1.name,
     		type: "slot",
-    		source: "(261:3) <Label for=\\\"selectCountry\\\">",
+    		source: "(268:3) <Label for=\\\"selectCountry\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (260:2) <FormGroup>
-    function create_default_slot_17$2(ctx) {
+    // (267:2) <FormGroup style="margin-top:60px">
+    function create_default_slot_20$2(ctx) {
     	let t;
     	let updating_value;
     	let current;
@@ -56537,7 +56642,7 @@ var app = (function () {
     	const label = new Label({
     			props: {
     				for: "selectCountry",
-    				$$slots: { default: [create_default_slot_19$2] },
+    				$$slots: { default: [create_default_slot_22$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -56613,17 +56718,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_17$2.name,
+    		id: create_default_slot_20$2.name,
     		type: "slot",
-    		source: "(260:2) <FormGroup>",
+    		source: "(267:2) <FormGroup style=\\\"margin-top:60px\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (268:2) <Button style="margin-bottom: 1%;" outline color="primary" on:click="{search(currentCountry)}" class="button-search" >
-    function create_default_slot_16$2(ctx) {
+    // (275:2) <Button style="margin-bottom: 1%;" outline color="primary" on:click="{search(currentCountry)}" class="button-search" >
+    function create_default_slot_19$2(ctx) {
     	let i;
     	let t;
 
@@ -56632,7 +56737,7 @@ var app = (function () {
     			i = element("i");
     			t = text(" Buscar");
     			attr_dev(i, "class", "fas fa-search");
-    			add_location(i, file$C, 267, 121, 8337);
+    			add_location(i, file$C, 274, 121, 8506);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -56646,17 +56751,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_16$2.name,
+    		id: create_default_slot_19$2.name,
     		type: "slot",
-    		source: "(268:2) <Button style=\\\"margin-bottom: 1%;\\\" outline color=\\\"primary\\\" on:click=\\\"{search(currentCountry)}\\\" class=\\\"button-search\\\" >",
+    		source: "(275:2) <Button style=\\\"margin-bottom: 1%;\\\" outline color=\\\"primary\\\" on:click=\\\"{search(currentCountry)}\\\" class=\\\"button-search\\\" >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (290:10) <Button outline  color="primary" on:click={insertDivorce}>
-    function create_default_slot_15$2(ctx) {
+    // (297:10) <Button outline  color="primary" on:click={insertDivorce}>
+    function create_default_slot_18$2(ctx) {
     	let t;
 
     	const block = {
@@ -56673,17 +56778,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_15$2.name,
+    		id: create_default_slot_18$2.name,
     		type: "slot",
-    		source: "(290:10) <Button outline  color=\\\"primary\\\" on:click={insertDivorce}>",
+    		source: "(297:10) <Button outline  color=\\\"primary\\\" on:click={insertDivorce}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (299:11) <Button outline  color="danger" on:click={deleteDivorce(d.country,d.year)}>
-    function create_default_slot_14$2(ctx) {
+    // (306:11) <Button outline  color="danger" on:click={deleteDivorce(d.country,d.year)}>
+    function create_default_slot_17$2(ctx) {
     	let t;
 
     	const block = {
@@ -56700,16 +56805,16 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_14$2.name,
+    		id: create_default_slot_17$2.name,
     		type: "slot",
-    		source: "(299:11) <Button outline  color=\\\"danger\\\" on:click={deleteDivorce(d.country,d.year)}>",
+    		source: "(306:11) <Button outline  color=\\\"danger\\\" on:click={deleteDivorce(d.country,d.year)}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (292:4) {#each divorces as d}
+    // (299:4) {#each divorces as d}
     function create_each_block$2(ctx) {
     	let tr;
     	let td0;
@@ -56743,7 +56848,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "danger",
-    				$$slots: { default: [create_default_slot_14$2] },
+    				$$slots: { default: [create_default_slot_17$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -56777,14 +56882,14 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			t11 = space();
     			attr_dev(a, "href", a_href_value = "#/globalDivorcesAPI/" + /*d*/ ctx[24].country + "/" + /*d*/ ctx[24].year);
-    			add_location(a, file$C, 293, 12, 9145);
-    			add_location(td0, file$C, 293, 6, 9139);
-    			add_location(td1, file$C, 294, 6, 9226);
-    			add_location(td2, file$C, 295, 6, 9251);
-    			add_location(td3, file$C, 296, 6, 9279);
-    			add_location(td4, file$C, 297, 6, 9311);
-    			add_location(td5, file$C, 298, 6, 9341);
-    			add_location(tr, file$C, 292, 5, 9127);
+    			add_location(a, file$C, 300, 12, 9314);
+    			add_location(td0, file$C, 300, 6, 9308);
+    			add_location(td1, file$C, 301, 6, 9395);
+    			add_location(td2, file$C, 302, 6, 9420);
+    			add_location(td3, file$C, 303, 6, 9448);
+    			add_location(td4, file$C, 304, 6, 9480);
+    			add_location(td5, file$C, 305, 6, 9510);
+    			add_location(tr, file$C, 299, 5, 9296);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -56849,15 +56954,15 @@ var app = (function () {
     		block,
     		id: create_each_block$2.name,
     		type: "each",
-    		source: "(292:4) {#each divorces as d}",
+    		source: "(299:4) {#each divorces as d}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (271:2) <Table bordered style="text-align: center;">
-    function create_default_slot_13$2(ctx) {
+    // (278:2) <Table bordered style="text-align: center;">
+    function create_default_slot_16$2(ctx) {
     	let thead;
     	let tr0;
     	let th0;
@@ -56899,7 +57004,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "primary",
-    				$$slots: { default: [create_default_slot_15$2] },
+    				$$slots: { default: [create_default_slot_18$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -56966,31 +57071,31 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(th0, file$C, 273, 5, 8466);
-    			add_location(th1, file$C, 274, 5, 8486);
-    			add_location(th2, file$C, 275, 5, 8505);
-    			add_location(th3, file$C, 276, 5, 8530);
-    			add_location(th4, file$C, 277, 5, 8556);
-    			add_location(th5, file$C, 278, 5, 8581);
-    			add_location(tr0, file$C, 272, 4, 8455);
-    			add_location(thead, file$C, 271, 3, 8442);
-    			add_location(input0, file$C, 284, 9, 8656);
-    			add_location(td0, file$C, 284, 5, 8652);
+    			add_location(th0, file$C, 280, 5, 8635);
+    			add_location(th1, file$C, 281, 5, 8655);
+    			add_location(th2, file$C, 282, 5, 8674);
+    			add_location(th3, file$C, 283, 5, 8699);
+    			add_location(th4, file$C, 284, 5, 8725);
+    			add_location(th5, file$C, 285, 5, 8750);
+    			add_location(tr0, file$C, 279, 4, 8624);
+    			add_location(thead, file$C, 278, 3, 8611);
+    			add_location(input0, file$C, 291, 9, 8825);
+    			add_location(td0, file$C, 291, 5, 8821);
     			attr_dev(input1, "type", "number");
-    			add_location(input1, file$C, 285, 9, 8713);
-    			add_location(td1, file$C, 285, 5, 8709);
+    			add_location(input1, file$C, 292, 9, 8882);
+    			add_location(td1, file$C, 292, 5, 8878);
     			attr_dev(input2, "type", "number");
-    			add_location(input2, file$C, 286, 9, 8781);
-    			add_location(td2, file$C, 286, 5, 8777);
+    			add_location(input2, file$C, 293, 9, 8950);
+    			add_location(td2, file$C, 293, 5, 8946);
     			attr_dev(input3, "type", "number");
-    			add_location(input3, file$C, 287, 9, 8852);
-    			add_location(td3, file$C, 287, 5, 8848);
+    			add_location(input3, file$C, 294, 9, 9021);
+    			add_location(td3, file$C, 294, 5, 9017);
     			attr_dev(input4, "type", "number");
-    			add_location(input4, file$C, 288, 9, 8927);
-    			add_location(td4, file$C, 288, 5, 8923);
-    			add_location(td5, file$C, 289, 5, 8996);
-    			add_location(tr1, file$C, 283, 4, 8641);
-    			add_location(tbody, file$C, 282, 3, 8628);
+    			add_location(input4, file$C, 295, 9, 9096);
+    			add_location(td4, file$C, 295, 5, 9092);
+    			add_location(td5, file$C, 296, 5, 9165);
+    			add_location(tr1, file$C, 290, 4, 8810);
+    			add_location(tbody, file$C, 289, 3, 8797);
     		},
     		m: function mount(target, anchor, remount) {
     			insert_dev(target, thead, anchor);
@@ -57138,16 +57243,16 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_13$2.name,
+    		id: create_default_slot_16$2.name,
     		type: "slot",
-    		source: "(271:2) <Table bordered style=\\\"text-align: center;\\\">",
+    		source: "(278:2) <Table bordered style=\\\"text-align: center;\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (256:18)     Loading divorces...   {:then divorces}
+    // (263:18)     Loading divorces...   {:then divorces}
     function create_pending_block$4(ctx) {
     	let t;
 
@@ -57170,14 +57275,14 @@ var app = (function () {
     		block,
     		id: create_pending_block$4.name,
     		type: "pending",
-    		source: "(256:18)     Loading divorces...   {:then divorces}",
+    		source: "(263:18)     Loading divorces...   {:then divorces}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (308:1) {#if showPagination == true}
+    // (315:1) {#if showPagination == true}
     function create_if_block_2$4(ctx) {
     	let div;
     	let current;
@@ -57186,7 +57291,7 @@ var app = (function () {
     			props: {
     				style: "text-align: center;",
     				ariaLabel: "Cambiar de página",
-    				$$slots: { default: [create_default_slot_4$2] },
+    				$$slots: { default: [create_default_slot_7$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57196,7 +57301,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			create_component(pagination.$$.fragment);
-    			add_location(div, file$C, 308, 1, 9548);
+    			add_location(div, file$C, 315, 1, 9717);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -57231,15 +57336,15 @@ var app = (function () {
     		block,
     		id: create_if_block_2$4.name,
     		type: "if",
-    		source: "(308:1) {#if showPagination == true}",
+    		source: "(315:1) {#if showPagination == true}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (312:1) <PaginationItem class="{currentPage === 1 ? 'disabled' : ''}">
-    function create_default_slot_12$2(ctx) {
+    // (319:1) <PaginationItem class="{currentPage === 1 ? 'disabled' : ''}">
+    function create_default_slot_15$2(ctx) {
     	let current;
 
     	const paginationlink = new PaginationLink({
@@ -57277,22 +57382,22 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_12$2.name,
+    		id: create_default_slot_15$2.name,
     		type: "slot",
-    		source: "(312:1) <PaginationItem class=\\\"{currentPage === 1 ? 'disabled' : ''}\\\">",
+    		source: "(319:1) <PaginationItem class=\\\"{currentPage === 1 ? 'disabled' : ''}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (317:1) {#if currentPage != 1}
+    // (324:1) {#if currentPage != 1}
     function create_if_block_4$2(ctx) {
     	let current;
 
     	const paginationitem = new PaginationItem({
     			props: {
-    				$$slots: { default: [create_default_slot_10$2] },
+    				$$slots: { default: [create_default_slot_13$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57333,15 +57438,15 @@ var app = (function () {
     		block,
     		id: create_if_block_4$2.name,
     		type: "if",
-    		source: "(317:1) {#if currentPage != 1}",
+    		source: "(324:1) {#if currentPage != 1}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (319:2) <PaginationLink href="#/globalDivorcesAPI" on:click="{() => addOffset(-1)}" >
-    function create_default_slot_11$2(ctx) {
+    // (326:2) <PaginationLink href="#/globalDivorcesAPI" on:click="{() => addOffset(-1)}" >
+    function create_default_slot_14$2(ctx) {
     	let t_value = /*currentPage*/ ctx[3] - 1 + "";
     	let t;
 
@@ -57362,23 +57467,23 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_11$2.name,
+    		id: create_default_slot_14$2.name,
     		type: "slot",
-    		source: "(319:2) <PaginationLink href=\\\"#/globalDivorcesAPI\\\" on:click=\\\"{() => addOffset(-1)}\\\" >",
+    		source: "(326:2) <PaginationLink href=\\\"#/globalDivorcesAPI\\\" on:click=\\\"{() => addOffset(-1)}\\\" >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (318:1) <PaginationItem>
-    function create_default_slot_10$2(ctx) {
+    // (325:1) <PaginationItem>
+    function create_default_slot_13$2(ctx) {
     	let current;
 
     	const paginationlink = new PaginationLink({
     			props: {
     				href: "#/globalDivorcesAPI",
-    				$$slots: { default: [create_default_slot_11$2] },
+    				$$slots: { default: [create_default_slot_14$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57419,17 +57524,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_10$2.name,
+    		id: create_default_slot_13$2.name,
     		type: "slot",
-    		source: "(318:1) <PaginationItem>",
+    		source: "(325:1) <PaginationItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (323:2) <PaginationLink href="#/globalDivorcesAPI" >
-    function create_default_slot_9$2(ctx) {
+    // (330:2) <PaginationLink href="#/globalDivorcesAPI" >
+    function create_default_slot_12$2(ctx) {
     	let t;
 
     	const block = {
@@ -57449,23 +57554,23 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_9$2.name,
+    		id: create_default_slot_12$2.name,
     		type: "slot",
-    		source: "(323:2) <PaginationLink href=\\\"#/globalDivorcesAPI\\\" >",
+    		source: "(330:2) <PaginationLink href=\\\"#/globalDivorcesAPI\\\" >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (322:1) <PaginationItem active>
-    function create_default_slot_8$2(ctx) {
+    // (329:1) <PaginationItem active>
+    function create_default_slot_11$2(ctx) {
     	let current;
 
     	const paginationlink = new PaginationLink({
     			props: {
     				href: "#/globalDivorcesAPI",
-    				$$slots: { default: [create_default_slot_9$2] },
+    				$$slots: { default: [create_default_slot_12$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57504,22 +57609,22 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_8$2.name,
+    		id: create_default_slot_11$2.name,
     		type: "slot",
-    		source: "(322:1) <PaginationItem active>",
+    		source: "(329:1) <PaginationItem active>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (327:1) {#if moreData}
+    // (334:1) {#if moreData}
     function create_if_block_3$3(ctx) {
     	let current;
 
     	const paginationitem = new PaginationItem({
     			props: {
-    				$$slots: { default: [create_default_slot_6$2] },
+    				$$slots: { default: [create_default_slot_9$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57560,15 +57665,15 @@ var app = (function () {
     		block,
     		id: create_if_block_3$3.name,
     		type: "if",
-    		source: "(327:1) {#if moreData}",
+    		source: "(334:1) {#if moreData}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (329:2) <PaginationLink href="#/globalDivorcesAPI" on:click="{() => addOffset(1)}">
-    function create_default_slot_7$2(ctx) {
+    // (336:2) <PaginationLink href="#/globalDivorcesAPI" on:click="{() => addOffset(1)}">
+    function create_default_slot_10$2(ctx) {
     	let t_value = /*currentPage*/ ctx[3] + 1 + "";
     	let t;
 
@@ -57589,23 +57694,23 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_7$2.name,
+    		id: create_default_slot_10$2.name,
     		type: "slot",
-    		source: "(329:2) <PaginationLink href=\\\"#/globalDivorcesAPI\\\" on:click=\\\"{() => addOffset(1)}\\\">",
+    		source: "(336:2) <PaginationLink href=\\\"#/globalDivorcesAPI\\\" on:click=\\\"{() => addOffset(1)}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (328:1) <PaginationItem >
-    function create_default_slot_6$2(ctx) {
+    // (335:1) <PaginationItem >
+    function create_default_slot_9$2(ctx) {
     	let current;
 
     	const paginationlink = new PaginationLink({
     			props: {
     				href: "#/globalDivorcesAPI",
-    				$$slots: { default: [create_default_slot_7$2] },
+    				$$slots: { default: [create_default_slot_10$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57646,17 +57751,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_6$2.name,
+    		id: create_default_slot_9$2.name,
     		type: "slot",
-    		source: "(328:1) <PaginationItem >",
+    		source: "(335:1) <PaginationItem >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (333:1) <PaginationItem class="{moreData ? '' : 'disabled'}">
-    function create_default_slot_5$2(ctx) {
+    // (340:1) <PaginationItem class="{moreData ? '' : 'disabled'}">
+    function create_default_slot_8$2(ctx) {
     	let current;
 
     	const paginationlink = new PaginationLink({
@@ -57691,17 +57796,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_5$2.name,
+    		id: create_default_slot_8$2.name,
     		type: "slot",
-    		source: "(333:1) <PaginationItem class=\\\"{moreData ? '' : 'disabled'}\\\">",
+    		source: "(340:1) <PaginationItem class=\\\"{moreData ? '' : 'disabled'}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (309:6) <Pagination style = "text-align: center;"  ariaLabel="Cambiar de página">
-    function create_default_slot_4$2(ctx) {
+    // (316:6) <Pagination style = "text-align: center;"  ariaLabel="Cambiar de página">
+    function create_default_slot_7$2(ctx) {
     	let t0;
     	let t1;
     	let t2;
@@ -57711,7 +57816,7 @@ var app = (function () {
     	const paginationitem0 = new PaginationItem({
     			props: {
     				class: /*currentPage*/ ctx[3] === 1 ? "disabled" : "",
-    				$$slots: { default: [create_default_slot_12$2] },
+    				$$slots: { default: [create_default_slot_15$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57722,7 +57827,7 @@ var app = (function () {
     	const paginationitem1 = new PaginationItem({
     			props: {
     				active: true,
-    				$$slots: { default: [create_default_slot_8$2] },
+    				$$slots: { default: [create_default_slot_11$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57733,7 +57838,7 @@ var app = (function () {
     	const paginationitem2 = new PaginationItem({
     			props: {
     				class: /*moreData*/ ctx[4] ? "" : "disabled",
-    				$$slots: { default: [create_default_slot_5$2] },
+    				$$slots: { default: [create_default_slot_8$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57868,17 +57973,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_4$2.name,
+    		id: create_default_slot_7$2.name,
     		type: "slot",
-    		source: "(309:6) <Pagination style = \\\"text-align: center;\\\"  ariaLabel=\\\"Cambiar de página\\\">",
+    		source: "(316:6) <Pagination style = \\\"text-align: center;\\\"  ariaLabel=\\\"Cambiar de página\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (341:1) <Button style="float: right;" outline  color="danger" on:click={deleteAll}>
-    function create_default_slot_3$2(ctx) {
+    // (348:1) <Button style="float: right;" outline  color="danger" on:click={deleteAll}>
+    function create_default_slot_6$2(ctx) {
     	let t;
 
     	const block = {
@@ -57895,17 +58000,17 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3$2.name,
+    		id: create_default_slot_6$2.name,
     		type: "slot",
-    		source: "(341:1) <Button style=\\\"float: right;\\\" outline  color=\\\"danger\\\" on:click={deleteAll}>",
+    		source: "(348:1) <Button style=\\\"float: right;\\\" outline  color=\\\"danger\\\" on:click={deleteAll}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (342:1) <Button style="float: left;" outline  color="primary" on:click={loadInitialData} on:click={showPagination=true}>
-    function create_default_slot_2$5(ctx) {
+    // (349:1) <Button style="float: left;" outline  color="primary" on:click={loadInitialData} on:click={showPagination=true}>
+    function create_default_slot_5$2(ctx) {
     	let t;
 
     	const block = {
@@ -57922,16 +58027,16 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$5.name,
+    		id: create_default_slot_5$2.name,
     		type: "slot",
-    		source: "(342:1) <Button style=\\\"float: left;\\\" outline  color=\\\"primary\\\" on:click={loadInitialData} on:click={showPagination=true}>",
+    		source: "(349:1) <Button style=\\\"float: left;\\\" outline  color=\\\"primary\\\" on:click={loadInitialData} on:click={showPagination=true}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (345:1) {#if showPagination==false}
+    // (352:1) {#if showPagination==false}
     function create_if_block_1$5(ctx) {
     	let current;
 
@@ -57940,7 +58045,7 @@ var app = (function () {
     				style: "float: left; margin-left: 20px;",
     				outline: true,
     				color: "secondary",
-    				$$slots: { default: [create_default_slot_1$5] },
+    				$$slots: { default: [create_default_slot_4$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57988,15 +58093,15 @@ var app = (function () {
     		block,
     		id: create_if_block_1$5.name,
     		type: "if",
-    		source: "(345:1) {#if showPagination==false}",
+    		source: "(352:1) {#if showPagination==false}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (346:1) <Button style="float: left; margin-left: 20px;" outline  color="secondary" on:click={getDivorces} on:click={showPagination=true}>
-    function create_default_slot_1$5(ctx) {
+    // (353:1) <Button style="float: left; margin-left: 20px;" outline  color="secondary" on:click={getDivorces} on:click={showPagination=true}>
+    function create_default_slot_4$2(ctx) {
     	let t;
 
     	const block = {
@@ -58013,16 +58118,16 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$5.name,
+    		id: create_default_slot_4$2.name,
     		type: "slot",
-    		source: "(346:1) <Button style=\\\"float: left; margin-left: 20px;\\\" outline  color=\\\"secondary\\\" on:click={getDivorces} on:click={showPagination=true}>",
+    		source: "(353:1) <Button style=\\\"float: left; margin-left: 20px;\\\" outline  color=\\\"secondary\\\" on:click={getDivorces} on:click={showPagination=true}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (349:1) {#if showPagination==true}
+    // (356:1) {#if showPagination==true}
     function create_if_block$c(ctx) {
     	let current;
 
@@ -58031,7 +58136,7 @@ var app = (function () {
     				style: "float: left; margin-left: 20px;",
     				outline: true,
     				color: "secondary",
-    				$$slots: { default: [create_default_slot$o] },
+    				$$slots: { default: [create_default_slot_3$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -58079,15 +58184,15 @@ var app = (function () {
     		block,
     		id: create_if_block$c.name,
     		type: "if",
-    		source: "(349:1) {#if showPagination==true}",
+    		source: "(356:1) {#if showPagination==true}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (350:1) <Button style="float: left; margin-left: 20px;" outline  color="secondary" on:click={pop} on:click={showPagination=true}>
-    function create_default_slot$o(ctx) {
+    // (357:1) <Button style="float: left; margin-left: 20px;" outline  color="secondary" on:click={pop} on:click={showPagination=true}>
+    function create_default_slot_3$2(ctx) {
     	let t;
 
     	const block = {
@@ -58104,9 +58209,90 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
+    		id: create_default_slot_3$2.name,
+    		type: "slot",
+    		source: "(357:1) <Button style=\\\"float: left; margin-left: 20px;\\\" outline  color=\\\"secondary\\\" on:click={pop} on:click={showPagination=true}>",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (362:1) <Button  outline  color="primary" role="link" onclick="window.location = 'http://localhost:12345/#/globalDivorcesAPI/DivorcesGraph'">
+    function create_default_slot_2$5(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Gráfica HightChart");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_2$5.name,
+    		type: "slot",
+    		source: "(362:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = 'http://localhost:12345/#/globalDivorcesAPI/DivorcesGraph'\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (363:1) <Button  outline  color="primary" role="link" onclick="window.location = 'http://localhost:12345/#/globalDivorcesAPI/DivorcesGraph2'">
+    function create_default_slot_1$5(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Gráfica Chart.js");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot_1$5.name,
+    		type: "slot",
+    		source: "(363:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = 'http://localhost:12345/#/globalDivorcesAPI/DivorcesGraph2'\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (364:1) <Button  outline  color="primary" role="link" onclick="window.location = 'http://localhost:12345/#/globalDivorcesAPI/Integrations'">
+    function create_default_slot$o(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Integraciones");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
     		id: create_default_slot$o.name,
     		type: "slot",
-    		source: "(350:1) <Button style=\\\"float: left; margin-left: 20px;\\\" outline  color=\\\"secondary\\\" on:click={pop} on:click={showPagination=true}>",
+    		source: "(364:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = 'http://localhost:12345/#/globalDivorcesAPI/Integrations'\\\">",
     		ctx
     	});
 
@@ -58124,6 +58310,12 @@ var app = (function () {
     	let t3;
     	let t4;
     	let t5;
+    	let t6;
+    	let p;
+    	let t7;
+    	let div2;
+    	let t8;
+    	let t9;
     	let current;
 
     	let info = {
@@ -58145,7 +58337,7 @@ var app = (function () {
     				style: "float: right;",
     				outline: true,
     				color: "danger",
-    				$$slots: { default: [create_default_slot_3$2] },
+    				$$slots: { default: [create_default_slot_6$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -58158,7 +58350,7 @@ var app = (function () {
     				style: "float: left;",
     				outline: true,
     				color: "primary",
-    				$$slots: { default: [create_default_slot_2$5] },
+    				$$slots: { default: [create_default_slot_5$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -58172,6 +58364,42 @@ var app = (function () {
 
     	let if_block1 = /*showPagination*/ ctx[1] == false && create_if_block_1$5(ctx);
     	let if_block2 = /*showPagination*/ ctx[1] == true && create_if_block$c(ctx);
+
+    	const button2 = new Button({
+    			props: {
+    				outline: true,
+    				color: "primary",
+    				role: "link",
+    				onclick: "window.location = 'http://localhost:12345/#/globalDivorcesAPI/DivorcesGraph'",
+    				$$slots: { default: [create_default_slot_2$5] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button3 = new Button({
+    			props: {
+    				outline: true,
+    				color: "primary",
+    				role: "link",
+    				onclick: "window.location = 'http://localhost:12345/#/globalDivorcesAPI/DivorcesGraph2'",
+    				$$slots: { default: [create_default_slot_1$5] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button4 = new Button({
+    			props: {
+    				outline: true,
+    				color: "primary",
+    				role: "link",
+    				onclick: "window.location = 'http://localhost:12345/#/globalDivorcesAPI/Integrations'",
+    				$$slots: { default: [create_default_slot$o] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
 
     	const block = {
     		c: function create() {
@@ -58190,13 +58418,25 @@ var app = (function () {
     			if (if_block1) if_block1.c();
     			t5 = space();
     			if (if_block2) if_block2.c();
+    			t6 = space();
+    			p = element("p");
+    			t7 = space();
+    			div2 = element("div");
+    			create_component(button2.$$.fragment);
+    			t8 = space();
+    			create_component(button3.$$.fragment);
+    			t9 = space();
+    			create_component(button4.$$.fragment);
     			attr_dev(div0, "role", "alert");
     			attr_dev(div0, "id", "div_alert");
     			set_style(div0, "display", "none");
-    			add_location(div0, file$C, 253, 1, 7884);
-    			add_location(div1, file$C, 338, 1, 10578);
+    			add_location(div0, file$C, 260, 1, 8029);
+    			add_location(div1, file$C, 345, 1, 10747);
+    			add_location(p, file$C, 358, 1, 11388);
+    			attr_dev(div2, "class", "graficas svelte-rvrbxm");
+    			add_location(div2, file$C, 359, 1, 11398);
     			set_style(main, "padding", "10px");
-    			add_location(main, file$C, 252, 0, 7850);
+    			add_location(main, file$C, 259, 0, 7995);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -58219,6 +58459,15 @@ var app = (function () {
     			if (if_block1) if_block1.m(main, null);
     			append_dev(main, t5);
     			if (if_block2) if_block2.m(main, null);
+    			append_dev(main, t6);
+    			append_dev(main, p);
+    			append_dev(main, t7);
+    			append_dev(main, div2);
+    			mount_component(button2, div2, null);
+    			append_dev(div2, t8);
+    			mount_component(button3, div2, null);
+    			append_dev(div2, t9);
+    			mount_component(button4, div2, null);
     			current = true;
     		},
     		p: function update(new_ctx, [dirty]) {
@@ -58303,7 +58552,7 @@ var app = (function () {
     					if_block2 = create_if_block$c(ctx);
     					if_block2.c();
     					transition_in(if_block2, 1);
-    					if_block2.m(main, null);
+    					if_block2.m(main, t6);
     				}
     			} else if (if_block2) {
     				group_outros();
@@ -58314,6 +58563,28 @@ var app = (function () {
 
     				check_outros();
     			}
+
+    			const button2_changes = {};
+
+    			if (dirty & /*$$scope*/ 134217728) {
+    				button2_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button2.$set(button2_changes);
+    			const button3_changes = {};
+
+    			if (dirty & /*$$scope*/ 134217728) {
+    				button3_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button3.$set(button3_changes);
+    			const button4_changes = {};
+
+    			if (dirty & /*$$scope*/ 134217728) {
+    				button4_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button4.$set(button4_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -58323,6 +58594,9 @@ var app = (function () {
     			transition_in(button1.$$.fragment, local);
     			transition_in(if_block1);
     			transition_in(if_block2);
+    			transition_in(button2.$$.fragment, local);
+    			transition_in(button3.$$.fragment, local);
+    			transition_in(button4.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
@@ -58336,6 +58610,9 @@ var app = (function () {
     			transition_out(button1.$$.fragment, local);
     			transition_out(if_block1);
     			transition_out(if_block2);
+    			transition_out(button2.$$.fragment, local);
+    			transition_out(button3.$$.fragment, local);
+    			transition_out(button4.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
@@ -58348,6 +58625,9 @@ var app = (function () {
     			destroy_component(button1);
     			if (if_block1) if_block1.d();
     			if (if_block2) if_block2.d();
+    			destroy_component(button2);
+    			destroy_component(button3);
+    			destroy_component(button4);
     		}
     	};
 
@@ -58535,10 +58815,14 @@ var app = (function () {
     	////////////////////////////////       Insert Divorce      ///////////////////////////////////////
     	//////////////////////////////////////////////////////////////////////////////////////////////////
     	async function insertDivorce() {
+    		var pais = newDivorce.country;
+    		var MyReg = /[0-9]/;
     		console.log("Inserting divorce..." + JSON.stringify(newDivorce));
 
     		if (newDivorce.country == "" || newDivorce.country == null || newDivorce.year == "" || newDivorce.year == null) {
     			errorAlert$1("Se debe incluir el nombre del país y el año obligatoriamente");
+    		} else if (MyReg.test(pais)) {
+    			errorAlert$1("Formato de datos incorrecto");
     		} else {
     			const res = await fetch("/api/v2/global-divorces", {
     				method: "POST",
@@ -59575,10 +59859,2721 @@ var app = (function () {
     	}
     }
 
-    /* src\front\App.svelte generated by Svelte v3.22.2 */
-    const file$F = "src\\front\\App.svelte";
+    /* src\front\DivorcesGUI\DivorcesGraph.svelte generated by Svelte v3.22.2 */
+
+    const { console: console_1$q } = globals;
+    const file$F = "src\\front\\DivorcesGUI\\DivorcesGraph.svelte";
+
+    // (103:0) <Button outline color="secondary" on:click="{pop}" >
+    function create_default_slot$q(ctx) {
+    	let i;
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			i = element("i");
+    			t = text(" Atrás");
+    			attr_dev(i, "class", "fas fa-arrow-circle-left");
+    			add_location(i, file$F, 102, 53, 2747);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, i, anchor);
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(i);
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$q.name,
+    		type: "slot",
+    		source: "(103:0) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
 
     function create_fragment$G(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let script4;
+    	let script4_src_value;
+    	let t0;
+    	let main;
+    	let h2;
+    	let t2;
+    	let figure;
+    	let div0;
+    	let t3;
+    	let p;
+    	let t5;
+    	let div1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				color: "secondary",
+    				$$slots: { default: [create_default_slot$q] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button.$on("click", pop);
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			script4 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			h2 = element("h2");
+    			h2.textContent = "Gráfico highchart";
+    			t2 = space();
+    			figure = element("figure");
+    			div0 = element("div");
+    			t3 = space();
+    			p = element("p");
+    			p.textContent = "Gráfico de columnas que compara el número de divorcios por paises y años.";
+    			t5 = space();
+    			div1 = element("div");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$F, 83, 13, 1997);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$F, 84, 0, 2064);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$F, 85, 0, 2131);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$F, 86, 0, 2205);
+    			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
+    			add_location(script4, file$F, 87, 0, 2281);
+    			add_location(h2, file$F, 93, 4, 2417);
+    			attr_dev(div0, "id", "container");
+    			attr_dev(div0, "class", "svelte-1xiowu");
+    			add_location(div0, file$F, 96, 8, 2495);
+    			attr_dev(p, "class", "highcharts-description");
+    			add_location(p, file$F, 97, 8, 2531);
+    			attr_dev(figure, "class", "highcharts-figure svelte-1xiowu");
+    			add_location(figure, file$F, 95, 4, 2451);
+    			add_location(div1, file$F, 101, 4, 2687);
+    			add_location(main, file$F, 92, 0, 2405);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			append_dev(document.head, script4);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, h2);
+    			append_dev(main, t2);
+    			append_dev(main, figure);
+    			append_dev(figure, div0);
+    			append_dev(figure, t3);
+    			append_dev(figure, p);
+    			append_dev(main, t5);
+    			append_dev(main, div1);
+    			mount_component(button, div1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script4, "load", loadGraph$f, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			detach_dev(script4);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$G.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph$f() {
+    	const raw_data = await fetch("/api/v2/global-divorces");
+    	let data = await raw_data.json();
+
+    	let countries = Array.from(new Set(data.map(d => {
+    			return d.country;
+    		})));
+
+    	let years = Array.from(new Set(data.map(d => {
+    			return d.year;
+    		})));
+
+    	let series_graph = [];
+
+    	for (var i = 0; i < years.length; i++) {
+    		var divorce_year = [];
+
+    		for (var j = 0; j < data.length; j++) {
+    			if (data[j].year == years[i]) {
+    				console.log("entra");
+    				divorce_year[j] = data[j].divorce;
+    			} else {
+    				divorce_year[j] = 0;
+    			}
+    		}
+
+    		series_graph.push({ "name": years[i], "data": divorce_year });
+    	}
+
+    	let serie_final = series_graph;
+    	console.log(serie_final);
+
+    	Highcharts.chart("container", {
+    		chart: { type: "column" },
+    		title: { text: "Número de divorcios por paises" },
+    		subtitle: {
+    			text: "Fuente: https://datosmacro.expansion.com/demografia/divorcios"
+    		},
+    		xAxis: { categories: countries, crosshair: true },
+    		yAxis: {
+    			//   tickInterval: 10,
+    			min: 0,
+    			title: { text: "Nº de divorcios" }
+    		},
+    		tooltip: {
+    			headerFormat: "<span style=\"font-size:10px\">{point.key}</span><table>",
+    			pointFormat: "<tr><td style=\"color:{series.color};padding:0\">{series.name}: </td>" + "<td style=\"padding:0\"><b>{point.y:.0f} </b></td></tr>",
+    			footerFormat: "</table>",
+    			shared: true,
+    			useHTML: true
+    		},
+    		plotOptions: {
+    			column: { pointPadding: 0.2, borderWidth: 0 }
+    		},
+    		series: serie_final
+    	});
+    }
+
+    function instance$G($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1$q.warn(`<DivorcesGraph> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("DivorcesGraph", $$slots, []);
+    	$$self.$capture_state = () => ({ Button, pop, loadGraph: loadGraph$f });
+    	return [];
+    }
+
+    class DivorcesGraph extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$G, create_fragment$G, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "DivorcesGraph",
+    			options,
+    			id: create_fragment$G.name
+    		});
+    	}
+    }
+
+    /* src\front\DivorcesGUI\DivorcesGraph2.svelte generated by Svelte v3.22.2 */
+
+    const { console: console_1$r, document: document_1 } = globals;
+    const file$G = "src\\front\\DivorcesGUI\\DivorcesGraph2.svelte";
+
+    // (59:5) <Button outline color="secondary" on:click="{pop}" >
+    function create_default_slot$r(ctx) {
+    	let i;
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			i = element("i");
+    			t = text(" Atrás");
+    			attr_dev(i, "class", "fas fa-arrow-circle-left");
+    			add_location(i, file$G, 58, 58, 1524);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, i, anchor);
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(i);
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$r.name,
+    		type: "slot",
+    		source: "(59:5) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$H(ctx) {
+    	let script;
+    	let script_src_value;
+    	let t0;
+    	let main;
+    	let h3;
+    	let t2;
+    	let canvas;
+    	let t3;
+    	let div;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				color: "secondary",
+    				$$slots: { default: [create_default_slot$r] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button.$on("click", pop);
+
+    	const block = {
+    		c: function create() {
+    			script = element("script");
+    			t0 = space();
+    			main = element("main");
+    			h3 = element("h3");
+    			h3.textContent = "Grafica Chart.js";
+    			t2 = space();
+    			canvas = element("canvas");
+    			t3 = space();
+    			div = element("div");
+    			create_component(button.$$.fragment);
+    			if (script.src !== (script_src_value = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js")) attr_dev(script, "src", script_src_value);
+    			add_location(script, file$G, 3, 0, 19);
+    			add_location(h3, file$G, 55, 0, 1351);
+    			attr_dev(canvas, "id", "MyChart");
+    			set_style(canvas, "display", "block");
+    			set_style(canvas, "width", "710px");
+    			set_style(canvas, "height", "355px");
+    			add_location(canvas, file$G, 57, 0, 1381);
+    			add_location(div, file$G, 58, 0, 1466);
+    			add_location(main, file$G, 54, 0, 1343);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document_1.head, script);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, h3);
+    			append_dev(main, t2);
+    			append_dev(main, canvas);
+    			append_dev(main, t3);
+    			append_dev(main, div);
+    			mount_component(button, div, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script, "load", loadGraph$g, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$H.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph$g() {
+    	const raw_data = await fetch("/api/v2/global-divorces");
+    	let data = await raw_data.json();
+
+    	let countries = Array.from(new Set(data.map(d => {
+    			return d.country;
+    		})));
+
+    	let divorces = Array.from(new Set(data.map(d => {
+    			return d.divorce;
+    		})));
+
+    	function ejemplo2(len) {
+    		var colores = [];
+
+    		for (var i = 0; i < len; i++) {
+    			var str = "rgb(";
+
+    			for (var j = 0; j < 3; j++) {
+    				var aleatorio = Math.round(Math.random() * 255);
+    				str = str + aleatorio;
+
+    				if (j < 2) {
+    					str = str + ",";
+    				}
+    			}
+
+    			str = str + ")";
+    			colores[i] = str;
+    		}
+
+    		return colores;
+    	}
+
+    	console.log(ejemplo2(countries.length));
+    	var ctx = document.getElementById("MyChart").getContext("2d");
+
+    	var myChart = new Chart(ctx,
+    	{
+    			type: "pie",
+    			data: {
+    				labels: countries,
+    				datasets: [
+    					{
+    						data: divorces,
+    						backgroundColor: ejemplo2(countries.length)
+    					}
+    				]
+    			}
+    		});
+    }
+
+    function instance$H($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1$r.warn(`<DivorcesGraph2> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("DivorcesGraph2", $$slots, []);
+    	$$self.$capture_state = () => ({ Button, pop, loadGraph: loadGraph$g });
+    	return [];
+    }
+
+    class DivorcesGraph2 extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$H, create_fragment$H, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "DivorcesGraph2",
+    			options,
+    			id: create_fragment$H.name
+    		});
+    	}
+    }
+
+    /* src\front\DivorcesGUI\Integrations\Integrations.svelte generated by Svelte v3.22.2 */
+    const file$H = "src\\front\\DivorcesGUI\\Integrations\\Integrations.svelte";
+
+    // (16:21) <Button style="margin-top: 10px;" outline color="secondary" on:click="{pop}" >
+    function create_default_slot$s(ctx) {
+    	let i;
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			i = element("i");
+    			t = text(" Atrás");
+    			attr_dev(i, "class", "fas fa-arrow-circle-left");
+    			add_location(i, file$H, 15, 100, 1341);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, i, anchor);
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(i);
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$s.name,
+    		type: "slot",
+    		source: "(16:21) <Button style=\\\"margin-top: 10px;\\\" outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$I(ctx) {
+    	let main;
+    	let h1;
+    	let t1;
+    	let div0;
+    	let button0;
+    	let t3;
+    	let button1;
+    	let t5;
+    	let button2;
+    	let t7;
+    	let button3;
+    	let t9;
+    	let button4;
+    	let t11;
+    	let button5;
+    	let t13;
+    	let button6;
+    	let t15;
+    	let div1;
+    	let current;
+
+    	const button7 = new Button({
+    			props: {
+    				style: "margin-top: 10px;",
+    				outline: true,
+    				color: "secondary",
+    				$$slots: { default: [create_default_slot$s] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button7.$on("click", pop);
+
+    	const block = {
+    		c: function create() {
+    			main = element("main");
+    			h1 = element("h1");
+    			h1.textContent = "Integraciones";
+    			t1 = space();
+    			div0 = element("div");
+    			button0 = element("button");
+    			button0.textContent = "Int. G26";
+    			t3 = space();
+    			button1 = element("button");
+    			button1.textContent = "Int. G24";
+    			t5 = space();
+    			button2 = element("button");
+    			button2.textContent = "Int. G30";
+    			t7 = space();
+    			button3 = element("button");
+    			button3.textContent = "Int. G09";
+    			t9 = space();
+    			button4 = element("button");
+    			button4.textContent = "Int. G25";
+    			t11 = space();
+    			button5 = element("button");
+    			button5.textContent = "Int. Ext. NBA";
+    			t13 = space();
+    			button6 = element("button");
+    			button6.textContent = "Int. Ext. INE";
+    			t15 = space();
+    			div1 = element("div");
+    			create_component(button7.$$.fragment);
+    			attr_dev(h1, "align", "center");
+    			add_location(h1, file$H, 3, 0, 119);
+    			attr_dev(button0, "type", "button");
+    			attr_dev(button0, "class", "btn btn-success");
+    			attr_dev(button0, "onclick", "window.location.href='#/globalDivorcesAPI/IntegrationsTransfers'");
+    			add_location(button0, file$H, 5, 2, 202);
+    			attr_dev(button1, "type", "button");
+    			attr_dev(button1, "class", "btn btn-success");
+    			attr_dev(button1, "onclick", "window.location.href='#/globalDivorcesAPI/IntegrationsUnivregs'");
+    			add_location(button1, file$H, 6, 8, 353);
+    			attr_dev(button2, "type", "button");
+    			attr_dev(button2, "class", "btn btn-success");
+    			attr_dev(button2, "onclick", "window.location.href='#/globalDivorcesAPI/IntegrationsSugarConsume'");
+    			add_location(button2, file$H, 7, 2, 497);
+    			attr_dev(button3, "type", "button");
+    			attr_dev(button3, "class", "btn btn-success");
+    			attr_dev(button3, "onclick", "window.location.href='#/globalDivorcesAPI/IntegrationsEnergy'");
+    			add_location(button3, file$H, 8, 2, 646);
+    			attr_dev(button4, "type", "button");
+    			attr_dev(button4, "class", "btn btn-success");
+    			attr_dev(button4, "onclick", "window.location.href='#/globalDivorcesAPI/IntegrationsCompetitivity'");
+    			add_location(button4, file$H, 9, 2, 788);
+    			attr_dev(button5, "type", "button");
+    			attr_dev(button5, "class", "btn btn-success");
+    			attr_dev(button5, "onclick", "window.location.href='#/globalDivorcesAPI/IntegrationsNBA'");
+    			add_location(button5, file$H, 10, 2, 938);
+    			attr_dev(button6, "type", "button");
+    			attr_dev(button6, "class", "btn btn-success");
+    			attr_dev(button6, "onclick", "window.location.href='#/globalDivorcesAPI/IntegrationsINE'");
+    			add_location(button6, file$H, 11, 2, 1084);
+    			attr_dev(div0, "align", "center");
+    			attr_dev(div0, "class", "div-home");
+    			add_location(div0, file$H, 4, 1, 160);
+    			attr_dev(div1, "align", "center");
+    			add_location(div1, file$H, 15, 1, 1242);
+    			add_location(main, file$H, 2, 0, 111);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, main, anchor);
+    			append_dev(main, h1);
+    			append_dev(main, t1);
+    			append_dev(main, div0);
+    			append_dev(div0, button0);
+    			append_dev(div0, t3);
+    			append_dev(div0, button1);
+    			append_dev(div0, t5);
+    			append_dev(div0, button2);
+    			append_dev(div0, t7);
+    			append_dev(div0, button3);
+    			append_dev(div0, t9);
+    			append_dev(div0, button4);
+    			append_dev(div0, t11);
+    			append_dev(div0, button5);
+    			append_dev(div0, t13);
+    			append_dev(div0, button6);
+    			append_dev(main, t15);
+    			append_dev(main, div1);
+    			mount_component(button7, div1, null);
+    			current = true;
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button7_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button7_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button7.$set(button7_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button7.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button7.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(main);
+    			destroy_component(button7);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$I.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function instance$I($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn(`<Integrations> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("Integrations", $$slots, []);
+    	$$self.$capture_state = () => ({ Button, pop });
+    	return [];
+    }
+
+    class Integrations$1 extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$I, create_fragment$I, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "Integrations",
+    			options,
+    			id: create_fragment$I.name
+    		});
+    	}
+    }
+
+    /* src\front\DivorcesGUI\Integrations\IntegrationsTransfers.svelte generated by Svelte v3.22.2 */
+
+    const { console: console_1$s } = globals;
+    const file$I = "src\\front\\DivorcesGUI\\Integrations\\IntegrationsTransfers.svelte";
+
+    // (114:0) <Button outline color="secondary" on:click="{pop}" >
+    function create_default_slot$t(ctx) {
+    	let i;
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			i = element("i");
+    			t = text(" Atrás");
+    			attr_dev(i, "class", "fas fa-arrow-circle-left");
+    			add_location(i, file$I, 113, 53, 3246);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, i, anchor);
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(i);
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$t.name,
+    		type: "slot",
+    		source: "(114:0) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$J(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let script4;
+    	let script4_src_value;
+    	let t0;
+    	let main;
+    	let h2;
+    	let t2;
+    	let figure;
+    	let div0;
+    	let t3;
+    	let p;
+    	let t5;
+    	let div1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				color: "secondary",
+    				$$slots: { default: [create_default_slot$t] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button.$on("click", pop);
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			script4 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			h2 = element("h2");
+    			h2.textContent = "Integración API Fichajes";
+    			t2 = space();
+    			figure = element("figure");
+    			div0 = element("div");
+    			t3 = space();
+    			p = element("p");
+    			p.textContent = "Gráfico de columnas que compara el número de divorcios por paises y años con el número de ficahjes de equipos de fútbol.\r\n            Estos datos no tienen ningún tipo de relación. \r\n            Debido al alto número de divorcios, los fichajes no se aprecian en la gráfica, por lo que para visualizarlos hay que\r\n            desactivar los divorcios de la gráfica pinchando en número de divorcios.";
+    			t5 = space();
+    			div1 = element("div");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$I, 91, 13, 2165);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$I, 92, 0, 2232);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$I, 93, 0, 2299);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$I, 94, 0, 2373);
+    			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
+    			add_location(script4, file$I, 95, 0, 2449);
+    			add_location(h2, file$I, 101, 4, 2585);
+    			attr_dev(div0, "id", "container");
+    			attr_dev(div0, "class", "svelte-1xiowu");
+    			add_location(div0, file$I, 104, 8, 2670);
+    			attr_dev(p, "class", "highcharts-description");
+    			add_location(p, file$I, 105, 8, 2706);
+    			attr_dev(figure, "class", "highcharts-figure svelte-1xiowu");
+    			add_location(figure, file$I, 103, 4, 2626);
+    			add_location(div1, file$I, 112, 4, 3186);
+    			add_location(main, file$I, 100, 0, 2573);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			append_dev(document.head, script4);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, h2);
+    			append_dev(main, t2);
+    			append_dev(main, figure);
+    			append_dev(figure, div0);
+    			append_dev(figure, t3);
+    			append_dev(figure, p);
+    			append_dev(main, t5);
+    			append_dev(main, div1);
+    			mount_component(button, div1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script4, "load", loadGraph$h, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			detach_dev(script4);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$J.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph$h() {
+    	const raw_data1 = await fetch("/api/v2/global-divorces");
+    	const raw_data2 = await fetch("/api/v3/global-transfers");
+    	let data = await raw_data1.json();
+    	let data2 = await raw_data2.json();
+
+    	let countries = Array.from(new Set(data.map(d => {
+    			return d.country + " " + d.year;
+    		})));
+
+    	let divorces = Array.from(new Set(data.map(d => {
+    			return d.divorce;
+    		})));
+
+    	let teams = Array.from(new Set(data2.map(t => {
+    			return t.team + " " + t.year;
+    		})));
+
+    	let signing = Array.from(new Set(data2.map(t => {
+    			return t.signing;
+    		})));
+
+    	let teams_countries = teams.concat(countries);
+    	var salto = [];
+
+    	for (var i = 0; i < teams.length; i++) {
+    		salto[i] = 0;
+    	}
+
+    	divorces = salto.concat(divorces);
+    	console.log("ARRAY " + teams_countries);
+
+    	Highcharts.chart("container", {
+    		chart: { type: "column" },
+    		title: {
+    			text: "Número de divorcios por paises y fichajes por equipo de fútbol"
+    		},
+    		subtitle: {
+    			text: "Para visualizar los datos de los fichajes desactive los divorcios."
+    		},
+    		xAxis: {
+    			categories: teams_countries,
+    			crosshair: true
+    		},
+    		yAxis: {
+    			//   tickInterval: 10,
+    			min: 0,
+    			title: { text: "Nº de divorcios y de fichajes" }
+    		},
+    		tooltip: {
+    			headerFormat: "<span style=\"font-size:10px\">{point.key}</span><table>",
+    			pointFormat: "<tr><td style=\"color:{series.color};padding:0\">{series.name}: </td>" + "<td style=\"padding:0\"><b>{point.y:.0f} </b></td></tr>",
+    			footerFormat: "</table>",
+    			shared: true,
+    			useHTML: true
+    		},
+    		plotOptions: {
+    			column: { pointPadding: 0.2, borderWidth: 0 }
+    		},
+    		series: [
+    			{
+    				name: "Número de Divorcios",
+    				data: divorces
+    			},
+    			{
+    				name: "Número de fichajes",
+    				data: signing
+    			}
+    		]
+    	});
+    }
+
+    function instance$J($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1$s.warn(`<IntegrationsTransfers> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("IntegrationsTransfers", $$slots, []);
+    	$$self.$capture_state = () => ({ Button, pop, loadGraph: loadGraph$h });
+    	return [];
+    }
+
+    class IntegrationsTransfers extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$J, create_fragment$J, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "IntegrationsTransfers",
+    			options,
+    			id: create_fragment$J.name
+    		});
+    	}
+    }
+
+    /* src\front\DivorcesGUI\Integrations\IntegrationsUnivregs.svelte generated by Svelte v3.22.2 */
+
+    const { console: console_1$t } = globals;
+    const file$J = "src\\front\\DivorcesGUI\\Integrations\\IntegrationsUnivregs.svelte";
+
+    // (113:0) <Button outline color="secondary" on:click="{pop}" >
+    function create_default_slot$u(ctx) {
+    	let i;
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			i = element("i");
+    			t = text(" Atrás");
+    			attr_dev(i, "class", "fas fa-arrow-circle-left");
+    			add_location(i, file$J, 112, 53, 3117);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, i, anchor);
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(i);
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$u.name,
+    		type: "slot",
+    		source: "(113:0) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$K(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let script4;
+    	let script4_src_value;
+    	let t0;
+    	let main;
+    	let h2;
+    	let t2;
+    	let figure;
+    	let div0;
+    	let t3;
+    	let p;
+    	let t5;
+    	let div1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				color: "secondary",
+    				$$slots: { default: [create_default_slot$u] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button.$on("click", pop);
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			script4 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			h2 = element("h2");
+    			h2.textContent = "Integración API Peticiones universitarias";
+    			t2 = space();
+    			figure = element("figure");
+    			div0 = element("div");
+    			t3 = space();
+    			p = element("p");
+    			p.textContent = "Gráfico de columnas que compara el número de divorcios por paises y años con el número de peticiones universitarias.\r\n            Estos datos no tienen ningún tipo de relación.";
+    			t5 = space();
+    			div1 = element("div");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$J, 91, 13, 2229);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$J, 92, 0, 2296);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$J, 93, 0, 2363);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$J, 94, 0, 2437);
+    			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
+    			add_location(script4, file$J, 95, 0, 2513);
+    			add_location(h2, file$J, 101, 4, 2649);
+    			attr_dev(div0, "id", "container");
+    			attr_dev(div0, "class", "svelte-1xiowu");
+    			add_location(div0, file$J, 104, 8, 2751);
+    			attr_dev(p, "class", "highcharts-description");
+    			add_location(p, file$J, 105, 8, 2787);
+    			attr_dev(figure, "class", "highcharts-figure svelte-1xiowu");
+    			add_location(figure, file$J, 103, 4, 2707);
+    			add_location(div1, file$J, 111, 4, 3057);
+    			add_location(main, file$J, 100, 0, 2637);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			append_dev(document.head, script4);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, h2);
+    			append_dev(main, t2);
+    			append_dev(main, figure);
+    			append_dev(figure, div0);
+    			append_dev(figure, t3);
+    			append_dev(figure, p);
+    			append_dev(main, t5);
+    			append_dev(main, div1);
+    			mount_component(button, div1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script4, "load", loadGraph$i, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			detach_dev(script4);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$K.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph$i() {
+    	const raw_data1 = await fetch("/api/v2/global-divorces");
+    	const raw_data2 = await fetch("/api/v2/univregs-stats");
+    	let data = await raw_data1.json();
+    	let data2 = await raw_data2.json();
+
+    	let countries = Array.from(new Set(data.map(d => {
+    			return d.country + " " + d.year;
+    		})));
+
+    	let divorces = Array.from(new Set(data.map(d => {
+    			return d.divorce;
+    		})));
+
+    	let comunidades = Array.from(new Set(data2.map(t => {
+    			return t.community;
+    		})));
+
+    	let univreg_gob = Array.from(new Set(data2.map(t => {
+    			return t.univreg_gob;
+    		})));
+
+    	let community_countries = comunidades.concat(countries);
+    	var salto = [];
+
+    	for (var i = 0; i < comunidades.length; i++) {
+    		salto[i] = 0;
+    	}
+
+    	divorces = salto.concat(divorces);
+    	console.log("ARRAY " + community_countries);
+
+    	Highcharts.chart("container", {
+    		chart: { type: "column" },
+    		title: {
+    			text: "Número de divorcios por paises y peticiones universitarias"
+    		},
+    		subtitle: {
+    			text: "Para visualizar uno de los datos solo seleccione el campo a eliminar."
+    		},
+    		xAxis: {
+    			categories: community_countries,
+    			crosshair: true
+    		},
+    		yAxis: {
+    			//   tickInterval: 10,
+    			min: 0,
+    			title: {
+    				text: "Nº de divorcios y de solicitudes universitarias"
+    			}
+    		},
+    		tooltip: {
+    			headerFormat: "<span style=\"font-size:10px\">{point.key}</span><table>",
+    			pointFormat: "<tr><td style=\"color:{series.color};padding:0\">{series.name}: </td>" + "<td style=\"padding:0\"><b>{point.y:.0f} </b></td></tr>",
+    			footerFormat: "</table>",
+    			shared: true,
+    			useHTML: true
+    		},
+    		plotOptions: {
+    			column: { pointPadding: 0.2, borderWidth: 0 }
+    		},
+    		series: [
+    			{
+    				name: "Número de Divorcios",
+    				data: divorces
+    			},
+    			{
+    				name: "Número de peticiones universitarias",
+    				data: univreg_gob
+    			}
+    		]
+    	});
+    }
+
+    function instance$K($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1$t.warn(`<IntegrationsUnivregs> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("IntegrationsUnivregs", $$slots, []);
+    	$$self.$capture_state = () => ({ Button, pop, loadGraph: loadGraph$i });
+    	return [];
+    }
+
+    class IntegrationsUnivregs extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$K, create_fragment$K, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "IntegrationsUnivregs",
+    			options,
+    			id: create_fragment$K.name
+    		});
+    	}
+    }
+
+    /* src\front\DivorcesGUI\Integrations\IntegrationsSugarConsume.svelte generated by Svelte v3.22.2 */
+
+    const { console: console_1$u } = globals;
+    const file$K = "src\\front\\DivorcesGUI\\Integrations\\IntegrationsSugarConsume.svelte";
+
+    // (111:0) <Button outline color="secondary" on:click="{pop}" >
+    function create_default_slot$v(ctx) {
+    	let i;
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			i = element("i");
+    			t = text(" Atrás");
+    			attr_dev(i, "class", "fas fa-arrow-circle-left");
+    			add_location(i, file$K, 110, 53, 3020);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, i, anchor);
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(i);
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$v.name,
+    		type: "slot",
+    		source: "(111:0) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$L(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let script4;
+    	let script4_src_value;
+    	let t0;
+    	let main;
+    	let h2;
+    	let t2;
+    	let figure;
+    	let div0;
+    	let t3;
+    	let p;
+    	let t5;
+    	let div1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				color: "secondary",
+    				$$slots: { default: [create_default_slot$v] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button.$on("click", pop);
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			script4 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			h2 = element("h2");
+    			h2.textContent = "Integración API Consumo de Azúcar";
+    			t2 = space();
+    			figure = element("figure");
+    			div0 = element("div");
+    			t3 = space();
+    			p = element("p");
+    			p.textContent = "Gráfico de columnas que compara el número de divorcios por paises y años con el consumo en toneladas de azúcar.\r\n            Estos datos no tienen ningún tipo de relación.";
+    			t5 = space();
+    			div1 = element("div");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$K, 89, 13, 2145);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$K, 90, 0, 2212);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$K, 91, 0, 2279);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$K, 92, 0, 2353);
+    			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
+    			add_location(script4, file$K, 93, 0, 2429);
+    			add_location(h2, file$K, 99, 4, 2565);
+    			attr_dev(div0, "id", "container");
+    			attr_dev(div0, "class", "svelte-1xiowu");
+    			add_location(div0, file$K, 102, 8, 2659);
+    			attr_dev(p, "class", "highcharts-description");
+    			add_location(p, file$K, 103, 8, 2695);
+    			attr_dev(figure, "class", "highcharts-figure svelte-1xiowu");
+    			add_location(figure, file$K, 101, 4, 2615);
+    			add_location(div1, file$K, 109, 4, 2960);
+    			add_location(main, file$K, 98, 0, 2553);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			append_dev(document.head, script4);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, h2);
+    			append_dev(main, t2);
+    			append_dev(main, figure);
+    			append_dev(figure, div0);
+    			append_dev(figure, t3);
+    			append_dev(figure, p);
+    			append_dev(main, t5);
+    			append_dev(main, div1);
+    			mount_component(button, div1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script4, "load", loadGraph$j, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			detach_dev(script4);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$L.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph$j() {
+    	const raw_data1 = await fetch("/api/v2/global-divorces");
+    	const raw_data2 = await fetch("/api/v3/sugarconsume");
+    	let data = await raw_data1.json();
+    	let data2 = await raw_data2.json();
+
+    	let countries = Array.from(new Set(data.map(d => {
+    			return d.country + " " + d.year;
+    		})));
+
+    	let divorces = Array.from(new Set(data.map(d => {
+    			return d.divorce;
+    		})));
+
+    	let place = Array.from(new Set(data2.map(t => {
+    			return t.place + " " + t.year;
+    		})));
+
+    	let sugar = data2.map(t => {
+    		return t.sugarconsume;
+    	});
+
+    	let place_countries = place.concat(countries);
+    	var salto = [];
+
+    	for (var i = 0; i < place.length; i++) {
+    		salto[i] = 0;
+    	}
+
+    	divorces = salto.concat(divorces);
+    	console.log("ARRAY " + place_countries);
+
+    	Highcharts.chart("container", {
+    		chart: { type: "column" },
+    		title: {
+    			text: "Número de divorcios por paises y consumo de azúcar"
+    		},
+    		subtitle: {
+    			text: "Para visualizar uno de los datos solo seleccione el campo a eliminar."
+    		},
+    		xAxis: {
+    			categories: place_countries,
+    			crosshair: true
+    		},
+    		yAxis: {
+    			//   tickInterval: 10,
+    			min: 0,
+    			title: {
+    				text: "Nº de divorcios y de toneladas de azúcar"
+    			}
+    		},
+    		tooltip: {
+    			headerFormat: "<span style=\"font-size:10px\">{point.key}</span><table>",
+    			pointFormat: "<tr><td style=\"color:{series.color};padding:0\">{series.name}: </td>" + "<td style=\"padding:0\"><b>{point.y:.0f} </b></td></tr>",
+    			footerFormat: "</table>",
+    			shared: true,
+    			useHTML: true
+    		},
+    		plotOptions: {
+    			column: { pointPadding: 0.2, borderWidth: 0 }
+    		},
+    		series: [
+    			{
+    				name: "Número de Divorcios",
+    				data: divorces
+    			},
+    			{
+    				name: "Número de toneladas de azucar",
+    				data: sugar
+    			}
+    		]
+    	});
+    }
+
+    function instance$L($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1$u.warn(`<IntegrationsSugarConsume> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("IntegrationsSugarConsume", $$slots, []);
+    	$$self.$capture_state = () => ({ Button, pop, loadGraph: loadGraph$j });
+    	return [];
+    }
+
+    class IntegrationsSugarConsume extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$L, create_fragment$L, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "IntegrationsSugarConsume",
+    			options,
+    			id: create_fragment$L.name
+    		});
+    	}
+    }
+
+    /* src\front\DivorcesGUI\Integrations\IntegrationsEnergy.svelte generated by Svelte v3.22.2 */
+
+    const { console: console_1$v } = globals;
+    const file$L = "src\\front\\DivorcesGUI\\Integrations\\IntegrationsEnergy.svelte";
+
+    // (116:0) <Button outline color="secondary" on:click="{pop}" >
+    function create_default_slot$w(ctx) {
+    	let i;
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			i = element("i");
+    			t = text(" Atrás");
+    			attr_dev(i, "class", "fas fa-arrow-circle-left");
+    			add_location(i, file$L, 115, 53, 3140);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, i, anchor);
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(i);
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$w.name,
+    		type: "slot",
+    		source: "(116:0) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$M(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let script4;
+    	let script4_src_value;
+    	let t0;
+    	let main;
+    	let h2;
+    	let t2;
+    	let figure;
+    	let div0;
+    	let t3;
+    	let p;
+    	let t5;
+    	let div1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				color: "secondary",
+    				$$slots: { default: [create_default_slot$w] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button.$on("click", pop);
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			script4 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			h2 = element("h2");
+    			h2.textContent = "Integración API Consumo de Energías Naturales";
+    			t2 = space();
+    			figure = element("figure");
+    			div0 = element("div");
+    			t3 = space();
+    			p = element("p");
+    			p.textContent = "Gráfico de columnas que compara el número de divorcios por paises y años con el consumo en toneladas de petróleo.\r\n            Estos datos no tienen ningún tipo de relación.";
+    			t5 = space();
+    			div1 = element("div");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$L, 94, 13, 2251);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$L, 95, 0, 2318);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$L, 96, 0, 2385);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$L, 97, 0, 2459);
+    			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
+    			add_location(script4, file$L, 98, 0, 2535);
+    			add_location(h2, file$L, 104, 4, 2671);
+    			attr_dev(div0, "id", "container");
+    			attr_dev(div0, "class", "svelte-1xiowu");
+    			add_location(div0, file$L, 107, 8, 2777);
+    			attr_dev(p, "class", "highcharts-description");
+    			add_location(p, file$L, 108, 8, 2813);
+    			attr_dev(figure, "class", "highcharts-figure svelte-1xiowu");
+    			add_location(figure, file$L, 106, 4, 2733);
+    			add_location(div1, file$L, 114, 4, 3080);
+    			add_location(main, file$L, 103, 0, 2659);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			append_dev(document.head, script4);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, h2);
+    			append_dev(main, t2);
+    			append_dev(main, figure);
+    			append_dev(figure, div0);
+    			append_dev(figure, t3);
+    			append_dev(figure, p);
+    			append_dev(main, t5);
+    			append_dev(main, div1);
+    			mount_component(button, div1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script4, "load", loadGraph$k, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			detach_dev(script4);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$M.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph$k() {
+    	const raw_data1 = await fetch("/api/v2/global-divorces");
+    	const raw_data2 = await fetch("/api/v3/oil-coal-nuclear-energy-consumption-stats");
+    	let data = await raw_data1.json();
+    	let data2 = await raw_data2.json();
+
+    	let countries = Array.from(new Set(data.map(d => {
+    			return d.country + " " + d.year;
+    		})));
+
+    	let divorces = Array.from(new Set(data.map(d => {
+    			return d.divorce;
+    		})));
+
+    	let place = Array.from(new Set(data2.map(t => {
+    			return t.country;
+    		})));
+
+    	let oil = [];
+
+    	for (var i = 0; i < data2.length; i++) {
+    		let obj = data2[i];
+    		oil[i] = obj["oil-consumption"];
+    	}
+
+    	let place_countries = place.concat(countries);
+    	var salto = [];
+
+    	for (var i = 0; i < place.length; i++) {
+    		salto[i] = 0;
+    	}
+
+    	divorces = salto.concat(divorces);
+    	console.log("ARRAY " + place_countries);
+
+    	Highcharts.chart("container", {
+    		chart: { type: "column" },
+    		title: {
+    			text: "Número de divorcios por paises y consumo de petróleo"
+    		},
+    		subtitle: {
+    			text: "Para visualizar uno de los datos solo seleccione el campo a eliminar."
+    		},
+    		xAxis: {
+    			categories: place_countries,
+    			crosshair: true
+    		},
+    		yAxis: {
+    			//   tickInterval: 10,
+    			min: 0,
+    			title: {
+    				text: "Nº de divorcios y de toneladas de petróleo"
+    			}
+    		},
+    		tooltip: {
+    			headerFormat: "<span style=\"font-size:10px\">{point.key}</span><table>",
+    			pointFormat: "<tr><td style=\"color:{series.color};padding:0\">{series.name}: </td>" + "<td style=\"padding:0\"><b>{point.y:.0f} </b></td></tr>",
+    			footerFormat: "</table>",
+    			shared: true,
+    			useHTML: true
+    		},
+    		plotOptions: {
+    			column: { pointPadding: 0.2, borderWidth: 0 }
+    		},
+    		series: [
+    			{
+    				name: "Número de Divorcios",
+    				data: divorces
+    			},
+    			{
+    				name: "Número de toneladas de petróleo",
+    				data: oil
+    			}
+    		]
+    	});
+    }
+
+    function instance$M($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1$v.warn(`<IntegrationsEnergy> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("IntegrationsEnergy", $$slots, []);
+    	$$self.$capture_state = () => ({ Button, pop, loadGraph: loadGraph$k });
+    	return [];
+    }
+
+    class IntegrationsEnergy extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$M, create_fragment$M, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "IntegrationsEnergy",
+    			options,
+    			id: create_fragment$M.name
+    		});
+    	}
+    }
+
+    /* src\front\DivorcesGUI\Integrations\IntegrationsCompetivity.svelte generated by Svelte v3.22.2 */
+
+    const { console: console_1$w } = globals;
+    const file$M = "src\\front\\DivorcesGUI\\Integrations\\IntegrationsCompetivity.svelte";
+
+    // (113:0) <Button outline color="secondary" on:click="{pop}" >
+    function create_default_slot$x(ctx) {
+    	let i;
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			i = element("i");
+    			t = text(" Atrás");
+    			attr_dev(i, "class", "fas fa-arrow-circle-left");
+    			add_location(i, file$M, 112, 53, 3094);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, i, anchor);
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(i);
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$x.name,
+    		type: "slot",
+    		source: "(113:0) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$N(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let script4;
+    	let script4_src_value;
+    	let t0;
+    	let main;
+    	let h2;
+    	let t2;
+    	let figure;
+    	let div0;
+    	let t3;
+    	let p;
+    	let t5;
+    	let div1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				color: "secondary",
+    				$$slots: { default: [create_default_slot$x] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button.$on("click", pop);
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			script4 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			h2 = element("h2");
+    			h2.textContent = "Integración API Índice de competitividad global";
+    			t2 = space();
+    			figure = element("figure");
+    			div0 = element("div");
+    			t3 = space();
+    			p = element("p");
+    			p.textContent = "Gráfico de columnas que compara el número de divorcios por paises y el índice de competitividad globales.\r\n            Estos datos no tienen ningún tipo de relación.";
+    			t5 = space();
+    			div1 = element("div");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$M, 91, 13, 2211);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$M, 92, 0, 2278);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$M, 93, 0, 2345);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$M, 94, 0, 2419);
+    			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
+    			add_location(script4, file$M, 95, 0, 2495);
+    			add_location(h2, file$M, 101, 4, 2631);
+    			attr_dev(div0, "id", "container");
+    			attr_dev(div0, "class", "svelte-1xiowu");
+    			add_location(div0, file$M, 104, 8, 2739);
+    			attr_dev(p, "class", "highcharts-description");
+    			add_location(p, file$M, 105, 8, 2775);
+    			attr_dev(figure, "class", "highcharts-figure svelte-1xiowu");
+    			add_location(figure, file$M, 103, 4, 2695);
+    			add_location(div1, file$M, 111, 4, 3034);
+    			add_location(main, file$M, 100, 0, 2619);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			append_dev(document.head, script4);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, h2);
+    			append_dev(main, t2);
+    			append_dev(main, figure);
+    			append_dev(figure, div0);
+    			append_dev(figure, t3);
+    			append_dev(figure, p);
+    			append_dev(main, t5);
+    			append_dev(main, div1);
+    			mount_component(button, div1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script4, "load", loadGraph$l, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			detach_dev(script4);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$N.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph$l() {
+    	const raw_data1 = await fetch("/api/v2/global-divorces");
+    	const raw_data2 = await fetch("/api/v2/global_competitiveness_index");
+    	let data = await raw_data1.json();
+    	let data2 = await raw_data2.json();
+
+    	let countries = Array.from(new Set(data.map(d => {
+    			return d.country + " " + d.year;
+    		})));
+
+    	let divorces = Array.from(new Set(data.map(d => {
+    			return d.divorce;
+    		})));
+
+    	let places = Array.from(new Set(data2.map(t => {
+    			return t.country;
+    		})));
+
+    	let index = Array.from(new Set(data2.map(t => {
+    			return t.index;
+    		})));
+
+    	let places_countries = places.concat(countries);
+    	var salto = [];
+
+    	for (var i = 0; i < places.length; i++) {
+    		salto[i] = 0;
+    	}
+
+    	divorces = salto.concat(divorces);
+    	console.log("ARRAY " + places_countries);
+
+    	Highcharts.chart("container", {
+    		chart: { type: "column" },
+    		title: {
+    			text: "Número de divorcios por paises e Índices de competitividad globales"
+    		},
+    		subtitle: {
+    			text: "Para visualizar uno de los datos solo seleccione el campo a eliminar."
+    		},
+    		xAxis: {
+    			categories: places_countries,
+    			crosshair: true
+    		},
+    		yAxis: {
+    			//   tickInterval: 10,
+    			min: 0,
+    			title: {
+    				text: "Nº de divorcios e Índice de competitividad globales"
+    			}
+    		},
+    		tooltip: {
+    			headerFormat: "<span style=\"font-size:10px\">{point.key}</span><table>",
+    			pointFormat: "<tr><td style=\"color:{series.color};padding:0\">{series.name}: </td>" + "<td style=\"padding:0\"><b>{point.y:.0f} </b></td></tr>",
+    			footerFormat: "</table>",
+    			shared: true,
+    			useHTML: true
+    		},
+    		plotOptions: {
+    			column: { pointPadding: 0.2, borderWidth: 0 }
+    		},
+    		series: [
+    			{
+    				name: "Número de Divorcios",
+    				data: divorces
+    			},
+    			{
+    				name: "Índices de competitividad globales",
+    				data: index
+    			}
+    		]
+    	});
+    }
+
+    function instance$N($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1$w.warn(`<IntegrationsCompetivity> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("IntegrationsCompetivity", $$slots, []);
+    	$$self.$capture_state = () => ({ Button, pop, loadGraph: loadGraph$l });
+    	return [];
+    }
+
+    class IntegrationsCompetivity extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$N, create_fragment$N, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "IntegrationsCompetivity",
+    			options,
+    			id: create_fragment$N.name
+    		});
+    	}
+    }
+
+    /* src\front\DivorcesGUI\Integrations\IntegrationsNBA.svelte generated by Svelte v3.22.2 */
+
+    const { console: console_1$x } = globals;
+    const file$N = "src\\front\\DivorcesGUI\\Integrations\\IntegrationsNBA.svelte";
+
+    // (129:0) <Button outline color="secondary" on:click="{pop}" >
+    function create_default_slot$y(ctx) {
+    	let i;
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			i = element("i");
+    			t = text(" Atrás");
+    			attr_dev(i, "class", "fas fa-arrow-circle-left");
+    			add_location(i, file$N, 128, 53, 3634);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, i, anchor);
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(i);
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$y.name,
+    		type: "slot",
+    		source: "(129:0) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$O(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let script4;
+    	let script4_src_value;
+    	let t0;
+    	let main;
+    	let h2;
+    	let t2;
+    	let figure;
+    	let div0;
+    	let t3;
+    	let p;
+    	let t5;
+    	let div1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				color: "secondary",
+    				$$slots: { default: [create_default_slot$y] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button.$on("click", pop);
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			script4 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			h2 = element("h2");
+    			h2.textContent = "Integración API Externa NBA";
+    			t2 = space();
+    			figure = element("figure");
+    			div0 = element("div");
+    			t3 = space();
+    			p = element("p");
+    			p.textContent = "Gráfico de columnas que compara el número de divorcios por paises y puntos anotados por cada jugador en un partido de la nba.\r\n            Estos datos no tienen ningún tipo de relación. Para visualizar los puntos elimine los datos de divorcios de la tabla.";
+    			t5 = space();
+    			div1 = element("div");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$N, 107, 13, 2680);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$N, 108, 0, 2747);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$N, 109, 0, 2814);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$N, 110, 0, 2888);
+    			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
+    			add_location(script4, file$N, 111, 0, 2964);
+    			add_location(h2, file$N, 117, 4, 3100);
+    			attr_dev(div0, "id", "container");
+    			attr_dev(div0, "class", "svelte-1xiowu");
+    			add_location(div0, file$N, 120, 8, 3188);
+    			attr_dev(p, "class", "highcharts-description");
+    			add_location(p, file$N, 121, 8, 3224);
+    			attr_dev(figure, "class", "highcharts-figure svelte-1xiowu");
+    			add_location(figure, file$N, 119, 4, 3144);
+    			add_location(div1, file$N, 127, 4, 3574);
+    			add_location(main, file$N, 116, 0, 3088);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			append_dev(document.head, script4);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, h2);
+    			append_dev(main, t2);
+    			append_dev(main, figure);
+    			append_dev(figure, div0);
+    			append_dev(figure, t3);
+    			append_dev(figure, p);
+    			append_dev(main, t5);
+    			append_dev(main, div1);
+    			mount_component(button, div1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script4, "load", loadGraph$m, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			detach_dev(script4);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$O.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph$m() {
+    	const raw_data1 = await fetch("/api/v2/global-divorces");
+
+    	const raw_data2 = await fetch("https://free-nba.p.rapidapi.com/stats?page=0&per_page=25", {
+    		"method": "GET",
+    		"headers": {
+    			"x-rapidapi-host": "free-nba.p.rapidapi.com",
+    			"x-rapidapi-key": "a840bd129amshc11fafac1946f1fp1bbcd7jsn69488be18e23"
+    		}
+    	});
+
+    	let data = await raw_data1.json();
+    	let data2 = await raw_data2.json();
+    	console.log(data2);
+
+    	let countries = Array.from(new Set(data.map(d => {
+    			return d.country + " " + d.year;
+    		})));
+
+    	let divorces = Array.from(new Set(data.map(d => {
+    			return d.divorce;
+    		})));
+
+    	let datas = data2["data"];
+    	let players = [];
+    	let pts = [];
+
+    	for (var i = 0; i < datas.length; i++) {
+    		let obj = datas[i]["player"];
+    		players[i] = obj["first_name"];
+    		pts[i] = datas[i]["pts"];
+    	}
+
+    	let obj = datas[2]["team"]["full_name"];
+    	let obj1 = datas[20]["team"][["full_name"]];
+    	let play = obj + " - " + obj1;
+    	let players_countries = players.concat(countries);
+    	var salto = [];
+
+    	for (var i = 0; i < players.length; i++) {
+    		salto[i] = 0;
+    	}
+
+    	divorces = salto.concat(divorces);
+
+    	Highcharts.chart("container", {
+    		chart: { type: "column" },
+    		title: {
+    			text: "Número de divorcios por paises y puntos anotados por cada jugador del partido " + play + " de la NBA"
+    		},
+    		subtitle: {
+    			text: "Para visualizar uno de los datos solo seleccione el campo a eliminar."
+    		},
+    		xAxis: {
+    			categories: players_countries,
+    			crosshair: true
+    		},
+    		yAxis: {
+    			//   tickInterval: 10,
+    			min: 0,
+    			title: {
+    				text: "Nº de divorcios y puntos anotados por cada jugador del partido " + play + " de la NBA"
+    			}
+    		},
+    		tooltip: {
+    			headerFormat: "<span style=\"font-size:10px\">{point.key}</span><table>",
+    			pointFormat: "<tr><td style=\"color:{series.color};padding:0\">{series.name}: </td>" + "<td style=\"padding:0\"><b>{point.y:.0f} </b></td></tr>",
+    			footerFormat: "</table>",
+    			shared: true,
+    			useHTML: true
+    		},
+    		plotOptions: {
+    			column: { pointPadding: 0.2, borderWidth: 0 }
+    		},
+    		series: [
+    			{
+    				name: "Número de Divorcios",
+    				data: divorces
+    			},
+    			{
+    				name: "Puntos anotados por cada jugador en el partido " + play,
+    				data: pts
+    			}
+    		]
+    	});
+    }
+
+    function instance$O($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1$x.warn(`<IntegrationsNBA> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("IntegrationsNBA", $$slots, []);
+    	$$self.$capture_state = () => ({ Button, pop, loadGraph: loadGraph$m });
+    	return [];
+    }
+
+    class IntegrationsNBA extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$O, create_fragment$O, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "IntegrationsNBA",
+    			options,
+    			id: create_fragment$O.name
+    		});
+    	}
+    }
+
+    /* src\front\DivorcesGUI\Integrations\IntegrationsINE.svelte generated by Svelte v3.22.2 */
+
+    const { console: console_1$y } = globals;
+    const file$O = "src\\front\\DivorcesGUI\\Integrations\\IntegrationsINE.svelte";
+
+    // (123:0) <Button outline color="secondary" on:click="{pop}" >
+    function create_default_slot$z(ctx) {
+    	let i;
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			i = element("i");
+    			t = text(" Atrás");
+    			attr_dev(i, "class", "fas fa-arrow-circle-left");
+    			add_location(i, file$O, 122, 53, 3696);
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, i, anchor);
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(i);
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$z.name,
+    		type: "slot",
+    		source: "(123:0) <Button outline color=\\\"secondary\\\" on:click=\\\"{pop}\\\" >",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    function create_fragment$P(ctx) {
+    	let script0;
+    	let script0_src_value;
+    	let script1;
+    	let script1_src_value;
+    	let script2;
+    	let script2_src_value;
+    	let script3;
+    	let script3_src_value;
+    	let script4;
+    	let script4_src_value;
+    	let t0;
+    	let main;
+    	let h2;
+    	let t2;
+    	let figure;
+    	let div0;
+    	let t3;
+    	let p0;
+    	let t5;
+    	let p1;
+    	let t7;
+    	let div1;
+    	let current;
+    	let dispose;
+
+    	const button = new Button({
+    			props: {
+    				outline: true,
+    				color: "secondary",
+    				$$slots: { default: [create_default_slot$z] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	button.$on("click", pop);
+
+    	const block = {
+    		c: function create() {
+    			script0 = element("script");
+    			script1 = element("script");
+    			script2 = element("script");
+    			script3 = element("script");
+    			script4 = element("script");
+    			t0 = space();
+    			main = element("main");
+    			h2 = element("h2");
+    			h2.textContent = "Integración API Externa Número de hogares por comunidades y ciudades autónomas según tamaño de hogar y superficie útil de la vivienda.";
+    			t2 = space();
+    			figure = element("figure");
+    			div0 = element("div");
+    			t3 = space();
+    			p0 = element("p");
+    			p0.textContent = "Gráfico de columnas que compara el número de divorcios por paises y número de personas que viven en casas de menos de 46m2 en toda España.\r\n            Estos datos no tienen ningún tipo de relación. Para visualizar los puntos elimine los datos de divorcios de la tabla.";
+    			t5 = space();
+    			p1 = element("p");
+    			p1.textContent = "En este caso he seleccionado los datos de las casas de menos de 46m2 en toda España para que la gráfica no fuera demasidado grande.";
+    			t7 = space();
+    			div1 = element("div");
+    			create_component(button.$$.fragment);
+    			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
+    			add_location(script0, file$O, 101, 13, 2483);
+    			if (script1.src !== (script1_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script1, "src", script1_src_value);
+    			add_location(script1, file$O, 102, 0, 2550);
+    			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
+    			add_location(script2, file$O, 103, 0, 2617);
+    			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
+    			add_location(script3, file$O, 104, 0, 2691);
+    			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
+    			add_location(script4, file$O, 105, 0, 2767);
+    			add_location(h2, file$O, 111, 4, 2903);
+    			attr_dev(div0, "id", "container");
+    			attr_dev(div0, "class", "svelte-1xiowu");
+    			add_location(div0, file$O, 114, 8, 3098);
+    			attr_dev(p0, "class", "highcharts-description");
+    			add_location(p0, file$O, 115, 8, 3134);
+    			add_location(p1, file$O, 119, 8, 3476);
+    			attr_dev(figure, "class", "highcharts-figure svelte-1xiowu");
+    			add_location(figure, file$O, 113, 4, 3054);
+    			add_location(div1, file$O, 121, 4, 3636);
+    			add_location(main, file$O, 110, 0, 2891);
+    		},
+    		l: function claim(nodes) {
+    			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
+    		},
+    		m: function mount(target, anchor, remount) {
+    			append_dev(document.head, script0);
+    			append_dev(document.head, script1);
+    			append_dev(document.head, script2);
+    			append_dev(document.head, script3);
+    			append_dev(document.head, script4);
+    			insert_dev(target, t0, anchor);
+    			insert_dev(target, main, anchor);
+    			append_dev(main, h2);
+    			append_dev(main, t2);
+    			append_dev(main, figure);
+    			append_dev(figure, div0);
+    			append_dev(figure, t3);
+    			append_dev(figure, p0);
+    			append_dev(figure, t5);
+    			append_dev(figure, p1);
+    			append_dev(main, t7);
+    			append_dev(main, div1);
+    			mount_component(button, div1, null);
+    			current = true;
+    			if (remount) dispose();
+    			dispose = listen_dev(script4, "load", loadGraph$n, false, false, false);
+    		},
+    		p: function update(ctx, [dirty]) {
+    			const button_changes = {};
+
+    			if (dirty & /*$$scope*/ 1) {
+    				button_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button.$set(button_changes);
+    		},
+    		i: function intro(local) {
+    			if (current) return;
+    			transition_in(button.$$.fragment, local);
+    			current = true;
+    		},
+    		o: function outro(local) {
+    			transition_out(button.$$.fragment, local);
+    			current = false;
+    		},
+    		d: function destroy(detaching) {
+    			detach_dev(script0);
+    			detach_dev(script1);
+    			detach_dev(script2);
+    			detach_dev(script3);
+    			detach_dev(script4);
+    			if (detaching) detach_dev(t0);
+    			if (detaching) detach_dev(main);
+    			destroy_component(button);
+    			dispose();
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_fragment$P.name,
+    		type: "component",
+    		source: "",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    async function loadGraph$n() {
+    	const raw_data1 = await fetch("/api/v2/global-divorces");
+    	const raw_data2 = await fetch("http://servicios.ine.es/wstempus/js/es/DATOS_TABLA/t20/p274/serie/prov/p02/02006.px?tip=AM", { "method": "GET" });
+    	let data = await raw_data1.json();
+    	let data2 = await raw_data2.json();
+    	console.log(data2);
+
+    	let countries = Array.from(new Set(data.map(d => {
+    			return d.country + " " + d.year;
+    		})));
+
+    	let divorces = Array.from(new Set(data.map(d => {
+    			return d.divorce;
+    		})));
+
+    	let casas = [];
+    	let valor = [];
+
+    	for (var i = 9; i < 18; i++) {
+    		let obj = data2[i]["Nombre"];
+    		casas[i - 9] = obj;
+    		valor[i - 9] = data2[i]["Data"][0]["Valor"];
+    	}
+
+    	console.log("Casas " + casas);
+    	console.log("Valor " + valor);
+    	let casas_countries = casas.concat(countries);
+    	var salto = [];
+
+    	for (var i = 0; i < casas.length; i++) {
+    		salto[i] = 0;
+    	}
+
+    	divorces = salto.concat(divorces);
+
+    	Highcharts.chart("container", {
+    		chart: { type: "column" },
+    		title: {
+    			text: "Número de divorcios por paises y número de personas que viven en casas de menos de 46m2 en toda España"
+    		},
+    		subtitle: {
+    			text: "Para visualizar uno de los datos solo seleccione el campo a eliminar."
+    		},
+    		xAxis: {
+    			categories: casas_countries,
+    			crosshair: true
+    		},
+    		yAxis: {
+    			//   tickInterval: 10,
+    			min: 0,
+    			title: {
+    				text: "Nº de divorcios y número de personas que viven en casas de menos de 46m2 en toda España"
+    			}
+    		},
+    		tooltip: {
+    			headerFormat: "<span style=\"font-size:10px\">{point.key}</span><table>",
+    			pointFormat: "<tr><td style=\"color:{series.color};padding:0\">{series.name}: </td>" + "<td style=\"padding:0\"><b>{point.y:.0f} </b></td></tr>",
+    			footerFormat: "</table>",
+    			shared: true,
+    			useHTML: true
+    		},
+    		plotOptions: {
+    			column: { pointPadding: 0.2, borderWidth: 0 }
+    		},
+    		series: [
+    			{
+    				name: "Número de Divorcios",
+    				data: divorces
+    			},
+    			{
+    				name: "Número de personas que viven en casas de menos de 46m2 ",
+    				data: valor
+    			}
+    		]
+    	});
+    }
+
+    function instance$P($$self, $$props, $$invalidate) {
+    	const writable_props = [];
+
+    	Object.keys($$props).forEach(key => {
+    		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1$y.warn(`<IntegrationsINE> was created with unknown prop '${key}'`);
+    	});
+
+    	let { $$slots = {}, $$scope } = $$props;
+    	validate_slots("IntegrationsINE", $$slots, []);
+    	$$self.$capture_state = () => ({ Button, pop, loadGraph: loadGraph$n });
+    	return [];
+    }
+
+    class IntegrationsINE extends SvelteComponentDev {
+    	constructor(options) {
+    		super(options);
+    		init(this, options, instance$P, create_fragment$P, safe_not_equal, {});
+
+    		dispatch_dev("SvelteRegisterComponent", {
+    			component: this,
+    			tagName: "IntegrationsINE",
+    			options,
+    			id: create_fragment$P.name
+    		});
+    	}
+    }
+
+    /* src\front\App.svelte generated by Svelte v3.22.2 */
+    const file$P = "src\\front\\App.svelte";
+
+    function create_fragment$Q(ctx) {
     	let main;
     	let current;
 
@@ -59591,7 +62586,7 @@ var app = (function () {
     		c: function create() {
     			main = element("main");
     			create_component(router.$$.fragment);
-    			add_location(main, file$F, 75, 0, 3574);
+    			add_location(main, file$P, 101, 0, 5091);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -59619,7 +62614,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_fragment$G.name,
+    		id: create_fragment$Q.name,
     		type: "component",
     		source: "",
     		ctx
@@ -59628,7 +62623,7 @@ var app = (function () {
     	return block;
     }
 
-    function instance$G($$self, $$props, $$invalidate) {
+    function instance$Q($$self, $$props, $$invalidate) {
     	const routes = {
     		"/": Home,
     		"/global-marriages/:country/:year": EditMarriage,
@@ -59646,6 +62641,16 @@ var app = (function () {
     		"/empty": EmptyTable,
     		"/globalDivorcesAPI/:country/:year": EditDivorce,
     		"/globalDivorcesAPI": App$2,
+    		"/globalDivorcesAPI/DivorcesGraph": DivorcesGraph,
+    		"/globalDivorcesAPI/DivorcesGraph2": DivorcesGraph2,
+    		"/globalDivorcesAPI/Integrations": Integrations$1,
+    		"/globalDivorcesAPI/IntegrationsTransfers": IntegrationsTransfers,
+    		"/globalDivorcesAPI/IntegrationsUnivregs": IntegrationsUnivregs,
+    		"/globalDivorcesAPI/IntegrationsSugarConsume": IntegrationsSugarConsume,
+    		"/globalDivorcesAPI/IntegrationsEnergy": IntegrationsEnergy,
+    		"/globalDivorcesAPI/IntegrationsCompetitivity": IntegrationsCompetivity,
+    		"/globalDivorcesAPI/IntegrationsNBA": IntegrationsNBA,
+    		"/globalDivorcesAPI/IntegrationsINE": IntegrationsINE,
     		"/suicidesGraph": Global_suicides_Graph,
     		"/suicidesGraph2": Global_suicides_Graph2,
     		"/integrations_suicides": Integrations_suicides,
@@ -59699,6 +62704,16 @@ var app = (function () {
     		integrations_suicides_external2: Integrations_suicides_external2,
     		globalDivorces: App$2,
     		EditDivorce,
+    		DivorcesGraph,
+    		DivorcesGraph2,
+    		IntegrationsDivorce: Integrations$1,
+    		IntegrationsTransfers,
+    		IntegrationsUnivregs,
+    		IntegrationsSugarConsume,
+    		IntegrationsEnergy,
+    		IntegrationsCompetitivity: IntegrationsCompetivity,
+    		IntegrationsNBA,
+    		IntegrationsINE,
     		routes
     	});
 
@@ -59708,13 +62723,13 @@ var app = (function () {
     class App$3 extends SvelteComponentDev {
     	constructor(options) {
     		super(options);
-    		init(this, options, instance$G, create_fragment$G, safe_not_equal, {});
+    		init(this, options, instance$Q, create_fragment$Q, safe_not_equal, {});
 
     		dispatch_dev("SvelteRegisterComponent", {
     			component: this,
     			tagName: "App",
     			options,
-    			id: create_fragment$G.name
+    			id: create_fragment$Q.name
     		});
     	}
     }

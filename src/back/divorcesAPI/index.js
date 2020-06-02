@@ -4,6 +4,8 @@ module.exports = function(app){
 	const dataStore = require("nedb");
 	const dbFileName = path.join(__dirname, "global-divorces.db");
 	const BASE_API_URL = "/api/v2";
+	const request = require('request');
+	const express = require("express");
 
 
 	const db = new dataStore({
@@ -29,6 +31,67 @@ module.exports = function(app){
 		variation: -0.1
 	}
 ];
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////INTEGRACIONES///////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+	const URL1 = "http://sos1920-26.herokuapp.com";
+
+	app.use("/api/v3/global-transfers", function(req, res) {
+		console.log("GET API FICHAJES");
+		var url = URL1 + req.baseUrl + req.url;
+		req.pipe(request(url)).pipe(res);
+	});
+
+	app.use(express.static('.'));
+
+	const URL2 = "https://sos1920-24.herokuapp.com";
+
+	app.use("/api/v2/univregs-stats", function(req, res) {
+		console.log("GET API Plazas Universitarias");
+		var url = URL2 + req.baseUrl + req.url;
+		req.pipe(request(url)).pipe(res);
+	});
+
+	app.use(express.static('.'));
+
+	const URL3 = "https://sos1920-30.herokuapp.com";
+
+	app.use("/api/v3/sugarconsume", function(req, res) {
+		console.log("GET API Consumo de Azucar");
+		var url = URL3 + req.baseUrl + req.url;
+		req.pipe(request(url)).pipe(res);
+	});
+
+	app.use(express.static('.'));
+
+	const URL4 = "https://sos1920-09.herokuapp.com";
+
+	app.use("/api/v3/oil-coal-nuclear-energy-consumption-stats", function(req, res) {
+		console.log("GET API Consumo de Energías Naturales");
+		var url = URL4 + req.baseUrl + req.url;
+		req.pipe(request(url)).pipe(res);
+	});
+
+	app.use(express.static('.'));
+
+	const URL5 = "https://sos1920-25.herokuapp.com";
+
+	app.use("/api/v2/global_competitiveness_index", function(req, res) {
+		console.log("GET API Índice de Competitividad Globales");
+		var url = URL5 + req.baseUrl + req.url;
+		req.pipe(request(url)).pipe(res);
+	});
+
+	app.use(express.static('.'));
+
+	
+
+
+
 
 /////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////// GET DIVORCES ///////////////////////////////////
@@ -102,7 +165,6 @@ app.get(BASE_API_URL+"/global-divorces/loadInitialData",(req, res) => {
 	{ country:"Albania", year: 2018, divorce: 4846, crude_rate: 1.7, variation: 0.1},
 	{ country:"Cyprus", year: 2017, divorce: 1932, crude_rate: 2.2, variation: -0.1	},
 
-	{ country: "USA", year: 2016, divorce: 827261, crude_rate: 3.2, variation: 0.1 },
 	{ country: "Armenia", year: 2018, divorce: 3820, crude_rate: 1.3, variation: 0.1 },
 	{ country:"Belgium", year: 2017, divorce: 23068, crude_rate: 2, variation: -0.1},
 	{ country:"Switzerland", year: 2017, divorce: 16542, crude_rate: 1.9, variation: 0},
@@ -110,6 +172,7 @@ app.get(BASE_API_URL+"/global-divorces/loadInitialData",(req, res) => {
 	{ country:"Greece", year: 2017, divorce: 19190, crude_rate: 1.8, variation: 0.8},
 	{ country:"Ireland", year: 2015, divorce: 3289, crude_rate: 0.7, variation: 0.1},
 	{ country:"Iceland", year: 2011, divorce: 516, crude_rate: 1.6, variation: -0.2},
+	{ country:"Sweden", year: 2018, divorce: 24958, crude_rate: 2.5, variation: 0.1},
 
 
 ];
