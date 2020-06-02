@@ -19,7 +19,7 @@ globalSuicidesAPI(app);
 
 globalDivorcesAPI(app);
 
-var port = process.env.PORT || 12345; //
+var port = process.env.PORT || 99999; //
 
 app.use("/", express.static("./public"));
 
