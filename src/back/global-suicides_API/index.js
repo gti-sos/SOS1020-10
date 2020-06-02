@@ -166,10 +166,10 @@ app.use("/users", function(req, res) {
 	console.log("URL_EXT2: "+url);
 	console.log('piped: ' + req.baseUrl + req.url);
 	req.pipe(request(url)).pipe(res);
-	console.log("req: ");
-	console.log(req);
-	console.log("res: ");
-	console.log(res);
+	//console.log("req: ");
+	//console.log(req);
+	//console.log("res: ");
+	//console.log(res);
 });
 app.use(express.static('.'));
 

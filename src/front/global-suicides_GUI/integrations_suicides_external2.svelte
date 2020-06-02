@@ -97,8 +97,6 @@
     });
     }
 
-loadGraph();
-
     </script>
     
     <svelte:head>

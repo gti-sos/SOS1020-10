@@ -56268,16 +56268,17 @@ var app = (function () {
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
     			add_location(script3, file$B, 105, 8, 3099);
     			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
+    			script4.defer = true;
     			add_location(script4, file$B, 106, 8, 3183);
-    			add_location(h2, file$B, 110, 8, 3329);
+    			add_location(h2, file$B, 110, 8, 3335);
     			attr_dev(div, "id", "container");
     			attr_dev(div, "class", "svelte-1mpz8tj");
-    			add_location(div, file$B, 113, 12, 3487);
+    			add_location(div, file$B, 113, 12, 3493);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$B, 114, 12, 3527);
+    			add_location(p, file$B, 114, 12, 3533);
     			attr_dev(figure, "class", "highcharts-figure svelte-1mpz8tj");
-    			add_location(figure, file$B, 112, 8, 3439);
-    			add_location(main, file$B, 109, 4, 3313);
+    			add_location(figure, file$B, 112, 8, 3445);
+    			add_location(main, file$B, 109, 4, 3319);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
