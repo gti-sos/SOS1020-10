@@ -96,6 +96,8 @@
         }]
     });
     }
+    
+loadGraph();
 
     </script>
     
