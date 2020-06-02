@@ -5,7 +5,7 @@ import  {pop} from "svelte-spa-router";
 
 const URL_BASE = "api/v2/global-suicides";
 const URL_BASE2 = "api/v2/global-divorces";
-const URL_BASE3 = "api/v2/global-marriages";
+const URL_BASE3 = "api/v3/global-marriages";
    
 async function loadGraph(){
 
