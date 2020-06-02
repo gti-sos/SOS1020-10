@@ -29,7 +29,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v2/global-marriages",
+					"raw": "http://localhost:9999/api/v3/global-marriages",
 					"host": [
 						"http://localhost:9999/api"
 					],
@@ -68,7 +68,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v2/global-marriages/Italy/2018",
+					"raw": "http://localhost:9999/api/v3/global-marriages/Italy/2018",
 					"host": [
 						"http://localhost:9999/api"
 					],
@@ -104,7 +104,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v2/global-marriages/Mexico/2011",
+					"raw": "http://localhost:9999/api/v3/global-marriages/Mexico/2011",
 					"host": [
 						"http://localhost:9999/api"
 					],
@@ -148,7 +148,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9999/api/v2/global-marriages",
+					"raw": "http://localhost:9999/api/v3/global-marriages",
 					"host": [
 						"http://localhost:9999/api"
 					],
@@ -190,7 +190,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9999/api/v2/global-marriages",
+					"raw": "http://localhost:9999/api/v3/global-marriages",
 					"host": [
 						"http://localhost:9999/api"
 					],
@@ -231,7 +231,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9999/api/v2/global-marriages/Italy/2018",
+					"raw": "http://localhost:9999/api/v3/global-marriages/Italy/2018",
 					"host": [
 						"http://localhost:9999/api"
 					],
@@ -274,7 +274,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9999/api/v2/global-marriages/Belgium/2017",
+					"raw": "http://localhost:9999/api/v3/global-marriages/Belgium/2017",
 					"host": [
 						"http://localhost:9999/api"
 					],
@@ -317,7 +317,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9999/api/v2/global-marriages",
+					"raw": "http://localhost:9999/api/v3/global-marriages",
 					"host": [
 						"http://localhost:9999/api"
 					],
@@ -365,7 +365,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v2/global-marriages?marriages=40716&year=2018",
+					"raw": "http://localhost:9999/api/v3/global-marriages?marriages=40716&year=2018",
 					"host": [
 						"http://localhost:9999/api"
 					],
@@ -416,7 +416,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v2/global-marriages?year=2018",
+					"raw": "http://localhost:9999/api/v3/global-marriages?year=2018",
 					"host": [
 						"http://localhost:9999/api"
 					],
@@ -459,7 +459,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v2/global-marriages?offset=0&limit=10",
+					"raw": "http://localhost:9999/api/v3/global-marriages?offset=0&limit=10",
 					"host": [
 						"http://localhost:9999/api"
 					],
@@ -506,7 +506,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v2/global-marriages?offset=4&limit=2",
+					"raw": "http://localhost:9999/api/v3/global-marriages?offset=4&limit=2",
 					"host": [
 						"http://localhost:9999/api"
 					],
@@ -552,7 +552,7 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v2/global-marriages",
+					"raw": "http://localhost:9999/api/v3/global-marriages",
 					"host": [
 						"http://localhost:9999/api"
 					],
@@ -597,7 +597,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v2/global-marriages/loadInitialData",
+					"raw": "http://localhost:9999/api/v3/global-marriages/loadInitialData",
 					"host": [
 						"http://localhost:9999/api"
 					],
