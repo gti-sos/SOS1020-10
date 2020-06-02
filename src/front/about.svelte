@@ -10,6 +10,7 @@ import  {pop} from "svelte-spa-router";
     <h2>Enlace a los vídeos del grupo SOS1920-10</h2>
     <Button color="info" on:click="{pop}">Atrás</Button>
     <p></p>
-    <iframe width="560" height="315" src="https://youtu.be/-W06s122NXA"  allowfullscreen></iframe>
+    <h4>Vídeo DEMO API: Suicidios Globales</h4>
+    <li><a href="https://youtu.be/-W06s122NXA" rel="nofollow">https://youtu.be/-W06s122NXA</a> (Desarrollada por:  <a href="https://github.com/nonospe">Antonio Jose Jimenez Segovia</a>)</li>
 
 </main>

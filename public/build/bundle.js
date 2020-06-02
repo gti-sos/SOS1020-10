@@ -2611,8 +2611,13 @@ var app = (function () {
     	let t2;
     	let p;
     	let t3;
-    	let iframe;
-    	let iframe_src_value;
+    	let h4;
+    	let t5;
+    	let li;
+    	let a0;
+    	let t7;
+    	let a1;
+    	let t9;
     	let current;
 
     	const button = new Button({
@@ -2636,14 +2641,25 @@ var app = (function () {
     			t2 = space();
     			p = element("p");
     			t3 = space();
-    			iframe = element("iframe");
+    			h4 = element("h4");
+    			h4.textContent = "Vídeo DEMO API: Suicidios Globales";
+    			t5 = space();
+    			li = element("li");
+    			a0 = element("a");
+    			a0.textContent = "https://youtu.be/-W06s122NXA";
+    			t7 = text(" (Desarrollada por:  ");
+    			a1 = element("a");
+    			a1.textContent = "Antonio Jose Jimenez Segovia";
+    			t9 = text(")");
     			add_location(h2, file$3, 9, 4, 136);
     			add_location(p, file$3, 11, 4, 249);
-    			attr_dev(iframe, "width", "560");
-    			attr_dev(iframe, "height", "315");
-    			if (iframe.src !== (iframe_src_value = "https://youtu.be/-W06s122NXA")) attr_dev(iframe, "src", iframe_src_value);
-    			iframe.allowFullscreen = true;
-    			add_location(iframe, file$3, 12, 4, 262);
+    			add_location(h4, file$3, 12, 4, 262);
+    			attr_dev(a0, "href", "https://youtu.be/-W06s122NXA");
+    			attr_dev(a0, "rel", "nofollow");
+    			add_location(a0, file$3, 13, 8, 315);
+    			attr_dev(a1, "href", "https://github.com/nonospe");
+    			add_location(a1, file$3, 13, 115, 422);
+    			add_location(li, file$3, 13, 4, 311);
     			add_location(main, file$3, 7, 0, 121);
     		},
     		l: function claim(nodes) {
@@ -2657,7 +2673,13 @@ var app = (function () {
     			append_dev(main, t2);
     			append_dev(main, p);
     			append_dev(main, t3);
-    			append_dev(main, iframe);
+    			append_dev(main, h4);
+    			append_dev(main, t5);
+    			append_dev(main, li);
+    			append_dev(li, a0);
+    			append_dev(li, t7);
+    			append_dev(li, a1);
+    			append_dev(li, t9);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
