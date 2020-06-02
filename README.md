@@ -27,7 +27,7 @@
 <p><strong>APIs</strong>:</p>
 <ul>
 <li><a href="https://sos1920-10.herokuapp.com/api/v2/global-suicides" rel="nofollow">https://sos1920-10.herokuapp.com/api/v2/global-suicides</a> (developed by <a href="https://github.com/nonospe">Antonio Jose Jimenez Segovia</a>)</li>
-<li><a href="https://sos1920-10.herokuapp.com/api/v2/global-marriages" rel="nofollow">https://sos1920-10.herokuapp.com/api/v2/global-marriages</a> (developed by <a href="https://github.com/rivadeneyraj">Jesús Vázquez Rivadeneyra</a>)</li>
+<li><a href="https://sos1920-10.herokuapp.com/api/v3/global-marriages" rel="nofollow">https://sos1920-10.herokuapp.com/api/v3/global-marriages</a> (developed by <a href="https://github.com/rivadeneyraj">Jesús Vázquez Rivadeneyra</a>)</li>
 <li><a href="https://sos1920-10.herokuapp.com/api/v2/global-divorces" rel="nofollow">https://sos1920-10.herokuapp.com/api/v2/global-divorces</a> (developed by <a href="https://github.com/juanmacortes9">Juan Manuel Cortés Alonso</a>)</li>
 </ul>
 
