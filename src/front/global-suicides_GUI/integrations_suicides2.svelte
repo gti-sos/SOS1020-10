@@ -14,7 +14,7 @@
     let MyData = await resData.json();
     
     let countries = Array.from(MyData.map((d) => {return d.country+d.year;}));
-    let years = Array.from(MyData.map((d) => {return d.year;}));
+    let years = Array.from(MyData.map((d) => {return parseInt(d.year);}));
     console.log("Datos nono");
     console.log(years);
 
@@ -23,7 +23,7 @@
     console.log("fetch a " + URL_BASE_grupo_01);
     const resData_2 = await fetch(URL_BASE_grupo_01);
     let MyData_2 = await resData_2.json();
-    let avg_2 = Array.from(MyData_2.map((d) => {return d.poverty_prp;}));
+    let avg_2 = Array.from(MyData_2.map((d) => {return parseInt(d.poverty_prp);}));
     console.log("Datos Ángela:");
     console.log(avg_2);
     

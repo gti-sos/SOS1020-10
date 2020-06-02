@@ -355,12 +355,13 @@ app.post(BASE_API_URL+"/global-suicides",(req,res) =>{
 	var men = parseFloat(newGlobalSuicides.men);
 	var women = parseFloat(newGlobalSuicides.women);
 	var average = parseFloat(newGlobalSuicides.average);
+	var MyReg = /[0-9]/;
 	
 	
 	
 	//probando el 405
 	if((!country) || (!lengthCoord) || (!latitudeCoord) || (!year) || (!men) || (!women) || 
-	   (!average) || (Object.keys(newGlobalSuicides).length != 7) || newGlobalSuicides == {}){
+	   (!average) || (Object.keys(newGlobalSuicides).length != 7) || newGlobalSuicides == {} || MyReg.test(country)){
 		
 		if((country == "") || (lengthCoord == 0) || (latitudeCoord == 0) || (year <= 0) || (men < 0) || (women < 0) || (average < 0)){
 			

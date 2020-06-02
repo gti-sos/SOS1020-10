@@ -10,13 +10,13 @@ async function loadGraph(){
     const resData = await fetch(URL_BASE);
     let MyData = await resData.json();
     let countries = Array.from(MyData.map((d) => {return d.country+d.year;}));
-    let averages = Array.from(MyData.map((d) => {return d.average;}));
+    let averages = Array.from(MyData.map((d) => {return parseFloat(d.average);}));
 
     const URL_BASE_grupo_02 = "/api/v2/rural-tourism-stats";
     const resData_1 = await fetch(URL_BASE_grupo_02);
     console.log("fetch a " + URL_BASE_grupo_02);
     let MyData_1 = await resData_1.json();
-    let avg_1 = Array.from(MyData_1.map((d) => {return d.averagestay;}));
+    let avg_1 = Array.from(MyData_1.map((d) => {return parseFloat(d.averagestay);}));
     console.log("Datos media Marta:");
     console.log(avg_1);
     

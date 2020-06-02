@@ -13,7 +13,7 @@
     let MyData = await resData.json();
     
     let countries = Array.from(MyData.map((d) => {return d.country;}));
-    let years = Array.from(MyData.map((d) => {return d.year;}));
+    let years = Array.from(MyData.map((d) => {return parseInt(d.year);}));
   
     const URL_BASE_EXT = "https://www.etnassoft.com/api/v1/get/?category=libros_programacion&criteria=most_viewed";
     console.log("fetch a " + URL_BASE_EXT);
@@ -28,7 +28,7 @@
     console.log("Datos externos:");
     console.log(data_ext);
 
-    let years_public = Array.from(new Set(MyData_Ext.map((d) => {return d.publisher_date;})));
+    let years_public = Array.from(new Set(MyData_Ext.map((d) => {return parseInt(d.publisher_date);})));
     console.log("Datos externos2 no muestra repetidos:");
     console.log(years_public);
     

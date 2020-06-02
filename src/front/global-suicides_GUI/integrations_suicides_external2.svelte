@@ -16,7 +16,7 @@
     console.log("countries:");
     console.log(countries);
 
-    let length_coords = Array.from(MyData.map((d) => {return d.lengthCoord;}));
+    let length_coords = Array.from(MyData.map((d) => {return parseFloat(d.lengthCoord);}));
     console.log("length coords:");
     console.log(length_coords);
   

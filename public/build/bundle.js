@@ -53949,16 +53949,16 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "El gráfico de pompas muestra la la media de suicidios por cada 100.000 personas en distintos países.            en distintos países.";
     			if (script0.src !== (script0_src_value = "https://d3js.org/d3.v5.min.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$t, 101, 1, 2167);
+    			add_location(script0, file$t, 101, 1, 2203);
     			if (script1.src !== (script1_src_value = "libraries/billboard.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$t, 102, 1, 2223);
+    			add_location(script1, file$t, 102, 1, 2259);
     			attr_dev(link, "rel", "stylesheet");
     			attr_dev(link, "href", "css/billboard.css");
-    			add_location(link, file$t, 103, 1, 2272);
-    			add_location(head, file$t, 99, 0, 2156);
-    			add_location(h2, file$t, 108, 2, 2347);
-    			add_location(p, file$t, 110, 6, 2439);
-    			add_location(main, file$t, 107, 0, 2337);
+    			add_location(link, file$t, 103, 1, 2308);
+    			add_location(head, file$t, 99, 0, 2192);
+    			add_location(h2, file$t, 108, 2, 2383);
+    			add_location(p, file$t, 110, 6, 2475);
+    			add_location(main, file$t, 107, 0, 2373);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -54034,15 +54034,15 @@ var app = (function () {
     		}));
 
     		let mens = Array.from(MyData.map(d => {
-    			return d.men;
+    			return parseFloat(d.men);
     		}));
 
     		let womens = Array.from(MyData.map(d => {
-    			return d.women;
+    			return parseFloat(d.women);
     		}));
 
     		let averages = Array.from(MyData.map(d => {
-    			return d.average;
+    			return parseFloat(d.average);
     		}));
 
     		let data_countries = [];
@@ -54220,24 +54220,24 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "El gráfico muestra valores de la api de grupo 10 y grupo 02. No tienen relación.";
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$u, 89, 4, 2403);
+    			add_location(script0, file$u, 89, 4, 2427);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$u, 90, 4, 2474);
+    			add_location(script1, file$u, 90, 4, 2498);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$u, 91, 4, 2555);
+    			add_location(script2, file$u, 91, 4, 2579);
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$u, 92, 4, 2633);
+    			add_location(script3, file$u, 92, 4, 2657);
     			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$u, 93, 4, 2713);
-    			add_location(h2, file$u, 97, 4, 2843);
+    			add_location(script4, file$u, 93, 4, 2737);
+    			add_location(h2, file$u, 97, 4, 2867);
     			attr_dev(div, "id", "container");
     			attr_dev(div, "class", "svelte-pgwtr9");
-    			add_location(div, file$u, 100, 8, 2986);
+    			add_location(div, file$u, 100, 8, 3010);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$u, 101, 8, 3022);
+    			add_location(p, file$u, 101, 8, 3046);
     			attr_dev(figure, "class", "highcharts-figure svelte-pgwtr9");
-    			add_location(figure, file$u, 99, 4, 2942);
-    			add_location(main, file$u, 96, 0, 2831);
+    			add_location(figure, file$u, 99, 4, 2966);
+    			add_location(main, file$u, 96, 0, 2855);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -54315,7 +54315,7 @@ var app = (function () {
     	}));
 
     	let averages = Array.from(MyData.map(d => {
-    		return d.average;
+    		return parseFloat(d.average);
     	}));
 
     	const URL_BASE_grupo_02 = "/api/v2/rural-tourism-stats";
@@ -54324,7 +54324,7 @@ var app = (function () {
     	let MyData_1 = await resData_1.json();
 
     	let avg_1 = Array.from(MyData_1.map(d => {
-    		return d.averagestay;
+    		return parseFloat(d.averagestay);
     	}));
 
     	console.log("Datos media Marta:");
@@ -54487,28 +54487,28 @@ var app = (function () {
     			p.textContent = "El gráfico muestra valores de la api de grupo 10 y grupo 01. No tienen relación.";
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
     			script0.defer = true;
-    			add_location(script0, file$v, 98, 8, 2624);
+    			add_location(script0, file$v, 98, 8, 2644);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
     			script1.defer = true;
-    			add_location(script1, file$v, 99, 8, 2705);
+    			add_location(script1, file$v, 99, 8, 2725);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
     			script2.defer = true;
-    			add_location(script2, file$v, 100, 8, 2797);
+    			add_location(script2, file$v, 100, 8, 2817);
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
     			script3.defer = true;
-    			add_location(script3, file$v, 101, 8, 2886);
+    			add_location(script3, file$v, 101, 8, 2906);
     			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
     			script4.defer = true;
-    			add_location(script4, file$v, 102, 8, 2977);
-    			add_location(h2, file$v, 106, 8, 3129);
+    			add_location(script4, file$v, 102, 8, 2997);
+    			add_location(h2, file$v, 106, 8, 3149);
     			attr_dev(div, "id", "container");
     			attr_dev(div, "class", "svelte-1mpz8tj");
-    			add_location(div, file$v, 109, 12, 3284);
+    			add_location(div, file$v, 109, 12, 3304);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$v, 110, 12, 3324);
+    			add_location(p, file$v, 110, 12, 3344);
     			attr_dev(figure, "class", "highcharts-figure svelte-1mpz8tj");
-    			add_location(figure, file$v, 108, 8, 3236);
-    			add_location(main, file$v, 105, 4, 3113);
+    			add_location(figure, file$v, 108, 8, 3256);
+    			add_location(main, file$v, 105, 4, 3133);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -54586,7 +54586,7 @@ var app = (function () {
     	}));
 
     	let years = Array.from(MyData.map(d => {
-    		return d.year;
+    		return parseInt(d.year);
     	}));
 
     	console.log("Datos nono");
@@ -54597,7 +54597,7 @@ var app = (function () {
     	let MyData_2 = await resData_2.json();
 
     	let avg_2 = Array.from(MyData_2.map(d => {
-    		return d.poverty_prp;
+    		return parseInt(d.poverty_prp);
     	}));
 
     	console.log("Datos Ángela:");
@@ -54763,28 +54763,28 @@ var app = (function () {
     			p.textContent = "El gráfico muestra valores de la api de grupo 10 y grupo 26. No tienen relación.";
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
     			script0.defer = true;
-    			add_location(script0, file$w, 96, 8, 2598);
+    			add_location(script0, file$w, 96, 8, 2620);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
     			script1.defer = true;
-    			add_location(script1, file$w, 97, 8, 2679);
+    			add_location(script1, file$w, 97, 8, 2701);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
     			script2.defer = true;
-    			add_location(script2, file$w, 98, 8, 2771);
+    			add_location(script2, file$w, 98, 8, 2793);
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
     			script3.defer = true;
-    			add_location(script3, file$w, 99, 8, 2860);
+    			add_location(script3, file$w, 99, 8, 2882);
     			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
     			script4.defer = true;
-    			add_location(script4, file$w, 100, 8, 2951);
-    			add_location(h2, file$w, 104, 8, 3103);
+    			add_location(script4, file$w, 100, 8, 2973);
+    			add_location(h2, file$w, 104, 8, 3125);
     			attr_dev(div, "id", "container");
     			attr_dev(div, "class", "svelte-1mpz8tj");
-    			add_location(div, file$w, 107, 12, 3258);
+    			add_location(div, file$w, 107, 12, 3280);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$w, 108, 12, 3298);
+    			add_location(p, file$w, 108, 12, 3320);
     			attr_dev(figure, "class", "highcharts-figure svelte-1mpz8tj");
-    			add_location(figure, file$w, 106, 8, 3210);
-    			add_location(main, file$w, 103, 4, 3087);
+    			add_location(figure, file$w, 106, 8, 3232);
+    			add_location(main, file$w, 103, 4, 3109);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -54862,7 +54862,7 @@ var app = (function () {
     	}));
 
     	let averages = Array.from(MyData.map(d => {
-    		return d.average;
+    		return parseFloat(d.average);
     	}));
 
     	const URL_BASE_grupo_26 = "/api/v3/goalscorers";
@@ -54871,7 +54871,7 @@ var app = (function () {
     	let MyData_3 = await resData_3.json();
 
     	let avg_3 = Array.from(MyData_3.map(d => {
-    		return d.teams;
+    		return parseInt(d.teams);
     	}));
 
     	console.log("Datos goleadores:");
@@ -55036,24 +55036,24 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "El gráfico muestra valores de la api de grupo 10 y grupo 22. No tienen relación.";
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$x, 93, 8, 2571);
+    			add_location(script0, file$x, 93, 8, 2593);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$x, 94, 8, 2646);
+    			add_location(script1, file$x, 94, 8, 2668);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$x, 95, 8, 2731);
+    			add_location(script2, file$x, 95, 8, 2753);
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$x, 96, 8, 2813);
+    			add_location(script3, file$x, 96, 8, 2835);
     			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$x, 97, 8, 2897);
-    			add_location(h2, file$x, 101, 8, 3043);
+    			add_location(script4, file$x, 97, 8, 2919);
+    			add_location(h2, file$x, 101, 8, 3065);
     			attr_dev(div, "id", "container");
     			attr_dev(div, "class", "svelte-1mpz8tj");
-    			add_location(div, file$x, 104, 12, 3198);
+    			add_location(div, file$x, 104, 12, 3220);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$x, 105, 12, 3238);
+    			add_location(p, file$x, 105, 12, 3260);
     			attr_dev(figure, "class", "highcharts-figure svelte-1mpz8tj");
-    			add_location(figure, file$x, 103, 8, 3150);
-    			add_location(main, file$x, 100, 4, 3027);
+    			add_location(figure, file$x, 103, 8, 3172);
+    			add_location(main, file$x, 100, 4, 3049);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -55131,7 +55131,7 @@ var app = (function () {
     	}));
 
     	let averages = Array.from(MyData.map(d => {
-    		return d.average;
+    		return parseFloat(d.average);
     	}));
 
     	const URL_BASE_grupo_22 = "/api/v1/og-basket-stats";
@@ -55140,7 +55140,7 @@ var app = (function () {
     	let MyData_4 = await resData_4.json();
 
     	let avg_4 = Array.from(MyData_4.map(d => {
-    		return d.threepoints;
+    		return parseInt(d.threepoints);
     	}));
 
     	console.log("Datos triples:");
@@ -55983,24 +55983,24 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "El gráfico muestra valores de la api interna y de una externa. No tienen relación.";
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$A, 101, 8, 2934);
+    			add_location(script0, file$A, 101, 8, 2954);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$A, 102, 8, 3009);
+    			add_location(script1, file$A, 102, 8, 3029);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$A, 103, 8, 3094);
+    			add_location(script2, file$A, 103, 8, 3114);
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$A, 104, 8, 3176);
+    			add_location(script3, file$A, 104, 8, 3196);
     			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$A, 105, 8, 3260);
-    			add_location(h2, file$A, 109, 8, 3406);
+    			add_location(script4, file$A, 105, 8, 3280);
+    			add_location(h2, file$A, 109, 8, 3426);
     			attr_dev(div, "id", "container");
     			attr_dev(div, "class", "svelte-1mpz8tj");
-    			add_location(div, file$A, 112, 12, 3564);
+    			add_location(div, file$A, 112, 12, 3584);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$A, 113, 12, 3604);
+    			add_location(p, file$A, 113, 12, 3624);
     			attr_dev(figure, "class", "highcharts-figure svelte-1mpz8tj");
-    			add_location(figure, file$A, 111, 8, 3516);
-    			add_location(main, file$A, 108, 4, 3390);
+    			add_location(figure, file$A, 111, 8, 3536);
+    			add_location(main, file$A, 108, 4, 3410);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -56078,7 +56078,7 @@ var app = (function () {
     	}));
 
     	let years = Array.from(MyData.map(d => {
-    		return d.year;
+    		return parseInt(d.year);
     	}));
 
     	const URL_BASE_EXT = "https://www.etnassoft.com/api/v1/get/?category=libros_programacion&criteria=most_viewed";
@@ -56093,7 +56093,7 @@ var app = (function () {
     	console.log(data_ext);
 
     	let years_public = Array.from(new Set(MyData_Ext.map(d => {
-    			return d.publisher_date;
+    			return parseInt(d.publisher_date);
     		})));
 
     	console.log("Datos externos2 no muestra repetidos:");
@@ -56266,25 +56266,25 @@ var app = (function () {
     			p = element("p");
     			p.textContent = "El gráfico muestra valores de la api interna y de una externa. No tienen relación.";
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$B, 102, 8, 2857);
+    			add_location(script0, file$B, 102, 8, 2869);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/modules/series-label.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$B, 103, 8, 2932);
+    			add_location(script1, file$B, 103, 8, 2944);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$B, 104, 8, 3017);
+    			add_location(script2, file$B, 104, 8, 3029);
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$B, 105, 8, 3099);
+    			add_location(script3, file$B, 105, 8, 3111);
     			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
     			script4.defer = true;
-    			add_location(script4, file$B, 106, 8, 3183);
-    			add_location(h2, file$B, 110, 8, 3335);
+    			add_location(script4, file$B, 106, 8, 3195);
+    			add_location(h2, file$B, 110, 8, 3347);
     			attr_dev(div, "id", "container");
     			attr_dev(div, "class", "svelte-1mpz8tj");
-    			add_location(div, file$B, 113, 12, 3493);
+    			add_location(div, file$B, 113, 12, 3505);
     			attr_dev(p, "class", "highcharts-description");
-    			add_location(p, file$B, 114, 12, 3533);
+    			add_location(p, file$B, 114, 12, 3545);
     			attr_dev(figure, "class", "highcharts-figure svelte-1mpz8tj");
-    			add_location(figure, file$B, 112, 8, 3445);
-    			add_location(main, file$B, 109, 4, 3319);
+    			add_location(figure, file$B, 112, 8, 3457);
+    			add_location(main, file$B, 109, 4, 3331);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -56365,7 +56365,7 @@ var app = (function () {
     	console.log(countries);
 
     	let length_coords = Array.from(MyData.map(d => {
-    		return d.lengthCoord;
+    		return parseFloat(d.lengthCoord);
     	}));
 
     	console.log("length coords:");

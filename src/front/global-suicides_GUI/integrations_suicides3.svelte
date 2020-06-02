@@ -14,14 +14,14 @@
     let MyData = await resData.json();
     
     let countries = Array.from(MyData.map((d) => {return d.country+d.year;}));
-    let averages = Array.from(MyData.map((d) => {return d.average;}));
+    let averages = Array.from(MyData.map((d) => {return parseFloat(d.average);}));
 
 
     const URL_BASE_grupo_26 = "/api/v3/goalscorers";
     console.log("fetch a " + URL_BASE_grupo_26);
     const resData_3 = await fetch(URL_BASE_grupo_26);
     let MyData_3 = await resData_3.json();
-    let avg_3 = Array.from(MyData_3.map((d) => {return d.teams;}));
+    let avg_3 = Array.from(MyData_3.map((d) => {return parseInt(d.teams);}));
     console.log("Datos goleadores:");
     console.log(avg_3);
         
