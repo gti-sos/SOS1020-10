@@ -2611,6 +2611,8 @@ var app = (function () {
     	let t2;
     	let p;
     	let t3;
+    	let iframe;
+    	let iframe_src_value;
     	let current;
 
     	const button = new Button({
@@ -2633,9 +2635,15 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			t2 = space();
     			p = element("p");
-    			t3 = text("\r\n    PONER AQUI LOS ENLACES A LOS VÍDEOS");
+    			t3 = space();
+    			iframe = element("iframe");
     			add_location(h2, file$3, 9, 4, 136);
     			add_location(p, file$3, 11, 4, 249);
+    			attr_dev(iframe, "width", "560");
+    			attr_dev(iframe, "height", "315");
+    			if (iframe.src !== (iframe_src_value = "https://youtu.be/-W06s122NXA")) attr_dev(iframe, "src", iframe_src_value);
+    			iframe.allowFullscreen = true;
+    			add_location(iframe, file$3, 12, 4, 262);
     			add_location(main, file$3, 7, 0, 121);
     		},
     		l: function claim(nodes) {
@@ -2649,6 +2657,7 @@ var app = (function () {
     			append_dev(main, t2);
     			append_dev(main, p);
     			append_dev(main, t3);
+    			append_dev(main, iframe);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
