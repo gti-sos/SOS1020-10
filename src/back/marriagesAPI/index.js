@@ -19,7 +19,7 @@ module.exports = function (app) {
         {"country": "Belgium", "year": 2017,   "marriages": 44329,   "avg_wm": 31.2,   "avg_m": 33.5 },
         {"country": "Mexico",   "year": 2011,   "marriages": 570954,  "avg_wm": 26.3,   "avg_m": 29.2 },
         {"country": "Portugal",   "year": 2016,   "marriages": 32399,   "avg_wm": 30.4,   "avg_m": 32.2 },
-        {"country": "Suiza",   "year": 2018,   "marriages": 40716,   "avg_wm": 30.5,   "avg_m": 32.9 },
+        {"country": "Switzerland",   "year": 2018,   "marriages": 40716,   "avg_wm": 30.5,   "avg_m": 32.9 },
 
         {"country": "Turkey",   "year": 2018,   "marriages": 553202	,   "avg_wm": 24.9,   "avg_m": 27.9 },
         {"country": "Ukranie",   "year": 2018,   "marriages": 553202	,   "avg_wm": 24.4,   "avg_m": 27.4 },
@@ -28,9 +28,9 @@ module.exports = function (app) {
         {"country": "Montenegro",   "year": 2018,   "marriages": 3321,   "avg_wm": 28.3,   "avg_m": 31.9 },
 
         {"country": "Iceland",   "year": 2011,   "marriages": 1458,   "avg_wm": 32.4,   "avg_m": 34.4 },
-        {"country": "Invented",   "year": 2017,   "marriages": 3321,   "avg_wm": 28.3,   "avg_m": 31.9 },
-        {"country": "Invented2",   "year": 2019,   "marriages": 4324,   "avg_wm": 28.3,   "avg_m": 31.9 },
-        {"country": "Invented3",   "year": 2020,   "marriages": 3321,   "avg_wm": 28.3,   "avg_m": 31.9 }
+        {"country": "Chipre",   "year": 2018,   "marriages": 6777,   "avg_wm": 27.7,   "avg_m": 30.4 },
+        {"country": "Denmark",   "year": 2018,   "marriages": 35525,   "avg_wm": 32.5,   "avg_m": 34.9 },
+        {"country": "Ireland",   "year": 2017,   "marriages": 22021,   "avg_wm": 31.9,   "avg_m": 33.8 }
 
 
     ];
