@@ -359,9 +359,9 @@ function errorResponse(res) {
 	<p></p>
 	<div class="graficas">
 	
-	<Button  outline  color="primary" role="link" onclick="window.location = 'http://localhost:12345/#/globalDivorcesAPI/DivorcesGraph'">Gráfica HightChart</Button>
-	<Button  outline  color="primary" role="link" onclick="window.location = 'http://localhost:12345/#/globalDivorcesAPI/DivorcesGraph2'">Gráfica Chart.js</Button>
-	<Button  outline  color="primary" role="link" onclick="window.location = 'http://localhost:12345/#/globalDivorcesAPI/Integrations'">Integraciones</Button>
+	<Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/DivorcesGraph'">Gráfica HightChart</Button>
+	<Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/DivorcesGraph2'">Gráfica Chart.js</Button>
+	<Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/Integrations'">Integraciones</Button>
 
 
 	</div>
