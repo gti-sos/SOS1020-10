@@ -29,12 +29,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v3/global-marriages",
+					"raw": "{{BASE_URL}}api/v3/global-marriages",
 					"host": [
-						"http://localhost:9999/api"
+						"{{BASE_URL}}api"
 					],
 					"path": [
-						"v2",
+						"v3",
 						"global-marriages"
 					]
 				}
@@ -68,12 +68,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v3/global-marriages/Italy/2018",
+					"raw": "{{BASE_URL}}api/v3/global-marriages/Italy/2018",
 					"host": [
-						"http://localhost:9999/api"
+						"{{BASE_URL}}api"
 					],
 					"path": [
-						"v2",
+						"v3",
 						"global-marriages",
 						"Italy",
 						"2018"
@@ -104,12 +104,12 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v3/global-marriages/Mexico/2011",
+					"raw": "{{BASE_URL}}api/v3/global-marriages/Mexico/2011",
 					"host": [
-						"http://localhost:9999/api"
+						"{{BASE_URL}}api"
 					],
 					"path": [
-						"v2",
+						"v3",
 						"global-marriages",
 						"Mexico",
 						"2011"
@@ -148,12 +148,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9999/api/v3/global-marriages",
+					"raw": "{{BASE_URL}}api/v3/global-marriages",
 					"host": [
-						"http://localhost:9999/api"
+						"{{BASE_URL}}api"
 					],
 					"path": [
-						"v2",
+						"v3",
 						"global-marriages"
 					]
 				}
@@ -190,12 +190,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9999/api/v3/global-marriages",
+					"raw": "{{BASE_URL}}api/v3/global-marriages",
 					"host": [
-						"http://localhost:9999/api"
+						"{{BASE_URL}}api"
 					],
 					"path": [
-						"v2",
+						"v3",
 						"global-marriages"
 					]
 				}
@@ -231,12 +231,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9999/api/v3/global-marriages/Italy/2018",
+					"raw": "{{BASE_URL}}api/v3/global-marriages/Italy/2018",
 					"host": [
-						"http://localhost:9999/api"
+						"{{BASE_URL}}api"
 					],
 					"path": [
-						"v2",
+						"v3",
 						"global-marriages",
 						"Italy",
 						"2018"
@@ -274,12 +274,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9999/api/v3/global-marriages/Belgium/2017",
+					"raw": "{{BASE_URL}}api/v3/global-marriages/Belgium/2017",
 					"host": [
-						"http://localhost:9999/api"
+						"{{BASE_URL}}api"
 					],
 					"path": [
-						"v2",
+						"v3",
 						"global-marriages",
 						"Belgium",
 						"2017"
@@ -317,12 +317,12 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:9999/api/v3/global-marriages",
+					"raw": "{{BASE_URL}}api/v3/global-marriages",
 					"host": [
-						"http://localhost:9999/api"
+						"{{BASE_URL}}api"
 					],
 					"path": [
-						"v2",
+						"v3",
 						"global-marriages"
 					]
 				}
@@ -365,12 +365,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v3/global-marriages?marriages=40716&year=2018",
+					"raw": "{{BASE_URL}}api/v3/global-marriages?marriages=40716&year=2018",
 					"host": [
-						"http://localhost:9999/api"
+						"{{BASE_URL}}api"
 					],
 					"path": [
-						"v2",
+						"v3",
 						"global-marriages"
 					],
 					"query": [
@@ -416,12 +416,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v3/global-marriages?year=2018",
+					"raw": "{{BASE_URL}}api/v3/global-marriages?year=2018",
 					"host": [
-						"http://localhost:9999/api"
+						"{{BASE_URL}}api"
 					],
 					"path": [
-						"v2",
+						"v3",
 						"global-marriages"
 					],
 					"query": [
@@ -459,12 +459,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v3/global-marriages?offset=0&limit=10",
+					"raw": "{{BASE_URL}}api/v3/global-marriages?offset=0&limit=10",
 					"host": [
-						"http://localhost:9999/api"
+						"{{BASE_URL}}api"
 					],
 					"path": [
-						"v2",
+						"v3",
 						"global-marriages"
 					],
 					"query": [
@@ -487,11 +487,11 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "f87e968f-ce4c-456d-b70e-20e1c17ae227",
+						"id": "623eaef9-035e-46b7-8c94-dc8f0e28c54e",
 						"exec": [
-							"pm.test(\"There is 1 country\", function () {\r",
+							"pm.test(\"There is 4 country\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData).to.have.lengthOf(2);\r",
+							"    pm.expect(jsonData).to.have.lengthOf(4);\r",
 							"});\r",
 							"\r",
 							"pm.test(\"Status code is 200\", function () {\r",
@@ -506,22 +506,22 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v3/global-marriages?offset=4&limit=2",
+					"raw": "{{BASE_URL}}api/v3/global-marriages?offset=10&limit=10",
 					"host": [
-						"http://localhost:9999/api"
+						"{{BASE_URL}}api"
 					],
 					"path": [
-						"v2",
+						"v3",
 						"global-marriages"
 					],
 					"query": [
 						{
 							"key": "offset",
-							"value": "4"
+							"value": "10"
 						},
 						{
 							"key": "limit",
-							"value": "2"
+							"value": "10"
 						}
 					]
 				}
@@ -552,12 +552,12 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v3/global-marriages",
+					"raw": "{{BASE_URL}}api/v3/global-marriages",
 					"host": [
-						"http://localhost:9999/api"
+						"{{BASE_URL}}api"
 					],
 					"path": [
-						"v2",
+						"v3",
 						"global-marriages"
 					]
 				}
@@ -597,12 +597,12 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://localhost:9999/api/v3/global-marriages/loadInitialData",
+					"raw": "{{BASE_URL}}api/v3/global-marriages/loadInitialData",
 					"host": [
-						"http://localhost:9999/api"
+						"{{BASE_URL}}api"
 					],
 					"path": [
-						"v2",
+						"v3",
 						"global-marriages",
 						"loadInitialData"
 					]
