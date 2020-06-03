@@ -12142,7 +12142,7 @@ var app = (function () {
 
     	async function getMarriage() {
     		console.log("Fetching marriage...");
-    		const res = await fetch("/api/v2/global-marriages/" + params.country + "/" + params.year);
+    		const res = await fetch("/api/v3/global-marriages/" + params.country + "/" + params.year);
 
     		if (res.ok) {
     			console.log("Ok:");
@@ -12163,7 +12163,7 @@ var app = (function () {
     	async function updateMarriage() {
     		console.log("Updating marriage..." + JSON.stringify(params.country));
 
-    		const res = await fetch("/api/v2/global-marriages/" + params.country + "/" + params.year, {
+    		const res = await fetch("/api/v3/global-marriages/" + params.country + "/" + params.year, {
     			method: "PUT",
     			body: JSON.stringify({
     				country: params.country,
