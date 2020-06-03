@@ -57,7 +57,7 @@
 			console.log("Received " + divorces.length + " divorces.");
 
 			if (divorces.length!=10){
-				moreData=false
+				moreData=false;
 			} else{
 						const next = await fetch("/api/v2/global-divorces?offset=" + numberElementsPages * (offset+1) + "&limit=" + numberElementsPages); 
 						console.log("La variable NEXT tiene el estado: " + next.status)
@@ -72,8 +72,16 @@
 					}
 		} 
 		
-		else{console.log("ERROR!");
-			errorResponse(res);}
+		else{
+			if (res.status==404) {
+				alert("No hay datos guardados");
+				showPagination = false;
+
+			} else{
+				errorResponse(res)
+			}
+			console.log("ERROR!");
+			}
 
 	}
 
@@ -175,7 +183,9 @@
 		}).then(function (res) {
 			if(res.ok){
 			getDivorces();
-			successAlert("¡Dato eliminado correctamente!")
+			successAlert("¡Dato eliminado correctamente!");
+			
+			
 		}
 			else{errorResponse(res);}
 		});

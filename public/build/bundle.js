@@ -56542,7 +56542,7 @@ var app = (function () {
     	return block;
     }
 
-    // (265:1) {:then divorces}
+    // (275:1) {:then divorces}
     function create_then_block$4(ctx) {
     	let t0;
     	let t1;
@@ -56649,14 +56649,14 @@ var app = (function () {
     		block,
     		id: create_then_block$4.name,
     		type: "then",
-    		source: "(265:1) {:then divorces}",
+    		source: "(275:1) {:then divorces}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (268:3) <Label for="selectCountry">
+    // (278:3) <Label for="selectCountry">
     function create_default_slot_22$1(ctx) {
     	let t;
 
@@ -56676,14 +56676,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_22$1.name,
     		type: "slot",
-    		source: "(268:3) <Label for=\\\"selectCountry\\\">",
+    		source: "(278:3) <Label for=\\\"selectCountry\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (267:2) <FormGroup style="margin-top:60px">
+    // (277:2) <FormGroup style="margin-top:60px">
     function create_default_slot_20$2(ctx) {
     	let t;
     	let updating_value;
@@ -56770,14 +56770,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_20$2.name,
     		type: "slot",
-    		source: "(267:2) <FormGroup style=\\\"margin-top:60px\\\">",
+    		source: "(277:2) <FormGroup style=\\\"margin-top:60px\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (275:2) <Button style="margin-bottom: 1%;" outline color="primary" on:click="{search(currentCountry)}" class="button-search" >
+    // (285:2) <Button style="margin-bottom: 1%;" outline color="primary" on:click="{search(currentCountry)}" class="button-search" >
     function create_default_slot_19$2(ctx) {
     	let i;
     	let t;
@@ -56787,7 +56787,7 @@ var app = (function () {
     			i = element("i");
     			t = text(" Buscar");
     			attr_dev(i, "class", "fas fa-search");
-    			add_location(i, file$C, 274, 121, 8506);
+    			add_location(i, file$C, 284, 121, 8642);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -56803,14 +56803,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_19$2.name,
     		type: "slot",
-    		source: "(275:2) <Button style=\\\"margin-bottom: 1%;\\\" outline color=\\\"primary\\\" on:click=\\\"{search(currentCountry)}\\\" class=\\\"button-search\\\" >",
+    		source: "(285:2) <Button style=\\\"margin-bottom: 1%;\\\" outline color=\\\"primary\\\" on:click=\\\"{search(currentCountry)}\\\" class=\\\"button-search\\\" >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (297:10) <Button outline  color="primary" on:click={insertDivorce}>
+    // (307:10) <Button outline  color="primary" on:click={insertDivorce}>
     function create_default_slot_18$2(ctx) {
     	let t;
 
@@ -56830,14 +56830,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_18$2.name,
     		type: "slot",
-    		source: "(297:10) <Button outline  color=\\\"primary\\\" on:click={insertDivorce}>",
+    		source: "(307:10) <Button outline  color=\\\"primary\\\" on:click={insertDivorce}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (306:11) <Button outline  color="danger" on:click={deleteDivorce(d.country,d.year)}>
+    // (316:11) <Button outline  color="danger" on:click={deleteDivorce(d.country,d.year)}>
     function create_default_slot_17$2(ctx) {
     	let t;
 
@@ -56857,14 +56857,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_17$2.name,
     		type: "slot",
-    		source: "(306:11) <Button outline  color=\\\"danger\\\" on:click={deleteDivorce(d.country,d.year)}>",
+    		source: "(316:11) <Button outline  color=\\\"danger\\\" on:click={deleteDivorce(d.country,d.year)}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (299:4) {#each divorces as d}
+    // (309:4) {#each divorces as d}
     function create_each_block$2(ctx) {
     	let tr;
     	let td0;
@@ -56932,14 +56932,14 @@ var app = (function () {
     			create_component(button.$$.fragment);
     			t11 = space();
     			attr_dev(a, "href", a_href_value = "#/globalDivorcesAPI/" + /*d*/ ctx[24].country + "/" + /*d*/ ctx[24].year);
-    			add_location(a, file$C, 300, 12, 9314);
-    			add_location(td0, file$C, 300, 6, 9308);
-    			add_location(td1, file$C, 301, 6, 9395);
-    			add_location(td2, file$C, 302, 6, 9420);
-    			add_location(td3, file$C, 303, 6, 9448);
-    			add_location(td4, file$C, 304, 6, 9480);
-    			add_location(td5, file$C, 305, 6, 9510);
-    			add_location(tr, file$C, 299, 5, 9296);
+    			add_location(a, file$C, 310, 12, 9450);
+    			add_location(td0, file$C, 310, 6, 9444);
+    			add_location(td1, file$C, 311, 6, 9531);
+    			add_location(td2, file$C, 312, 6, 9556);
+    			add_location(td3, file$C, 313, 6, 9584);
+    			add_location(td4, file$C, 314, 6, 9616);
+    			add_location(td5, file$C, 315, 6, 9646);
+    			add_location(tr, file$C, 309, 5, 9432);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -57004,14 +57004,14 @@ var app = (function () {
     		block,
     		id: create_each_block$2.name,
     		type: "each",
-    		source: "(299:4) {#each divorces as d}",
+    		source: "(309:4) {#each divorces as d}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (278:2) <Table bordered style="text-align: center;">
+    // (288:2) <Table bordered style="text-align: center;">
     function create_default_slot_16$2(ctx) {
     	let thead;
     	let tr0;
@@ -57121,31 +57121,31 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			add_location(th0, file$C, 280, 5, 8635);
-    			add_location(th1, file$C, 281, 5, 8655);
-    			add_location(th2, file$C, 282, 5, 8674);
-    			add_location(th3, file$C, 283, 5, 8699);
-    			add_location(th4, file$C, 284, 5, 8725);
-    			add_location(th5, file$C, 285, 5, 8750);
-    			add_location(tr0, file$C, 279, 4, 8624);
-    			add_location(thead, file$C, 278, 3, 8611);
-    			add_location(input0, file$C, 291, 9, 8825);
-    			add_location(td0, file$C, 291, 5, 8821);
+    			add_location(th0, file$C, 290, 5, 8771);
+    			add_location(th1, file$C, 291, 5, 8791);
+    			add_location(th2, file$C, 292, 5, 8810);
+    			add_location(th3, file$C, 293, 5, 8835);
+    			add_location(th4, file$C, 294, 5, 8861);
+    			add_location(th5, file$C, 295, 5, 8886);
+    			add_location(tr0, file$C, 289, 4, 8760);
+    			add_location(thead, file$C, 288, 3, 8747);
+    			add_location(input0, file$C, 301, 9, 8961);
+    			add_location(td0, file$C, 301, 5, 8957);
     			attr_dev(input1, "type", "number");
-    			add_location(input1, file$C, 292, 9, 8882);
-    			add_location(td1, file$C, 292, 5, 8878);
+    			add_location(input1, file$C, 302, 9, 9018);
+    			add_location(td1, file$C, 302, 5, 9014);
     			attr_dev(input2, "type", "number");
-    			add_location(input2, file$C, 293, 9, 8950);
-    			add_location(td2, file$C, 293, 5, 8946);
+    			add_location(input2, file$C, 303, 9, 9086);
+    			add_location(td2, file$C, 303, 5, 9082);
     			attr_dev(input3, "type", "number");
-    			add_location(input3, file$C, 294, 9, 9021);
-    			add_location(td3, file$C, 294, 5, 9017);
+    			add_location(input3, file$C, 304, 9, 9157);
+    			add_location(td3, file$C, 304, 5, 9153);
     			attr_dev(input4, "type", "number");
-    			add_location(input4, file$C, 295, 9, 9096);
-    			add_location(td4, file$C, 295, 5, 9092);
-    			add_location(td5, file$C, 296, 5, 9165);
-    			add_location(tr1, file$C, 290, 4, 8810);
-    			add_location(tbody, file$C, 289, 3, 8797);
+    			add_location(input4, file$C, 305, 9, 9232);
+    			add_location(td4, file$C, 305, 5, 9228);
+    			add_location(td5, file$C, 306, 5, 9301);
+    			add_location(tr1, file$C, 300, 4, 8946);
+    			add_location(tbody, file$C, 299, 3, 8933);
     		},
     		m: function mount(target, anchor, remount) {
     			insert_dev(target, thead, anchor);
@@ -57295,14 +57295,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_16$2.name,
     		type: "slot",
-    		source: "(278:2) <Table bordered style=\\\"text-align: center;\\\">",
+    		source: "(288:2) <Table bordered style=\\\"text-align: center;\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (263:18)     Loading divorces...   {:then divorces}
+    // (273:18)     Loading divorces...   {:then divorces}
     function create_pending_block$4(ctx) {
     	let t;
 
@@ -57325,14 +57325,14 @@ var app = (function () {
     		block,
     		id: create_pending_block$4.name,
     		type: "pending",
-    		source: "(263:18)     Loading divorces...   {:then divorces}",
+    		source: "(273:18)     Loading divorces...   {:then divorces}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (315:1) {#if showPagination == true}
+    // (325:1) {#if showPagination == true}
     function create_if_block_2$4(ctx) {
     	let div;
     	let current;
@@ -57351,7 +57351,7 @@ var app = (function () {
     		c: function create() {
     			div = element("div");
     			create_component(pagination.$$.fragment);
-    			add_location(div, file$C, 315, 1, 9717);
+    			add_location(div, file$C, 325, 1, 9853);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
@@ -57386,14 +57386,14 @@ var app = (function () {
     		block,
     		id: create_if_block_2$4.name,
     		type: "if",
-    		source: "(315:1) {#if showPagination == true}",
+    		source: "(325:1) {#if showPagination == true}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (319:1) <PaginationItem class="{currentPage === 1 ? 'disabled' : ''}">
+    // (329:1) <PaginationItem class="{currentPage === 1 ? 'disabled' : ''}">
     function create_default_slot_15$2(ctx) {
     	let current;
 
@@ -57434,14 +57434,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_15$2.name,
     		type: "slot",
-    		source: "(319:1) <PaginationItem class=\\\"{currentPage === 1 ? 'disabled' : ''}\\\">",
+    		source: "(329:1) <PaginationItem class=\\\"{currentPage === 1 ? 'disabled' : ''}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (324:1) {#if currentPage != 1}
+    // (334:1) {#if currentPage != 1}
     function create_if_block_4$2(ctx) {
     	let current;
 
@@ -57488,14 +57488,14 @@ var app = (function () {
     		block,
     		id: create_if_block_4$2.name,
     		type: "if",
-    		source: "(324:1) {#if currentPage != 1}",
+    		source: "(334:1) {#if currentPage != 1}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (326:2) <PaginationLink href="#/globalDivorcesAPI" on:click="{() => addOffset(-1)}" >
+    // (336:2) <PaginationLink href="#/globalDivorcesAPI" on:click="{() => addOffset(-1)}" >
     function create_default_slot_14$2(ctx) {
     	let t_value = /*currentPage*/ ctx[3] - 1 + "";
     	let t;
@@ -57519,14 +57519,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_14$2.name,
     		type: "slot",
-    		source: "(326:2) <PaginationLink href=\\\"#/globalDivorcesAPI\\\" on:click=\\\"{() => addOffset(-1)}\\\" >",
+    		source: "(336:2) <PaginationLink href=\\\"#/globalDivorcesAPI\\\" on:click=\\\"{() => addOffset(-1)}\\\" >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (325:1) <PaginationItem>
+    // (335:1) <PaginationItem>
     function create_default_slot_13$2(ctx) {
     	let current;
 
@@ -57576,14 +57576,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_13$2.name,
     		type: "slot",
-    		source: "(325:1) <PaginationItem>",
+    		source: "(335:1) <PaginationItem>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (330:2) <PaginationLink href="#/globalDivorcesAPI" >
+    // (340:2) <PaginationLink href="#/globalDivorcesAPI" >
     function create_default_slot_12$2(ctx) {
     	let t;
 
@@ -57606,14 +57606,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_12$2.name,
     		type: "slot",
-    		source: "(330:2) <PaginationLink href=\\\"#/globalDivorcesAPI\\\" >",
+    		source: "(340:2) <PaginationLink href=\\\"#/globalDivorcesAPI\\\" >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (329:1) <PaginationItem active>
+    // (339:1) <PaginationItem active>
     function create_default_slot_11$2(ctx) {
     	let current;
 
@@ -57661,14 +57661,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_11$2.name,
     		type: "slot",
-    		source: "(329:1) <PaginationItem active>",
+    		source: "(339:1) <PaginationItem active>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (334:1) {#if moreData}
+    // (344:1) {#if moreData}
     function create_if_block_3$3(ctx) {
     	let current;
 
@@ -57715,14 +57715,14 @@ var app = (function () {
     		block,
     		id: create_if_block_3$3.name,
     		type: "if",
-    		source: "(334:1) {#if moreData}",
+    		source: "(344:1) {#if moreData}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (336:2) <PaginationLink href="#/globalDivorcesAPI" on:click="{() => addOffset(1)}">
+    // (346:2) <PaginationLink href="#/globalDivorcesAPI" on:click="{() => addOffset(1)}">
     function create_default_slot_10$2(ctx) {
     	let t_value = /*currentPage*/ ctx[3] + 1 + "";
     	let t;
@@ -57746,14 +57746,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_10$2.name,
     		type: "slot",
-    		source: "(336:2) <PaginationLink href=\\\"#/globalDivorcesAPI\\\" on:click=\\\"{() => addOffset(1)}\\\">",
+    		source: "(346:2) <PaginationLink href=\\\"#/globalDivorcesAPI\\\" on:click=\\\"{() => addOffset(1)}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (335:1) <PaginationItem >
+    // (345:1) <PaginationItem >
     function create_default_slot_9$2(ctx) {
     	let current;
 
@@ -57803,14 +57803,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_9$2.name,
     		type: "slot",
-    		source: "(335:1) <PaginationItem >",
+    		source: "(345:1) <PaginationItem >",
     		ctx
     	});
 
     	return block;
     }
 
-    // (340:1) <PaginationItem class="{moreData ? '' : 'disabled'}">
+    // (350:1) <PaginationItem class="{moreData ? '' : 'disabled'}">
     function create_default_slot_8$2(ctx) {
     	let current;
 
@@ -57848,14 +57848,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_8$2.name,
     		type: "slot",
-    		source: "(340:1) <PaginationItem class=\\\"{moreData ? '' : 'disabled'}\\\">",
+    		source: "(350:1) <PaginationItem class=\\\"{moreData ? '' : 'disabled'}\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (316:6) <Pagination style = "text-align: center;"  ariaLabel="Cambiar de página">
+    // (326:6) <Pagination style = "text-align: center;"  ariaLabel="Cambiar de página">
     function create_default_slot_7$2(ctx) {
     	let t0;
     	let t1;
@@ -58025,14 +58025,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_7$2.name,
     		type: "slot",
-    		source: "(316:6) <Pagination style = \\\"text-align: center;\\\"  ariaLabel=\\\"Cambiar de página\\\">",
+    		source: "(326:6) <Pagination style = \\\"text-align: center;\\\"  ariaLabel=\\\"Cambiar de página\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (348:1) <Button style="float: right;" outline  color="danger" on:click={deleteAll}>
+    // (358:1) <Button style="float: right;" outline  color="danger" on:click={deleteAll}>
     function create_default_slot_6$2(ctx) {
     	let t;
 
@@ -58052,14 +58052,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_6$2.name,
     		type: "slot",
-    		source: "(348:1) <Button style=\\\"float: right;\\\" outline  color=\\\"danger\\\" on:click={deleteAll}>",
+    		source: "(358:1) <Button style=\\\"float: right;\\\" outline  color=\\\"danger\\\" on:click={deleteAll}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (349:1) <Button style="float: left;" outline  color="primary" on:click={loadInitialData} on:click={showPagination=true}>
+    // (359:1) <Button style="float: left;" outline  color="primary" on:click={loadInitialData} on:click={showPagination=true}>
     function create_default_slot_5$2(ctx) {
     	let t;
 
@@ -58079,14 +58079,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_5$2.name,
     		type: "slot",
-    		source: "(349:1) <Button style=\\\"float: left;\\\" outline  color=\\\"primary\\\" on:click={loadInitialData} on:click={showPagination=true}>",
+    		source: "(359:1) <Button style=\\\"float: left;\\\" outline  color=\\\"primary\\\" on:click={loadInitialData} on:click={showPagination=true}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (352:1) {#if showPagination==false}
+    // (362:1) {#if showPagination==false}
     function create_if_block_1$5(ctx) {
     	let current;
 
@@ -58143,14 +58143,14 @@ var app = (function () {
     		block,
     		id: create_if_block_1$5.name,
     		type: "if",
-    		source: "(352:1) {#if showPagination==false}",
+    		source: "(362:1) {#if showPagination==false}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (353:1) <Button style="float: left; margin-left: 20px;" outline  color="secondary" on:click={getDivorces} on:click={showPagination=true}>
+    // (363:1) <Button style="float: left; margin-left: 20px;" outline  color="secondary" on:click={getDivorces} on:click={showPagination=true}>
     function create_default_slot_4$2(ctx) {
     	let t;
 
@@ -58170,14 +58170,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_4$2.name,
     		type: "slot",
-    		source: "(353:1) <Button style=\\\"float: left; margin-left: 20px;\\\" outline  color=\\\"secondary\\\" on:click={getDivorces} on:click={showPagination=true}>",
+    		source: "(363:1) <Button style=\\\"float: left; margin-left: 20px;\\\" outline  color=\\\"secondary\\\" on:click={getDivorces} on:click={showPagination=true}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (356:1) {#if showPagination==true}
+    // (366:1) {#if showPagination==true}
     function create_if_block$c(ctx) {
     	let current;
 
@@ -58234,14 +58234,14 @@ var app = (function () {
     		block,
     		id: create_if_block$c.name,
     		type: "if",
-    		source: "(356:1) {#if showPagination==true}",
+    		source: "(366:1) {#if showPagination==true}",
     		ctx
     	});
 
     	return block;
     }
 
-    // (357:1) <Button style="float: left; margin-left: 20px;" outline  color="secondary" on:click={pop} on:click={showPagination=true}>
+    // (367:1) <Button style="float: left; margin-left: 20px;" outline  color="secondary" on:click={pop} on:click={showPagination=true}>
     function create_default_slot_3$2(ctx) {
     	let t;
 
@@ -58261,14 +58261,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_3$2.name,
     		type: "slot",
-    		source: "(357:1) <Button style=\\\"float: left; margin-left: 20px;\\\" outline  color=\\\"secondary\\\" on:click={pop} on:click={showPagination=true}>",
+    		source: "(367:1) <Button style=\\\"float: left; margin-left: 20px;\\\" outline  color=\\\"secondary\\\" on:click={pop} on:click={showPagination=true}>",
     		ctx
     	});
 
     	return block;
     }
 
-    // (362:1) <Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/DivorcesGraph'">
+    // (372:1) <Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/DivorcesGraph'">
     function create_default_slot_2$5(ctx) {
     	let t;
 
@@ -58288,14 +58288,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$5.name,
     		type: "slot",
-    		source: "(362:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = '#/globalDivorcesAPI/DivorcesGraph'\\\">",
+    		source: "(372:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = '#/globalDivorcesAPI/DivorcesGraph'\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (363:1) <Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/DivorcesGraph2'">
+    // (373:1) <Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/DivorcesGraph2'">
     function create_default_slot_1$5(ctx) {
     	let t;
 
@@ -58315,14 +58315,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$5.name,
     		type: "slot",
-    		source: "(363:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = '#/globalDivorcesAPI/DivorcesGraph2'\\\">",
+    		source: "(373:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = '#/globalDivorcesAPI/DivorcesGraph2'\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (364:1) <Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/Integrations'">
+    // (374:1) <Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/Integrations'">
     function create_default_slot$o(ctx) {
     	let t;
 
@@ -58342,7 +58342,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$o.name,
     		type: "slot",
-    		source: "(364:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = '#/globalDivorcesAPI/Integrations'\\\">",
+    		source: "(374:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = '#/globalDivorcesAPI/Integrations'\\\">",
     		ctx
     	});
 
@@ -58480,13 +58480,13 @@ var app = (function () {
     			attr_dev(div0, "role", "alert");
     			attr_dev(div0, "id", "div_alert");
     			set_style(div0, "display", "none");
-    			add_location(div0, file$C, 260, 1, 8029);
-    			add_location(div1, file$C, 345, 1, 10747);
-    			add_location(p, file$C, 358, 1, 11388);
+    			add_location(div0, file$C, 270, 1, 8165);
+    			add_location(div1, file$C, 355, 1, 10883);
+    			add_location(p, file$C, 368, 1, 11524);
     			attr_dev(div2, "class", "graficas svelte-rvrbxm");
-    			add_location(div2, file$C, 359, 1, 11398);
+    			add_location(div2, file$C, 369, 1, 11534);
     			set_style(main, "padding", "10px");
-    			add_location(main, file$C, 259, 0, 7995);
+    			add_location(main, file$C, 269, 0, 8131);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -58811,8 +58811,14 @@ var app = (function () {
     				}
     			}
     		} else {
+    			if (res.status == 404) {
+    				alert("No hay datos guardados");
+    				$$invalidate(1, showPagination = false);
+    			} else {
+    				errorResponse$5(res);
+    			}
+
     			console.log("ERROR!");
-    			errorResponse$5(res);
     		}
     	}
 
