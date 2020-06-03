@@ -9,7 +9,7 @@ async function loadGraph(){
 
 
     const raw_data1 = await fetch("/api/v2/global-divorces");
-    const raw_data2 = await fetch("http://servicios.ine.es/wstempus/js/es/DATOS_TABLA/t20/p274/serie/prov/p02/02006.px?tip=AM", {
+    const raw_data2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA/t20/p274/serie/prov/p02/02006.px?tip=AM", {
 	"method": "GET"
 });
 

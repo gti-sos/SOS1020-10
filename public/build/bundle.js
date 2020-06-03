@@ -58268,7 +58268,7 @@ var app = (function () {
     	return block;
     }
 
-    // (362:1) <Button  outline  color="primary" role="link" onclick="window.location = 'http://localhost:12345/#/globalDivorcesAPI/DivorcesGraph'">
+    // (362:1) <Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/DivorcesGraph'">
     function create_default_slot_2$5(ctx) {
     	let t;
 
@@ -58288,14 +58288,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_2$5.name,
     		type: "slot",
-    		source: "(362:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = 'http://localhost:12345/#/globalDivorcesAPI/DivorcesGraph'\\\">",
+    		source: "(362:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = '#/globalDivorcesAPI/DivorcesGraph'\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (363:1) <Button  outline  color="primary" role="link" onclick="window.location = 'http://localhost:12345/#/globalDivorcesAPI/DivorcesGraph2'">
+    // (363:1) <Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/DivorcesGraph2'">
     function create_default_slot_1$5(ctx) {
     	let t;
 
@@ -58315,14 +58315,14 @@ var app = (function () {
     		block,
     		id: create_default_slot_1$5.name,
     		type: "slot",
-    		source: "(363:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = 'http://localhost:12345/#/globalDivorcesAPI/DivorcesGraph2'\\\">",
+    		source: "(363:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = '#/globalDivorcesAPI/DivorcesGraph2'\\\">",
     		ctx
     	});
 
     	return block;
     }
 
-    // (364:1) <Button  outline  color="primary" role="link" onclick="window.location = 'http://localhost:12345/#/globalDivorcesAPI/Integrations'">
+    // (364:1) <Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/Integrations'">
     function create_default_slot$o(ctx) {
     	let t;
 
@@ -58342,7 +58342,7 @@ var app = (function () {
     		block,
     		id: create_default_slot$o.name,
     		type: "slot",
-    		source: "(364:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = 'http://localhost:12345/#/globalDivorcesAPI/Integrations'\\\">",
+    		source: "(364:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = '#/globalDivorcesAPI/Integrations'\\\">",
     		ctx
     	});
 
@@ -58420,7 +58420,7 @@ var app = (function () {
     				outline: true,
     				color: "primary",
     				role: "link",
-    				onclick: "window.location = 'http://localhost:12345/#/globalDivorcesAPI/DivorcesGraph'",
+    				onclick: "window.location = '#/globalDivorcesAPI/DivorcesGraph'",
     				$$slots: { default: [create_default_slot_2$5] },
     				$$scope: { ctx }
     			},
@@ -58432,7 +58432,7 @@ var app = (function () {
     				outline: true,
     				color: "primary",
     				role: "link",
-    				onclick: "window.location = 'http://localhost:12345/#/globalDivorcesAPI/DivorcesGraph2'",
+    				onclick: "window.location = '#/globalDivorcesAPI/DivorcesGraph2'",
     				$$slots: { default: [create_default_slot_1$5] },
     				$$scope: { ctx }
     			},
@@ -58444,7 +58444,7 @@ var app = (function () {
     				outline: true,
     				color: "primary",
     				role: "link",
-    				onclick: "window.location = 'http://localhost:12345/#/globalDivorcesAPI/Integrations'",
+    				onclick: "window.location = '#/globalDivorcesAPI/Integrations'",
     				$$slots: { default: [create_default_slot$o] },
     				$$scope: { ctx }
     			},
@@ -62342,7 +62342,7 @@ var app = (function () {
     			i = element("i");
     			t = text(" Atrás");
     			attr_dev(i, "class", "fas fa-arrow-circle-left");
-    			add_location(i, file$O, 122, 53, 3696);
+    			add_location(i, file$O, 122, 53, 3697);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, i, anchor);
@@ -62427,26 +62427,26 @@ var app = (function () {
     			div1 = element("div");
     			create_component(button.$$.fragment);
     			if (script0.src !== (script0_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script0, "src", script0_src_value);
-    			add_location(script0, file$O, 101, 13, 2483);
+    			add_location(script0, file$O, 101, 13, 2484);
     			if (script1.src !== (script1_src_value = "https://code.highcharts.com/highcharts.js")) attr_dev(script1, "src", script1_src_value);
-    			add_location(script1, file$O, 102, 0, 2550);
+    			add_location(script1, file$O, 102, 0, 2551);
     			if (script2.src !== (script2_src_value = "https://code.highcharts.com/modules/exporting.js")) attr_dev(script2, "src", script2_src_value);
-    			add_location(script2, file$O, 103, 0, 2617);
+    			add_location(script2, file$O, 103, 0, 2618);
     			if (script3.src !== (script3_src_value = "https://code.highcharts.com/modules/export-data.js")) attr_dev(script3, "src", script3_src_value);
-    			add_location(script3, file$O, 104, 0, 2691);
+    			add_location(script3, file$O, 104, 0, 2692);
     			if (script4.src !== (script4_src_value = "https://code.highcharts.com/modules/accessibility.js")) attr_dev(script4, "src", script4_src_value);
-    			add_location(script4, file$O, 105, 0, 2767);
-    			add_location(h2, file$O, 111, 4, 2903);
+    			add_location(script4, file$O, 105, 0, 2768);
+    			add_location(h2, file$O, 111, 4, 2904);
     			attr_dev(div0, "id", "container");
     			attr_dev(div0, "class", "svelte-1xiowu");
-    			add_location(div0, file$O, 114, 8, 3098);
+    			add_location(div0, file$O, 114, 8, 3099);
     			attr_dev(p0, "class", "highcharts-description");
-    			add_location(p0, file$O, 115, 8, 3134);
-    			add_location(p1, file$O, 119, 8, 3476);
+    			add_location(p0, file$O, 115, 8, 3135);
+    			add_location(p1, file$O, 119, 8, 3477);
     			attr_dev(figure, "class", "highcharts-figure svelte-1xiowu");
-    			add_location(figure, file$O, 113, 4, 3054);
-    			add_location(div1, file$O, 121, 4, 3636);
-    			add_location(main, file$O, 110, 0, 2891);
+    			add_location(figure, file$O, 113, 4, 3055);
+    			add_location(div1, file$O, 121, 4, 3637);
+    			add_location(main, file$O, 110, 0, 2892);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -62518,7 +62518,7 @@ var app = (function () {
 
     async function loadGraph$n() {
     	const raw_data1 = await fetch("/api/v2/global-divorces");
-    	const raw_data2 = await fetch("http://servicios.ine.es/wstempus/js/es/DATOS_TABLA/t20/p274/serie/prov/p02/02006.px?tip=AM", { "method": "GET" });
+    	const raw_data2 = await fetch("https://servicios.ine.es/wstempus/js/es/DATOS_TABLA/t20/p274/serie/prov/p02/02006.px?tip=AM", { "method": "GET" });
     	let data = await raw_data1.json();
     	let data2 = await raw_data2.json();
     	console.log(data2);
