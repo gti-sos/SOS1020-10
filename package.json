@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "test": "npx newman run tests/global-suicides_TEST.json && npx newman run tests/global-divorces_TEST.json",
+    "test": "npx newman run tests/global-suicides_TEST.json && npx newman run tests/global-divorces_TEST.json && npx newman run tests/global-marriages_TEST.json",
     "start": "node index"
   },
   "devDependencies": {
