@@ -2613,11 +2613,17 @@ var app = (function () {
     	let t3;
     	let h4;
     	let t5;
-    	let li;
+    	let li0;
     	let a0;
     	let t7;
     	let a1;
     	let t9;
+    	let t10;
+    	let li1;
+    	let a2;
+    	let t12;
+    	let a3;
+    	let t14;
     	let current;
 
     	const button = new Button({
@@ -2644,13 +2650,21 @@ var app = (function () {
     			h4 = element("h4");
     			h4.textContent = "Vídeo DEMO API: Suicidios Globales";
     			t5 = space();
-    			li = element("li");
+    			li0 = element("li");
     			a0 = element("a");
     			a0.textContent = "https://youtu.be/-W06s122NXA";
     			t7 = text(" (Desarrollada por:  ");
     			a1 = element("a");
     			a1.textContent = "Antonio Jose Jimenez Segovia";
     			t9 = text(")");
+    			t10 = space();
+    			li1 = element("li");
+    			a2 = element("a");
+    			a2.textContent = "https://www.youtube.com/watch?v=hNLX321kCy4&feature=youtu.be";
+    			t12 = text(" (Desarrollada por:  ");
+    			a3 = element("a");
+    			a3.textContent = "Juan Manuel Cortés Alonso";
+    			t14 = text(")");
     			add_location(h2, file$3, 9, 4, 136);
     			add_location(p, file$3, 11, 4, 249);
     			add_location(h4, file$3, 12, 4, 262);
@@ -2659,7 +2673,13 @@ var app = (function () {
     			add_location(a0, file$3, 13, 8, 315);
     			attr_dev(a1, "href", "https://github.com/nonospe");
     			add_location(a1, file$3, 13, 115, 422);
-    			add_location(li, file$3, 13, 4, 311);
+    			add_location(li0, file$3, 13, 4, 311);
+    			attr_dev(a2, "href", "https://www.youtube.com/watch?v=hNLX321kCy4&feature=youtu.be");
+    			attr_dev(a2, "rel", "nofollow");
+    			add_location(a2, file$3, 14, 8, 507);
+    			attr_dev(a3, "href", "https://github.com/juanmacortes9");
+    			add_location(a3, file$3, 14, 179, 678);
+    			add_location(li1, file$3, 14, 4, 503);
     			add_location(main, file$3, 7, 0, 121);
     		},
     		l: function claim(nodes) {
@@ -2675,11 +2695,17 @@ var app = (function () {
     			append_dev(main, t3);
     			append_dev(main, h4);
     			append_dev(main, t5);
-    			append_dev(main, li);
-    			append_dev(li, a0);
-    			append_dev(li, t7);
-    			append_dev(li, a1);
-    			append_dev(li, t9);
+    			append_dev(main, li0);
+    			append_dev(li0, a0);
+    			append_dev(li0, t7);
+    			append_dev(li0, a1);
+    			append_dev(li0, t9);
+    			append_dev(main, t10);
+    			append_dev(main, li1);
+    			append_dev(li1, a2);
+    			append_dev(li1, t12);
+    			append_dev(li1, a3);
+    			append_dev(li1, t14);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
@@ -56551,7 +56577,7 @@ var app = (function () {
     	const formgroup = new FormGroup({
     			props: {
     				style: "margin-top:60px",
-    				$$slots: { default: [create_default_slot_20$2] },
+    				$$slots: { default: [create_default_slot_21$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -56563,7 +56589,7 @@ var app = (function () {
     				outline: true,
     				color: "primary",
     				class: "button-search",
-    				$$slots: { default: [create_default_slot_19$2] },
+    				$$slots: { default: [create_default_slot_20$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -56577,7 +56603,7 @@ var app = (function () {
     			props: {
     				bordered: true,
     				style: "text-align: center;",
-    				$$slots: { default: [create_default_slot_16$2] },
+    				$$slots: { default: [create_default_slot_17$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -56657,7 +56683,7 @@ var app = (function () {
     }
 
     // (278:3) <Label for="selectCountry">
-    function create_default_slot_22$1(ctx) {
+    function create_default_slot_23$1(ctx) {
     	let t;
 
     	const block = {
@@ -56674,7 +56700,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_22$1.name,
+    		id: create_default_slot_23$1.name,
     		type: "slot",
     		source: "(278:3) <Label for=\\\"selectCountry\\\">",
     		ctx
@@ -56684,7 +56710,7 @@ var app = (function () {
     }
 
     // (277:2) <FormGroup style="margin-top:60px">
-    function create_default_slot_20$2(ctx) {
+    function create_default_slot_21$1(ctx) {
     	let t;
     	let updating_value;
     	let current;
@@ -56692,7 +56718,7 @@ var app = (function () {
     	const label = new Label({
     			props: {
     				for: "selectCountry",
-    				$$slots: { default: [create_default_slot_22$1] },
+    				$$slots: { default: [create_default_slot_23$1] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -56768,7 +56794,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_20$2.name,
+    		id: create_default_slot_21$1.name,
     		type: "slot",
     		source: "(277:2) <FormGroup style=\\\"margin-top:60px\\\">",
     		ctx
@@ -56778,7 +56804,7 @@ var app = (function () {
     }
 
     // (285:2) <Button style="margin-bottom: 1%;" outline color="primary" on:click="{search(currentCountry)}" class="button-search" >
-    function create_default_slot_19$2(ctx) {
+    function create_default_slot_20$2(ctx) {
     	let i;
     	let t;
 
@@ -56801,7 +56827,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_19$2.name,
+    		id: create_default_slot_20$2.name,
     		type: "slot",
     		source: "(285:2) <Button style=\\\"margin-bottom: 1%;\\\" outline color=\\\"primary\\\" on:click=\\\"{search(currentCountry)}\\\" class=\\\"button-search\\\" >",
     		ctx
@@ -56811,7 +56837,7 @@ var app = (function () {
     }
 
     // (307:10) <Button outline  color="primary" on:click={insertDivorce}>
-    function create_default_slot_18$2(ctx) {
+    function create_default_slot_19$2(ctx) {
     	let t;
 
     	const block = {
@@ -56828,7 +56854,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_18$2.name,
+    		id: create_default_slot_19$2.name,
     		type: "slot",
     		source: "(307:10) <Button outline  color=\\\"primary\\\" on:click={insertDivorce}>",
     		ctx
@@ -56838,7 +56864,7 @@ var app = (function () {
     }
 
     // (316:11) <Button outline  color="danger" on:click={deleteDivorce(d.country,d.year)}>
-    function create_default_slot_17$2(ctx) {
+    function create_default_slot_18$2(ctx) {
     	let t;
 
     	const block = {
@@ -56855,7 +56881,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_17$2.name,
+    		id: create_default_slot_18$2.name,
     		type: "slot",
     		source: "(316:11) <Button outline  color=\\\"danger\\\" on:click={deleteDivorce(d.country,d.year)}>",
     		ctx
@@ -56898,7 +56924,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "danger",
-    				$$slots: { default: [create_default_slot_17$2] },
+    				$$slots: { default: [create_default_slot_18$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57012,7 +57038,7 @@ var app = (function () {
     }
 
     // (288:2) <Table bordered style="text-align: center;">
-    function create_default_slot_16$2(ctx) {
+    function create_default_slot_17$2(ctx) {
     	let thead;
     	let tr0;
     	let th0;
@@ -57054,7 +57080,7 @@ var app = (function () {
     			props: {
     				outline: true,
     				color: "primary",
-    				$$slots: { default: [create_default_slot_18$2] },
+    				$$slots: { default: [create_default_slot_19$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57293,7 +57319,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_16$2.name,
+    		id: create_default_slot_17$2.name,
     		type: "slot",
     		source: "(288:2) <Table bordered style=\\\"text-align: center;\\\">",
     		ctx
@@ -57341,7 +57367,7 @@ var app = (function () {
     			props: {
     				style: "text-align: center;",
     				ariaLabel: "Cambiar de página",
-    				$$slots: { default: [create_default_slot_7$2] },
+    				$$slots: { default: [create_default_slot_8$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57394,7 +57420,7 @@ var app = (function () {
     }
 
     // (329:1) <PaginationItem class="{currentPage === 1 ? 'disabled' : ''}">
-    function create_default_slot_15$2(ctx) {
+    function create_default_slot_16$2(ctx) {
     	let current;
 
     	const paginationlink = new PaginationLink({
@@ -57432,7 +57458,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_15$2.name,
+    		id: create_default_slot_16$2.name,
     		type: "slot",
     		source: "(329:1) <PaginationItem class=\\\"{currentPage === 1 ? 'disabled' : ''}\\\">",
     		ctx
@@ -57447,7 +57473,7 @@ var app = (function () {
 
     	const paginationitem = new PaginationItem({
     			props: {
-    				$$slots: { default: [create_default_slot_13$2] },
+    				$$slots: { default: [create_default_slot_14$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57496,7 +57522,7 @@ var app = (function () {
     }
 
     // (336:2) <PaginationLink href="#/globalDivorcesAPI" on:click="{() => addOffset(-1)}" >
-    function create_default_slot_14$2(ctx) {
+    function create_default_slot_15$2(ctx) {
     	let t_value = /*currentPage*/ ctx[3] - 1 + "";
     	let t;
 
@@ -57517,7 +57543,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_14$2.name,
+    		id: create_default_slot_15$2.name,
     		type: "slot",
     		source: "(336:2) <PaginationLink href=\\\"#/globalDivorcesAPI\\\" on:click=\\\"{() => addOffset(-1)}\\\" >",
     		ctx
@@ -57527,13 +57553,13 @@ var app = (function () {
     }
 
     // (335:1) <PaginationItem>
-    function create_default_slot_13$2(ctx) {
+    function create_default_slot_14$2(ctx) {
     	let current;
 
     	const paginationlink = new PaginationLink({
     			props: {
     				href: "#/globalDivorcesAPI",
-    				$$slots: { default: [create_default_slot_14$2] },
+    				$$slots: { default: [create_default_slot_15$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57574,7 +57600,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_13$2.name,
+    		id: create_default_slot_14$2.name,
     		type: "slot",
     		source: "(335:1) <PaginationItem>",
     		ctx
@@ -57584,7 +57610,7 @@ var app = (function () {
     }
 
     // (340:2) <PaginationLink href="#/globalDivorcesAPI" >
-    function create_default_slot_12$2(ctx) {
+    function create_default_slot_13$2(ctx) {
     	let t;
 
     	const block = {
@@ -57604,7 +57630,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_12$2.name,
+    		id: create_default_slot_13$2.name,
     		type: "slot",
     		source: "(340:2) <PaginationLink href=\\\"#/globalDivorcesAPI\\\" >",
     		ctx
@@ -57614,13 +57640,13 @@ var app = (function () {
     }
 
     // (339:1) <PaginationItem active>
-    function create_default_slot_11$2(ctx) {
+    function create_default_slot_12$2(ctx) {
     	let current;
 
     	const paginationlink = new PaginationLink({
     			props: {
     				href: "#/globalDivorcesAPI",
-    				$$slots: { default: [create_default_slot_12$2] },
+    				$$slots: { default: [create_default_slot_13$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57659,7 +57685,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_11$2.name,
+    		id: create_default_slot_12$2.name,
     		type: "slot",
     		source: "(339:1) <PaginationItem active>",
     		ctx
@@ -57674,7 +57700,7 @@ var app = (function () {
 
     	const paginationitem = new PaginationItem({
     			props: {
-    				$$slots: { default: [create_default_slot_9$2] },
+    				$$slots: { default: [create_default_slot_10$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57723,7 +57749,7 @@ var app = (function () {
     }
 
     // (346:2) <PaginationLink href="#/globalDivorcesAPI" on:click="{() => addOffset(1)}">
-    function create_default_slot_10$2(ctx) {
+    function create_default_slot_11$2(ctx) {
     	let t_value = /*currentPage*/ ctx[3] + 1 + "";
     	let t;
 
@@ -57744,7 +57770,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_10$2.name,
+    		id: create_default_slot_11$2.name,
     		type: "slot",
     		source: "(346:2) <PaginationLink href=\\\"#/globalDivorcesAPI\\\" on:click=\\\"{() => addOffset(1)}\\\">",
     		ctx
@@ -57754,13 +57780,13 @@ var app = (function () {
     }
 
     // (345:1) <PaginationItem >
-    function create_default_slot_9$2(ctx) {
+    function create_default_slot_10$2(ctx) {
     	let current;
 
     	const paginationlink = new PaginationLink({
     			props: {
     				href: "#/globalDivorcesAPI",
-    				$$slots: { default: [create_default_slot_10$2] },
+    				$$slots: { default: [create_default_slot_11$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57801,7 +57827,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_9$2.name,
+    		id: create_default_slot_10$2.name,
     		type: "slot",
     		source: "(345:1) <PaginationItem >",
     		ctx
@@ -57811,7 +57837,7 @@ var app = (function () {
     }
 
     // (350:1) <PaginationItem class="{moreData ? '' : 'disabled'}">
-    function create_default_slot_8$2(ctx) {
+    function create_default_slot_9$2(ctx) {
     	let current;
 
     	const paginationlink = new PaginationLink({
@@ -57846,7 +57872,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_8$2.name,
+    		id: create_default_slot_9$2.name,
     		type: "slot",
     		source: "(350:1) <PaginationItem class=\\\"{moreData ? '' : 'disabled'}\\\">",
     		ctx
@@ -57856,7 +57882,7 @@ var app = (function () {
     }
 
     // (326:6) <Pagination style = "text-align: center;"  ariaLabel="Cambiar de página">
-    function create_default_slot_7$2(ctx) {
+    function create_default_slot_8$2(ctx) {
     	let t0;
     	let t1;
     	let t2;
@@ -57866,7 +57892,7 @@ var app = (function () {
     	const paginationitem0 = new PaginationItem({
     			props: {
     				class: /*currentPage*/ ctx[3] === 1 ? "disabled" : "",
-    				$$slots: { default: [create_default_slot_15$2] },
+    				$$slots: { default: [create_default_slot_16$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57877,7 +57903,7 @@ var app = (function () {
     	const paginationitem1 = new PaginationItem({
     			props: {
     				active: true,
-    				$$slots: { default: [create_default_slot_11$2] },
+    				$$slots: { default: [create_default_slot_12$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -57888,7 +57914,7 @@ var app = (function () {
     	const paginationitem2 = new PaginationItem({
     			props: {
     				class: /*moreData*/ ctx[4] ? "" : "disabled",
-    				$$slots: { default: [create_default_slot_8$2] },
+    				$$slots: { default: [create_default_slot_9$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -58023,7 +58049,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_7$2.name,
+    		id: create_default_slot_8$2.name,
     		type: "slot",
     		source: "(326:6) <Pagination style = \\\"text-align: center;\\\"  ariaLabel=\\\"Cambiar de página\\\">",
     		ctx
@@ -58033,7 +58059,7 @@ var app = (function () {
     }
 
     // (358:1) <Button style="float: right;" outline  color="danger" on:click={deleteAll}>
-    function create_default_slot_6$2(ctx) {
+    function create_default_slot_7$2(ctx) {
     	let t;
 
     	const block = {
@@ -58050,7 +58076,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_6$2.name,
+    		id: create_default_slot_7$2.name,
     		type: "slot",
     		source: "(358:1) <Button style=\\\"float: right;\\\" outline  color=\\\"danger\\\" on:click={deleteAll}>",
     		ctx
@@ -58060,7 +58086,7 @@ var app = (function () {
     }
 
     // (359:1) <Button style="float: left;" outline  color="primary" on:click={loadInitialData} on:click={showPagination=true}>
-    function create_default_slot_5$2(ctx) {
+    function create_default_slot_6$2(ctx) {
     	let t;
 
     	const block = {
@@ -58077,7 +58103,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_5$2.name,
+    		id: create_default_slot_6$2.name,
     		type: "slot",
     		source: "(359:1) <Button style=\\\"float: left;\\\" outline  color=\\\"primary\\\" on:click={loadInitialData} on:click={showPagination=true}>",
     		ctx
@@ -58095,7 +58121,7 @@ var app = (function () {
     				style: "float: left; margin-left: 20px;",
     				outline: true,
     				color: "secondary",
-    				$$slots: { default: [create_default_slot_4$2] },
+    				$$slots: { default: [create_default_slot_5$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -58151,7 +58177,7 @@ var app = (function () {
     }
 
     // (363:1) <Button style="float: left; margin-left: 20px;" outline  color="secondary" on:click={getDivorces} on:click={showPagination=true}>
-    function create_default_slot_4$2(ctx) {
+    function create_default_slot_5$2(ctx) {
     	let t;
 
     	const block = {
@@ -58168,7 +58194,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_4$2.name,
+    		id: create_default_slot_5$2.name,
     		type: "slot",
     		source: "(363:1) <Button style=\\\"float: left; margin-left: 20px;\\\" outline  color=\\\"secondary\\\" on:click={getDivorces} on:click={showPagination=true}>",
     		ctx
@@ -58186,7 +58212,7 @@ var app = (function () {
     				style: "float: left; margin-left: 20px;",
     				outline: true,
     				color: "secondary",
-    				$$slots: { default: [create_default_slot_3$2] },
+    				$$slots: { default: [create_default_slot_4$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -58242,7 +58268,7 @@ var app = (function () {
     }
 
     // (367:1) <Button style="float: left; margin-left: 20px;" outline  color="secondary" on:click={pop} on:click={showPagination=true}>
-    function create_default_slot_3$2(ctx) {
+    function create_default_slot_4$2(ctx) {
     	let t;
 
     	const block = {
@@ -58259,7 +58285,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_3$2.name,
+    		id: create_default_slot_4$2.name,
     		type: "slot",
     		source: "(367:1) <Button style=\\\"float: left; margin-left: 20px;\\\" outline  color=\\\"secondary\\\" on:click={pop} on:click={showPagination=true}>",
     		ctx
@@ -58269,7 +58295,7 @@ var app = (function () {
     }
 
     // (372:1) <Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/DivorcesGraph'">
-    function create_default_slot_2$5(ctx) {
+    function create_default_slot_3$2(ctx) {
     	let t;
 
     	const block = {
@@ -58286,7 +58312,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_2$5.name,
+    		id: create_default_slot_3$2.name,
     		type: "slot",
     		source: "(372:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = '#/globalDivorcesAPI/DivorcesGraph'\\\">",
     		ctx
@@ -58296,7 +58322,7 @@ var app = (function () {
     }
 
     // (373:1) <Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/DivorcesGraph2'">
-    function create_default_slot_1$5(ctx) {
+    function create_default_slot_2$5(ctx) {
     	let t;
 
     	const block = {
@@ -58313,7 +58339,7 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot_1$5.name,
+    		id: create_default_slot_2$5.name,
     		type: "slot",
     		source: "(373:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = '#/globalDivorcesAPI/DivorcesGraph2'\\\">",
     		ctx
@@ -58323,7 +58349,7 @@ var app = (function () {
     }
 
     // (374:1) <Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/Integrations'">
-    function create_default_slot$o(ctx) {
+    function create_default_slot_1$5(ctx) {
     	let t;
 
     	const block = {
@@ -58340,9 +58366,36 @@ var app = (function () {
 
     	dispatch_dev("SvelteRegisterBlock", {
     		block,
-    		id: create_default_slot$o.name,
+    		id: create_default_slot_1$5.name,
     		type: "slot",
     		source: "(374:1) <Button  outline  color=\\\"primary\\\" role=\\\"link\\\" onclick=\\\"window.location = '#/globalDivorcesAPI/Integrations'\\\">",
+    		ctx
+    	});
+
+    	return block;
+    }
+
+    // (375:1) <Button color="danger" role = "link" onclick= "window.location = 'https://www.youtube.com/watch?v=hNLX321kCy4&feature=youtu.be'">
+    function create_default_slot$o(ctx) {
+    	let t;
+
+    	const block = {
+    		c: function create() {
+    			t = text("Vídeo");
+    		},
+    		m: function mount(target, anchor) {
+    			insert_dev(target, t, anchor);
+    		},
+    		d: function destroy(detaching) {
+    			if (detaching) detach_dev(t);
+    		}
+    	};
+
+    	dispatch_dev("SvelteRegisterBlock", {
+    		block,
+    		id: create_default_slot$o.name,
+    		type: "slot",
+    		source: "(375:1) <Button color=\\\"danger\\\" role = \\\"link\\\" onclick= \\\"window.location = 'https://www.youtube.com/watch?v=hNLX321kCy4&feature=youtu.be'\\\">",
     		ctx
     	});
 
@@ -58366,6 +58419,7 @@ var app = (function () {
     	let div2;
     	let t8;
     	let t9;
+    	let t10;
     	let current;
 
     	let info = {
@@ -58387,7 +58441,7 @@ var app = (function () {
     				style: "float: right;",
     				outline: true,
     				color: "danger",
-    				$$slots: { default: [create_default_slot_6$2] },
+    				$$slots: { default: [create_default_slot_7$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -58400,7 +58454,7 @@ var app = (function () {
     				style: "float: left;",
     				outline: true,
     				color: "primary",
-    				$$slots: { default: [create_default_slot_5$2] },
+    				$$slots: { default: [create_default_slot_6$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -58421,7 +58475,7 @@ var app = (function () {
     				color: "primary",
     				role: "link",
     				onclick: "window.location = '#/globalDivorcesAPI/DivorcesGraph'",
-    				$$slots: { default: [create_default_slot_2$5] },
+    				$$slots: { default: [create_default_slot_3$2] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -58433,7 +58487,7 @@ var app = (function () {
     				color: "primary",
     				role: "link",
     				onclick: "window.location = '#/globalDivorcesAPI/DivorcesGraph2'",
-    				$$slots: { default: [create_default_slot_1$5] },
+    				$$slots: { default: [create_default_slot_2$5] },
     				$$scope: { ctx }
     			},
     			$$inline: true
@@ -58445,6 +58499,17 @@ var app = (function () {
     				color: "primary",
     				role: "link",
     				onclick: "window.location = '#/globalDivorcesAPI/Integrations'",
+    				$$slots: { default: [create_default_slot_1$5] },
+    				$$scope: { ctx }
+    			},
+    			$$inline: true
+    		});
+
+    	const button5 = new Button({
+    			props: {
+    				color: "danger",
+    				role: "link",
+    				onclick: "window.location = 'https://www.youtube.com/watch?v=hNLX321kCy4&feature=youtu.be'",
     				$$slots: { default: [create_default_slot$o] },
     				$$scope: { ctx }
     			},
@@ -58477,6 +58542,8 @@ var app = (function () {
     			create_component(button3.$$.fragment);
     			t9 = space();
     			create_component(button4.$$.fragment);
+    			t10 = space();
+    			create_component(button5.$$.fragment);
     			attr_dev(div0, "role", "alert");
     			attr_dev(div0, "id", "div_alert");
     			set_style(div0, "display", "none");
@@ -58518,6 +58585,8 @@ var app = (function () {
     			mount_component(button3, div2, null);
     			append_dev(div2, t9);
     			mount_component(button4, div2, null);
+    			append_dev(div2, t10);
+    			mount_component(button5, div2, null);
     			current = true;
     		},
     		p: function update(new_ctx, [dirty]) {
@@ -58635,6 +58704,13 @@ var app = (function () {
     			}
 
     			button4.$set(button4_changes);
+    			const button5_changes = {};
+
+    			if (dirty & /*$$scope*/ 134217728) {
+    				button5_changes.$$scope = { dirty, ctx };
+    			}
+
+    			button5.$set(button5_changes);
     		},
     		i: function intro(local) {
     			if (current) return;
@@ -58647,6 +58723,7 @@ var app = (function () {
     			transition_in(button2.$$.fragment, local);
     			transition_in(button3.$$.fragment, local);
     			transition_in(button4.$$.fragment, local);
+    			transition_in(button5.$$.fragment, local);
     			current = true;
     		},
     		o: function outro(local) {
@@ -58663,6 +58740,7 @@ var app = (function () {
     			transition_out(button2.$$.fragment, local);
     			transition_out(button3.$$.fragment, local);
     			transition_out(button4.$$.fragment, local);
+    			transition_out(button5.$$.fragment, local);
     			current = false;
     		},
     		d: function destroy(detaching) {
@@ -58678,6 +58756,7 @@ var app = (function () {
     			destroy_component(button2);
     			destroy_component(button3);
     			destroy_component(button4);
+    			destroy_component(button5);
     		}
     	};
 

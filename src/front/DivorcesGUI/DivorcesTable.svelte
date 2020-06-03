@@ -372,6 +372,7 @@ function errorResponse(res) {
 	<Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/DivorcesGraph'">Gráfica HightChart</Button>
 	<Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/DivorcesGraph2'">Gráfica Chart.js</Button>
 	<Button  outline  color="primary" role="link" onclick="window.location = '#/globalDivorcesAPI/Integrations'">Integraciones</Button>
+	<Button color="danger" role = "link" onclick= "window.location = 'https://www.youtube.com/watch?v=hNLX321kCy4&feature=youtu.be'">Vídeo</Button>
 
 
 	</div>
