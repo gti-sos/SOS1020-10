@@ -2624,6 +2624,12 @@ var app = (function () {
     	let t12;
     	let a3;
     	let t14;
+    	let t15;
+    	let li2;
+    	let a4;
+    	let t17;
+    	let a5;
+    	let t19;
     	let current;
 
     	const button = new Button({
@@ -2665,6 +2671,14 @@ var app = (function () {
     			a3 = element("a");
     			a3.textContent = "Juan Manuel Cortés Alonso";
     			t14 = text(")");
+    			t15 = space();
+    			li2 = element("li");
+    			a4 = element("a");
+    			a4.textContent = "https://www.youtube.com/watch?v=mqswRSRINrM";
+    			t17 = text(" (Desarrollada por:  ");
+    			a5 = element("a");
+    			a5.textContent = "Jesús Vázquez Rivadeneyra";
+    			t19 = text(")");
     			add_location(h2, file$3, 9, 4, 136);
     			add_location(p, file$3, 11, 4, 249);
     			add_location(h4, file$3, 12, 4, 262);
@@ -2680,6 +2694,12 @@ var app = (function () {
     			attr_dev(a3, "href", "https://github.com/juanmacortes9");
     			add_location(a3, file$3, 14, 179, 678);
     			add_location(li1, file$3, 14, 4, 503);
+    			attr_dev(a4, "href", "https://www.youtube.com/watch?v=mqswRSRINrM");
+    			attr_dev(a4, "rel", "nofollow");
+    			add_location(a4, file$3, 15, 8, 766);
+    			attr_dev(a5, "href", "https://github.com/rivadeneyraj");
+    			add_location(a5, file$3, 15, 145, 903);
+    			add_location(li2, file$3, 15, 4, 762);
     			add_location(main, file$3, 7, 0, 121);
     		},
     		l: function claim(nodes) {
@@ -2706,6 +2726,12 @@ var app = (function () {
     			append_dev(li1, t12);
     			append_dev(li1, a3);
     			append_dev(li1, t14);
+    			append_dev(main, t15);
+    			append_dev(main, li2);
+    			append_dev(li2, a4);
+    			append_dev(li2, t17);
+    			append_dev(li2, a5);
+    			append_dev(li2, t19);
     			current = true;
     		},
     		p: function update(ctx, [dirty]) {
