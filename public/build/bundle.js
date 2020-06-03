@@ -15559,17 +15559,17 @@ var app = (function () {
     			td7 = element("td");
     			t13 = text(t13_value);
     			t14 = space();
-    			add_location(td0, file$o, 376, 6, 9906);
+    			add_location(td0, file$o, 376, 6, 9990);
     			attr_dev(a, "href", a_href_value = "#/suicide/" + /*suicide*/ ctx[30].country);
-    			add_location(a, file$o, 377, 10, 10020);
-    			add_location(td1, file$o, 377, 6, 10016);
-    			add_location(td2, file$o, 378, 6, 10092);
-    			add_location(td3, file$o, 379, 6, 10130);
-    			add_location(td4, file$o, 380, 6, 10170);
-    			add_location(td5, file$o, 381, 6, 10201);
-    			add_location(td6, file$o, 382, 6, 10231);
-    			add_location(td7, file$o, 383, 6, 10263);
-    			add_location(tr, file$o, 375, 5, 9894);
+    			add_location(a, file$o, 377, 10, 10104);
+    			add_location(td1, file$o, 377, 6, 10100);
+    			add_location(td2, file$o, 378, 6, 10176);
+    			add_location(td3, file$o, 379, 6, 10214);
+    			add_location(td4, file$o, 380, 6, 10254);
+    			add_location(td5, file$o, 381, 6, 10285);
+    			add_location(td6, file$o, 382, 6, 10315);
+    			add_location(td7, file$o, 383, 6, 10347);
+    			add_location(tr, file$o, 375, 5, 9978);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, tr, anchor);
@@ -15790,18 +15790,24 @@ var app = (function () {
     			add_location(td0, file$o, 365, 4, 9353);
     			add_location(input0, file$o, 366, 10, 9441);
     			add_location(td1, file$o, 366, 6, 9437);
+    			attr_dev(input1, "type", "number");
     			add_location(input1, file$o, 367, 10, 9500);
     			add_location(td2, file$o, 367, 6, 9496);
-    			add_location(input2, file$o, 368, 10, 9563);
-    			add_location(td3, file$o, 368, 6, 9559);
-    			add_location(input3, file$o, 369, 10, 9628);
-    			add_location(td4, file$o, 369, 6, 9624);
-    			add_location(input4, file$o, 370, 10, 9684);
-    			add_location(td5, file$o, 370, 6, 9680);
-    			add_location(input5, file$o, 371, 10, 9739);
-    			add_location(td6, file$o, 371, 6, 9735);
-    			add_location(input6, file$o, 372, 10, 9796);
-    			add_location(td7, file$o, 372, 6, 9792);
+    			attr_dev(input2, "type", "number");
+    			add_location(input2, file$o, 368, 10, 9577);
+    			add_location(td3, file$o, 368, 6, 9573);
+    			attr_dev(input3, "type", "number");
+    			add_location(input3, file$o, 369, 10, 9656);
+    			add_location(td4, file$o, 369, 6, 9652);
+    			attr_dev(input4, "type", "number");
+    			add_location(input4, file$o, 370, 10, 9726);
+    			add_location(td5, file$o, 370, 6, 9722);
+    			attr_dev(input5, "type", "number");
+    			add_location(input5, file$o, 371, 10, 9795);
+    			add_location(td6, file$o, 371, 6, 9791);
+    			attr_dev(input6, "type", "number");
+    			add_location(input6, file$o, 372, 10, 9866);
+    			add_location(td7, file$o, 372, 6, 9862);
     			add_location(tr1, file$o, 364, 4, 9343);
     			add_location(tbody, file$o, 363, 3, 9330);
     		},
@@ -15888,27 +15894,27 @@ var app = (function () {
     				set_input_value(input0, /*newSuicide*/ ctx[4].country);
     			}
 
-    			if (dirty[0] & /*newSuicide*/ 16 && input1.value !== /*newSuicide*/ ctx[4].lengthCoord) {
+    			if (dirty[0] & /*newSuicide*/ 16 && to_number(input1.value) !== /*newSuicide*/ ctx[4].lengthCoord) {
     				set_input_value(input1, /*newSuicide*/ ctx[4].lengthCoord);
     			}
 
-    			if (dirty[0] & /*newSuicide*/ 16 && input2.value !== /*newSuicide*/ ctx[4].latitudeCoord) {
+    			if (dirty[0] & /*newSuicide*/ 16 && to_number(input2.value) !== /*newSuicide*/ ctx[4].latitudeCoord) {
     				set_input_value(input2, /*newSuicide*/ ctx[4].latitudeCoord);
     			}
 
-    			if (dirty[0] & /*newSuicide*/ 16 && input3.value !== /*newSuicide*/ ctx[4].year) {
+    			if (dirty[0] & /*newSuicide*/ 16 && to_number(input3.value) !== /*newSuicide*/ ctx[4].year) {
     				set_input_value(input3, /*newSuicide*/ ctx[4].year);
     			}
 
-    			if (dirty[0] & /*newSuicide*/ 16 && input4.value !== /*newSuicide*/ ctx[4].men) {
+    			if (dirty[0] & /*newSuicide*/ 16 && to_number(input4.value) !== /*newSuicide*/ ctx[4].men) {
     				set_input_value(input4, /*newSuicide*/ ctx[4].men);
     			}
 
-    			if (dirty[0] & /*newSuicide*/ 16 && input5.value !== /*newSuicide*/ ctx[4].women) {
+    			if (dirty[0] & /*newSuicide*/ 16 && to_number(input5.value) !== /*newSuicide*/ ctx[4].women) {
     				set_input_value(input5, /*newSuicide*/ ctx[4].women);
     			}
 
-    			if (dirty[0] & /*newSuicide*/ 16 && input6.value !== /*newSuicide*/ ctx[4].average) {
+    			if (dirty[0] & /*newSuicide*/ 16 && to_number(input6.value) !== /*newSuicide*/ ctx[4].average) {
     				set_input_value(input6, /*newSuicide*/ ctx[4].average);
     			}
 
@@ -16773,32 +16779,32 @@ var app = (function () {
     	}
 
     	function input1_input_handler() {
-    		newSuicide.lengthCoord = this.value;
+    		newSuicide.lengthCoord = to_number(this.value);
     		$$invalidate(4, newSuicide);
     	}
 
     	function input2_input_handler() {
-    		newSuicide.latitudeCoord = this.value;
+    		newSuicide.latitudeCoord = to_number(this.value);
     		$$invalidate(4, newSuicide);
     	}
 
     	function input3_input_handler() {
-    		newSuicide.year = this.value;
+    		newSuicide.year = to_number(this.value);
     		$$invalidate(4, newSuicide);
     	}
 
     	function input4_input_handler() {
-    		newSuicide.men = this.value;
+    		newSuicide.men = to_number(this.value);
     		$$invalidate(4, newSuicide);
     	}
 
     	function input5_input_handler() {
-    		newSuicide.women = this.value;
+    		newSuicide.women = to_number(this.value);
     		$$invalidate(4, newSuicide);
     	}
 
     	function input6_input_handler() {
-    		newSuicide.average = this.value;
+    		newSuicide.average = to_number(this.value);
     		$$invalidate(4, newSuicide);
     	}
 
@@ -18051,18 +18057,24 @@ var app = (function () {
     			add_location(td0, file$r, 130, 20, 4015);
     			add_location(input0, file$r, 131, 32, 4125);
     			add_location(td1, file$r, 131, 28, 4121);
+    			attr_dev(input1, "type", "number");
     			add_location(input1, file$r, 132, 32, 4200);
     			add_location(td2, file$r, 132, 28, 4196);
-    			add_location(input2, file$r, 133, 32, 4279);
-    			add_location(td3, file$r, 133, 28, 4275);
-    			add_location(input3, file$r, 134, 32, 4360);
-    			add_location(td4, file$r, 134, 28, 4356);
-    			add_location(input4, file$r, 135, 32, 4432);
-    			add_location(td5, file$r, 135, 28, 4428);
-    			add_location(input5, file$r, 136, 32, 4503);
-    			add_location(td6, file$r, 136, 28, 4499);
-    			add_location(input6, file$r, 137, 32, 4576);
-    			add_location(td7, file$r, 137, 28, 4572);
+    			attr_dev(input2, "type", "number");
+    			add_location(input2, file$r, 133, 32, 4293);
+    			add_location(td3, file$r, 133, 28, 4289);
+    			attr_dev(input3, "type", "number");
+    			add_location(input3, file$r, 134, 32, 4388);
+    			add_location(td4, file$r, 134, 28, 4384);
+    			attr_dev(input4, "type", "number");
+    			add_location(input4, file$r, 135, 32, 4474);
+    			add_location(td5, file$r, 135, 28, 4470);
+    			attr_dev(input5, "type", "number");
+    			add_location(input5, file$r, 136, 32, 4559);
+    			add_location(td6, file$r, 136, 28, 4555);
+    			attr_dev(input6, "type", "number");
+    			add_location(input6, file$r, 137, 32, 4646);
+    			add_location(td7, file$r, 137, 28, 4642);
     			add_location(tr1, file$r, 129, 20, 3989);
     			add_location(tbody, file$r, 128, 16, 3960);
     		},
@@ -18143,27 +18155,27 @@ var app = (function () {
     				set_input_value(input0, /*editedCountry*/ ctx[0]);
     			}
 
-    			if (dirty & /*editedLengthCoord*/ 2 && input1.value !== /*editedLengthCoord*/ ctx[1]) {
+    			if (dirty & /*editedLengthCoord*/ 2 && to_number(input1.value) !== /*editedLengthCoord*/ ctx[1]) {
     				set_input_value(input1, /*editedLengthCoord*/ ctx[1]);
     			}
 
-    			if (dirty & /*editedLatitudeCoord*/ 4 && input2.value !== /*editedLatitudeCoord*/ ctx[2]) {
+    			if (dirty & /*editedLatitudeCoord*/ 4 && to_number(input2.value) !== /*editedLatitudeCoord*/ ctx[2]) {
     				set_input_value(input2, /*editedLatitudeCoord*/ ctx[2]);
     			}
 
-    			if (dirty & /*editedYear*/ 8 && input3.value !== /*editedYear*/ ctx[3]) {
+    			if (dirty & /*editedYear*/ 8 && to_number(input3.value) !== /*editedYear*/ ctx[3]) {
     				set_input_value(input3, /*editedYear*/ ctx[3]);
     			}
 
-    			if (dirty & /*editedMen*/ 16 && input4.value !== /*editedMen*/ ctx[4]) {
+    			if (dirty & /*editedMen*/ 16 && to_number(input4.value) !== /*editedMen*/ ctx[4]) {
     				set_input_value(input4, /*editedMen*/ ctx[4]);
     			}
 
-    			if (dirty & /*editedWomen*/ 32 && input5.value !== /*editedWomen*/ ctx[5]) {
+    			if (dirty & /*editedWomen*/ 32 && to_number(input5.value) !== /*editedWomen*/ ctx[5]) {
     				set_input_value(input5, /*editedWomen*/ ctx[5]);
     			}
 
-    			if (dirty & /*editedAverage*/ 64 && input6.value !== /*editedAverage*/ ctx[6]) {
+    			if (dirty & /*editedAverage*/ 64 && to_number(input6.value) !== /*editedAverage*/ ctx[6]) {
     				set_input_value(input6, /*editedAverage*/ ctx[6]);
     			}
     		},
@@ -18205,7 +18217,7 @@ var app = (function () {
     			p = element("p");
     			p.textContent = `Error: ${/*errorMGS*/ ctx[7]}`;
     			set_style(p, "color", "red");
-    			add_location(p, file$r, 144, 8, 4738);
+    			add_location(p, file$r, 144, 8, 4822);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, p, anchor);
@@ -18483,32 +18495,32 @@ var app = (function () {
     	}
 
     	function input1_input_handler() {
-    		editedLengthCoord = this.value;
+    		editedLengthCoord = to_number(this.value);
     		$$invalidate(1, editedLengthCoord);
     	}
 
     	function input2_input_handler() {
-    		editedLatitudeCoord = this.value;
+    		editedLatitudeCoord = to_number(this.value);
     		$$invalidate(2, editedLatitudeCoord);
     	}
 
     	function input3_input_handler() {
-    		editedYear = this.value;
+    		editedYear = to_number(this.value);
     		$$invalidate(3, editedYear);
     	}
 
     	function input4_input_handler() {
-    		editedMen = this.value;
+    		editedMen = to_number(this.value);
     		$$invalidate(4, editedMen);
     	}
 
     	function input5_input_handler() {
-    		editedWomen = this.value;
+    		editedWomen = to_number(this.value);
     		$$invalidate(5, editedWomen);
     	}
 
     	function input6_input_handler() {
-    		editedAverage = this.value;
+    		editedAverage = to_number(this.value);
     		$$invalidate(6, editedAverage);
     	}
 

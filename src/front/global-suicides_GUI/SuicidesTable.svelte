@@ -365,12 +365,12 @@ function toVideo(){
 				<tr>
 				<td><Button color="primary" on:click="{insertSuicide}">Añadir</Button> </td>
 						<td><input bind:value="{newSuicide.country}"> </td>
-						<td><input bind:value="{newSuicide.lengthCoord}"> </td>
-						<td><input bind:value="{newSuicide.latitudeCoord}"> </td>
-						<td><input bind:value="{newSuicide.year}"> </td>
-						<td><input bind:value="{newSuicide.men}"> </td>
-						<td><input bind:value="{newSuicide.women}"> </td>
-						<td><input bind:value="{newSuicide.average}"> </td>
+						<td><input type="number" bind:value="{newSuicide.lengthCoord}"> </td>
+						<td><input type="number" bind:value="{newSuicide.latitudeCoord}"> </td>
+						<td><input type="number" bind:value="{newSuicide.year}"> </td>
+						<td><input type="number" bind:value="{newSuicide.men}"> </td>
+						<td><input type="number" bind:value="{newSuicide.women}"> </td>
+						<td><input type="number" bind:value="{newSuicide.average}"> </td>
 				</tr>
 				{#each suicides as suicide}
 					<tr>

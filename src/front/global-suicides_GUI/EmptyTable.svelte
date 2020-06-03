@@ -130,12 +130,12 @@ function clearAlert () {
                     <tr>
                     <td><Button color="primary" on:click="{addingSuicide}">Añadir</Button> </td>
                             <td><input bind:value="{editedCountry}"></td>
-                            <td><input bind:value="{editedLengthCoord}"></td>
-                            <td><input bind:value="{editedLatitudeCoord}"></td>
-                            <td><input bind:value="{editedYear}"></td>
-                            <td><input bind:value="{editedMen}"></td>
-                            <td><input bind:value="{editedWomen}"></td>
-                            <td><input bind:value="{editedAverage}"></td>
+                            <td><input type="number" bind:value="{editedLengthCoord}"></td>
+                            <td><input type="number" bind:value="{editedLatitudeCoord}"></td>
+                            <td><input type="number" bind:value="{editedYear}"></td>
+                            <td><input type="number" bind:value="{editedMen}"></td>
+                            <td><input type="number" bind:value="{editedWomen}"></td>
+                            <td><input type="number" bind:value="{editedAverage}"></td>
                     </tr>
     
                 </tbody>
